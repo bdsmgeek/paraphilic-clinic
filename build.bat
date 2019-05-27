@@ -1,1 +1,1 @@
-tweego -o builds/ParaphilicClinic.html src
+tweego -o docs/index.html src
