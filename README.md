@@ -1,4 +1,4 @@
-# Parapholic Clinic
+# Paraphilic Clinic
 
 [Join us on Discord!](https://discord.gg/zfgvcKv)
 
