@@ -1,0 +1,80 @@
+:: Player Character Creation
+!!Paraphilic Clinic Intake Form
+/* TODO 
+<label><<checkbox "$player.collectData" false true checked>> Send anonymous data to improve this program?</label>
+*/
+<table>
+  <tr>
+    <td>''Your first name:''</td>
+    <td>''Your last name:'' </td>
+  </tr>
+  <tr>
+    <td><<textbox "$player.first_name" "John" autofocus>></td>
+    <td><<textbox "$player.last_name" "Doe" >></td>
+  </tr>
+</table>
+''Your Pronouns:''
+<<listbox "$player.pronouns" autoselect>>
+	<<option "He/Him/His" "male">>
+	<<option "She/Her/Hers" "female">>
+	<<option "They/Their/Theirs" "enby">>
+<</listbox>>
+
+''Role/s you are applying for:''
+<label><<checkbox "$player.role.doctor" false true checked>> Doctor</label>
+<label><<checkbox "$player.role.patient" false true >> Patient</label>
+
+''You have:''
+<table>
+<tr>
+<td><label><<checkbox "$player.genitals.penis" false true checked>> Penis</label></td>
+<td><label><<checkbox "$player.genitals.clitoris" false true>> Clitoris</label></td>
+<td><label><<checkbox "$player.genitals.breasts" false true>> Breasts</label></td>
+</tr>
+<tr>
+<td><label><<checkbox "$player.genitals.testicles" false true checked>> Testicles</label></td>
+<td><label><<checkbox "$player.genitals.vagina" false true>> Vagina</label></td>
+</tr>
+</table>
+
+''Interests:''
+''Body Parts:''
+<label><<checkbox "$player.likes.penis" false true>> Penis</label>
+<label><<checkbox "$player.likes.testicles" false true>> Testicles</label>
+<label><<checkbox "$player.likes.clitoris" false true>> Clitoris</label>
+<label><<checkbox "$player.likes.vagina" false true>> Vagina</label>
+<label><<checkbox "$player.likes.breasts" false true>> Breasts</label>
+<label><<checkbox "$player.likes.buttocks" false true>> Buttocks</label>
+<label><<checkbox "$player.likes.anus" false true>> Anus</label>
+<label><<checkbox "$player.likes.urethra" false true>> Urethra</label>
+<label><<checkbox "$player.likes.legs" false true>> Legs</label>
+<label><<checkbox "$player.likes.legs.knees" false true>> Knees</label>
+<label><<checkbox "$player.likes.legs.feet" false true>> Feet</label>
+<label><<checkbox "$player.likes.legs.feet.toes" false true>> Toes</label>
+<label><<checkbox "$player.likes.arms" false true>> Arms</label>
+<label><<checkbox "$player.likes.elbows" false true>> Elbows</label>
+<label><<checkbox "$player.likes.hands" false true>> Hands</label>
+<label><<checkbox "$player.likes.fingers" false true>> Fingers</label>
+<<linkappend "More extreme options:" t8n>>
+<label><<checkbox "$player.likes.uteruses" false true>> Uteruses</label>
+<label><<checkbox "$player.likes.bladders" false true>> Bladders</label>
+<</linkappend>>
+
+''Body Fluids:''
+<label><<checkbox "$player.likes.spit" false true>> Spit</label>
+<label><<checkbox "$player.likes.urine" false true>> Urine</label>
+<<linkappend "More extreme options:" t8n>>
+<label><<checkbox "$player.likes.blood" false true>> Blood</label>
+<label><<checkbox "$player.likes.vomit" false true>> Vomit</label>
+<label><<checkbox "$player.likes.scat" false true>> Scat</label>
+<</linkappend>>
+
+''Items:''
+
+
+''Actions:''
+<<linkappend "More extreme options:" t8n>>
+
+<</linkappend>>
+
+[[Submit form. | Reception Submit Form]]

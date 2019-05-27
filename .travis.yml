@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - "7"
+before_script:
+  - wget http://www.motoslave.net/tweego/download.php/tweego-1.3.0-linux-x86.zip
+  - unzip tweego-1.3.0-linux-x86.zip /var/lib/tweego
+  - 
+
+env:
+  - TWEEGO_CHARSET=
+  - TWEEGO_FORMAT="sugarcube-2"
+  - TWEEGO_PATH="/var/lib/tweego/storyformats"
