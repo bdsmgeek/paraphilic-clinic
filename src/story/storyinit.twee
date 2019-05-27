@@ -61,7 +61,6 @@ variables().browser_path = window.location.href;
 	<<run setup.testPassage($browser_path.match('passageName=([A-Za-z0-9_]+)')[1])>>
 <</if>>
 <</if>>
-<<include "YearbookInit">>
 <<set $office_visit_count to 0>>
 <<set $character_name to "">>
 <<set $name to "Shepard">>

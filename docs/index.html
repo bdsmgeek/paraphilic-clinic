@@ -100,7 +100,7 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 		<div id="init-lacking">Your browser lacks required capabilities. Please upgrade it or switch to another to continue.</div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<div id="store-area" hidden><tw-storydata name="Paraphilic Clinic" startnode="19" creator="Tweego" creator-version="1.3.0" ifid="C2A1010F-4DFA-48D8-8B22-04B76D6878CE" zoom="1" format="SugarCube" format-version="2.28.2" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* twine-user-stylesheet #1: "Story Stylesheet" */
+	<div id="store-area" hidden><tw-storydata name="Paraphilic Clinic" startnode="16" creator="Tweego" creator-version="1.3.0" ifid="C2A1010F-4DFA-48D8-8B22-04B76D6878CE" zoom="1" format="SugarCube" format-version="2.28.2" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* twine-user-stylesheet #1: "Story Stylesheet" */
 /* twine-user-stylesheet #1: "Story Stylesheet" */
 .passage img {
   max-width: 100%;
@@ -717,7 +717,8 @@ var u=this.value();return t.apply(af(u)?u:[],n)}return this[r](function(r){retur
 n},Mn.prototype.reverse=function(){if(this.__filtered__){var n=new Mn(this);n.__dir__=-1,n.__filtered__=true}else n=this.clone(),n.__dir__*=-1;return n},Mn.prototype.value=function(){var n,t=this.__wrapped__.value(),r=this.__dir__,e=af(t),u=0>r,i=e?t.length:0;n=i;for(var o=this.__views__,f=0,c=-1,a=o.length;++c<a;){var l=o[c],s=l.size;switch(l.type){case"drop":f+=s;break;case"dropRight":n-=s;break;case"take":n=Mi(n,f+s);break;case"takeRight":f=Di(f,n-s)}}if(n={start:f,end:n},o=n.start,f=n.end,n=f-o,
 o=u?f:o-1,f=this.__iteratees__,c=f.length,a=0,l=Mi(n,this.__takeCount__),!e||!u&&i==n&&l==n)return kr(t,this.__actions__);e=[];n:for(;n--&&a<l;){for(o+=r,u=-1,i=t[o];++u<c;){var h=f[u],s=h.type,h=(0,h.iteratee)(i);if(2==s)i=h;else if(!h){if(1==s)continue n;break n}}e[a++]=i}return e},On.prototype.at=Fo,On.prototype.chain=function(){return Xe(this)},On.prototype.commit=function(){return new zn(this.value(),this.__chain__)},On.prototype.next=function(){this.__values__===F&&(this.__values__=ku(this.value()));
 var n=this.__index__>=this.__values__.length;return{done:n,value:n?F:this.__values__[this.__index__++]}},On.prototype.plant=function(n){for(var t,r=this;r instanceof Sn;){var e=Pe(r);e.__index__=0,e.__values__=F,t?u.__wrapped__=e:t=e;var u=e,r=r.__wrapped__}return u.__wrapped__=n,t},On.prototype.reverse=function(){var n=this.__wrapped__;return n instanceof Mn?(this.__actions__.length&&(n=new Mn(this)),n=n.reverse(),n.__actions__.push({func:nu,args:[Je],thisArg:F}),new zn(n,this.__chain__)):this.thru(Je);
-},On.prototype.toJSON=On.prototype.valueOf=On.prototype.value=function(){return kr(this.__wrapped__,this.__actions__)},On.prototype.first=On.prototype.head,Ai&&(On.prototype[Ai]=tu),On}();typeof define=="function"&&typeof define.amd=="object"&&define.amd?(Zn._=it, define(function(){return it})):Vn?((Vn.exports=it)._=it,qn._=it):Zn._=it}).call(this);</script><tw-passagedata pid="1" name="PassageFooter" tags="" position="100,100"></tw-passagedata><tw-passagedata pid="2" name="StoryAuthor" tags="" position="225,100">BDSMGeek is a kinky geek trying his hand at writting a fetish game.</tw-passagedata><tw-passagedata pid="3" name="StoryMenu" tags="" position="350,100">&lt;&lt;if !tags().includes(&quot;noskip&quot;)&gt;&gt;&lt;&lt;link &quot;Skip Scene&quot;&gt;&gt;
+},On.prototype.toJSON=On.prototype.valueOf=On.prototype.value=function(){return kr(this.__wrapped__,this.__actions__)},On.prototype.first=On.prototype.head,Ai&&(On.prototype[Ai]=tu),On}();typeof define=="function"&&typeof define.amd=="object"&&define.amd?(Zn._=it, define(function(){return it})):Vn?((Vn.exports=it)._=it,qn._=it):Zn._=it}).call(this);</script><tw-passagedata pid="1" name="PassageFooter" tags="" position="100,100"></tw-passagedata><tw-passagedata pid="2" name="StoryAuthor" tags="" position="225,100">BDSMGeek is a kinky geek trying his hand at writing a fetish game.
+&lt;a href=&quot;https://github.com/bdsmgeek/paraphilic-clinic/&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;img/GitHub-Mark-Light-32px.png&quot;&gt;&lt;/a&gt;</tw-passagedata><tw-passagedata pid="3" name="StoryMenu" tags="" position="350,100">&lt;&lt;if !tags().includes(&quot;noskip&quot;)&gt;&gt;&lt;&lt;link &quot;Skip Scene&quot;&gt;&gt;
 &lt;&lt;script&gt;&gt;
 Dialog.setup();
 Dialog.wiki(Story.get(&quot;SkipSceneDialog&quot;).processText());
@@ -731,21 +732,7 @@ Dialog.open({top: 300});
 
 [[Credits]]
 
-[[Report A Issue|https://github.com/bdsmgeek/paraphilic-clinic/issues/new?title=passage()]]</tw-passagedata><tw-passagedata pid="4" name="CameraScene" tags="" position="475,100">&lt;&lt;if not $hide_camera_links&gt;&gt;\
-	&lt;&lt;if (not $camerasSetup)&gt;&gt;\
-		[[Check the security cameras.-&gt;CameraSetup]]
-	
-	&lt;&lt;elseif (def $forcedCameraPassage)&gt;&gt;\
-		&lt;&lt;set _passageName to $forcedCameraPassage&gt;&gt;\
-		&lt;&lt;unset $forcedCameraPassage&gt;&gt;\
-		&lt;&lt;link &quot;Check the security cameras.&quot;&gt;&gt;
-			&lt;&lt;goto _passageName&gt;&gt;
-		&lt;&lt;/link&gt;&gt;
-	
-	&lt;&lt;else&gt;&gt;\
-        &lt;&lt;include &quot;RandomPassageLink&quot;&gt;&gt;\
-	&lt;&lt;/if&gt;&gt;\
-&lt;&lt;/if&gt;&gt;\</tw-passagedata><tw-passagedata pid="5" name="Gallery" tags="noskip" position="600,100">&lt;div id=&quot;gallery-container&quot;&gt;\
+[[Report A Issue|https://github.com/bdsmgeek/paraphilic-clinic/issues/new?title=passage()]]</tw-passagedata><tw-passagedata pid="4" name="Gallery" tags="noskip" position="475,100">&lt;div id=&quot;gallery-container&quot;&gt;\
 ! Gallery
 &lt;&lt;nobr&gt;&gt;
 &lt;img src=&quot;images/close.png&quot; id=&quot;close-image&quot; onclick=&quot;SugarCube.setup.hideGallery()&quot;/&gt;
@@ -770,59 +757,14 @@ Dialog.open({top: 300});
     &lt;/table&gt;
     &lt;&lt;back&gt;&gt;
 &lt;/div&gt;
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="6" name="img" tags="widget" position="725,100">&lt;&lt;widget &#39;img&#39;&gt;&gt;&lt;&lt;nobr&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="img" tags="widget" position="600,100">&lt;&lt;widget &#39;img&#39;&gt;&gt;&lt;&lt;nobr&gt;&gt;
     &lt;&lt;run $images_seen.push($args[0])&gt;&gt;
     &lt;&lt;if settings.showImages&gt;&gt;
         [img[&quot;images/&quot; + $args[0]]]
     &lt;&lt;else&gt;&gt;
     //Hidden Image.  Change your settings to view.//
     &lt;&lt;/if&gt;&gt;
-&lt;&lt;/nobr&gt;&gt;&lt;&lt;/widget&gt;&gt;\</tw-passagedata><tw-passagedata pid="7" name="Yearbook" tags="noskip" position="850,100">! Yearbook
-!! Teachers
-&lt;&lt;set _teacherNames to setup.getTeacherNames()&gt;&gt;\
-&lt;&lt;for _i to 0; _i lt _teacherNames.length; _i++&gt;&gt;
-	&lt;&lt;set _name to _teacherNames[_i]&gt;&gt;
-    \&lt;&lt;set _seen to !setup.isNewYearbookEntriesFor(_name)&gt;&gt;
-    \&lt;&lt;charDetailsButton _name _seen&gt;&gt;
-
-\&lt;&lt;/for&gt;&gt;&lt;&lt;if _teacherNames.length eq 0&gt;&gt;//Empty, for now//&lt;&lt;/if&gt;&gt;
-!! Students
-&lt;&lt;set _studentNames to setup.getStudentNames()&gt;&gt;\
-&lt;&lt;for _i to 0; _i lt _studentNames.length; _i++&gt;&gt;
-	&lt;&lt;set _name to _studentNames[_i]&gt;&gt;
-    \&lt;&lt;set _seen to !setup.isNewYearbookEntriesFor(_name)&gt;&gt;
-    \&lt;&lt;charDetailsButton _name _seen&gt;&gt;
-		
-\&lt;&lt;/for&gt;&gt;&lt;&lt;if _studentNames.length eq 0&gt;&gt;//Empty, for now//&lt;&lt;/if&gt;&gt;
-
-&lt;&lt;back &quot;Back to current scene&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="8" name="YearbookInit" tags="" position="975,100">&lt;&lt;set $character_backgrounds to {
-	&quot;Ms. Darwin&quot;: &quot;Ms. Darwin is the new biology teacher.  She joined the school without knowing much about it so you and the other teachers must show her the ropes.&quot;,
-	&quot;Ms. Monet&quot;: &quot;Ms. Monet is the art teacher.  She&#39;s creative, she enjoys her job, and she&#39;s an exhibitionist.  It&#39;s not her exhibitionism that got her into trouble.  She&#39;s always kept that within her art class where it&#39;s somewhat of a gray area.  Rather, you caught her embezzling 1000s of dollars from the school&#39;s petty cash.  When you blackmailed her over it, she apologized profusely and you&#39;ve since both made up and actually have grown to trust her again.&quot;,
-	&quot;Mrs. Ball&quot;: &quot;Mrs. Ball is the PE teacher.  She&#39;s mean, sadistic, and unattractive.  Your relationship is rather precarious because Mrs. Ball hates it when anyone contradicts her, but, unfortunately for her, that is sometimes your job.  Actually, she doesn&#39;t get along with many people and the students are terrified of her.\n\nYou probably could blackmail her over the way she torments the students, but there hasn&#39;t been a need to bring up that unpleasant conversation.  You usually stay out of her hair during her lessons and when she punishes someone, and that keeps her happy.  Besides, you need her around because she&#39;s a valuable disciplinarian who keeps the school in order.&quot;,
-	&quot;Ms. Tink&quot;: &quot;Ms. Tink is a teacher hired by the Anonymous Benefactor.  You haven&#39;t had to blackmail her to stay, she just seems to enjoy building lewd devices.  When she was young she grew up on a farm.  There, her inventions automated a lot of her daily chores, but she soon got bored and moved to the city.&quot;,
-	&quot;Mrs. Eigen&quot;: &quot;Mrs. Eigen is a retired CPA who now works as a math teacher at Saint Mary&#39;s.  As you&#39;d expect, she&#39;s extremely logical, but she&#39;s also very kind.  She doesn&#39;t bring as much enthusiasm to the table as Ms. Monet, but she&#39;s always interested in experimenting with her lessons.\n\nWith the help of the Anonymous Benefactor, you discovered she was embezzling money at her previous job but never got caught.  You used this information to blackmail her to stay at Saint Mary&#39;s.&quot;, 
-	&quot;Mrs. Curie&quot;: &quot;Mrs. Curie was hired by the Anonymous Benefactor as the biochemistry teacher.  She was fired from her previous job for ethical reasons and is happy to work at Saint Mary&#39;s where there are far less restrictions on the experiments she&#39;s allowed to run.\n\nShe has a strong work ethic and tends to care more about her experiments more than the well being of the people she&#39;s subjecting them to.&quot;,
-	&quot;Ms. Waterloo&quot;: &quot;Ms. Waterloo was hired by the Anonymous Benefactor as a swim coach.  In her file you&#39;ve found shaky evidence of her being inappropriate with students at previous schools, but nothing concrete.  She&#39;s a skinny African American and a little shorter than average so you have to look down to chat with her.  Not exactly the kind of person you&#39;d describe as having a &#39;swimmer&#39;s body&#39;, but she is a great swimmer.\n\nShe&#39;s extremely intelligent.  After receiving a fully paid scholarship for her swimming ability, she graduated with a master&#39;s degree in counseling psychology.  She also has a good personality and gets along with most people.&quot;,
-	&quot;Nurse Neadle&quot;: &quot;Nurse Neadle was hired a couple of weeks before Ms. Darwin and was the first faculty member recommended to you by AB.  There was a nurse before her, but she quit once funding dwindled and you had to make cutbacks to keep the school open.\n\nIt&#39;s very important to have a nurse on staff, but the school is small and the students don&#39;t get in a lot of fights.  As a result, Nurse Neadle has a lot of free time on her hands and you haven&#39;t had much opportunity to interact with her.\n\nWhenever you do talk, she seems very concerned for the students&#39; well being.  You don&#39;t know much about her background, but apparently she&#39;s worked as a phlebotomist for 1 year and was a gynecological assistant for 2 years.  At least, that&#39;s what AB told you.  You were so desperate for a nurse you never ran a background check on her.&quot;,
-	&quot;Mia&quot;: &quot;Mia is one of your most open-minded and brightest students.  She has a good attitude about most classes and you get the feeling she might actually enjoy being at Saint Mary&#39;s.\n\nShe&#39;s of Japanese descent, but she was born and raised in America.\n\nShe&#39;s at Saint Mary&#39;s because she was convicted of disorderly conduct, disturbing the peace, and indecent exposure.  The way she tells it, she got really drunk at 2am, woke up her neighbors, and flashed anyone who came outside to see the source of the commotion.&quot;,
-	&quot;Olivia&quot;: &quot;Olivia is a recalcitrant who hates authority.  Before she was at Saint Mary&#39;s, she got in countless fights with her fellow students.  Eventually, one of her victims pressed charges and she was convicted of assault and battery.  She&#39;ll only admit to ever losing one fight where her opponent subdued her by pulling on her hair.  She&#39;s kept it short ever since.  It gives her face an androgynous appearance, but her body is very feminine.&quot;,
-	&quot;Casey&quot;: &quot;Casey is a Latina who grew up in a deeply religious household spending her whole upbringing being repressed and controlled by her parents.  She had a pattern of stealing nudie magazines from liquor stores and got away with it until her mom found her stash and turned her in to the authorities.\n\nShe was convicted of shoplifting and theft.&quot;,
-	&quot;Kira&quot;: &quot;Kira is a sweet, chubby, Caucasian girl convicted of stalking.  She was driving a friend to school and got in an accident.  Kira was unscathed, but her friend suffered permanent nerve damage that caused chronic pain.  Kira was obsessed with making the girl feel better and became so clingy the girl eventually filed a restraining order which Kira violated multiple times.\n\nAs this story demonstrates, Kira&#39;s heart is usually in the right place, but she can be physically and socially inept.&quot;,
-	&quot;Amy&quot;: &quot;Amy is a very petite and innocent Caucasian girl who was convicted of vandalism, but you doubt her the legitimacy of the conviction.  According to her record, she was with a group of friends who were vandalizing property, but the police showed up and the group ran away.  All of them, that is, except for Amy.  Apparently she just stood there and began crying.  When she was taken in for questioning, she had a can of pink spray paint in her sweater, but she swears she never used it.  Unfortunately for her, a jury found her guilty.&quot;,
-	&quot;Sarah&quot;: &quot;Sarah was abandoned by her parents when she was young and raised by her 18 year old Aunt who was in way over her head.  During that time, Sarah longed for the safety and stability an adult guardian.\n\nShe became proficient in computing at school, even though she could never afford one at home.  Eventually she taught herself to hack and was able to make a good living by phishing for people&#39;s credit card numbers.\n\nOnce her mom, Claire, learned of Sarah&#39;s financial success, she wanted back into Sarah&#39;s life.  Sarah, desperate for a mature caretaker, was happy to oblige.\n\nSarah was convicted of computer crimes.&quot;,
-	&quot;Jessie&quot;: &quot;Jessie grew up largely being ignored and left to her own devices.  She fell into the wrong crowd and started taking hard drugs.  This eventually got her into trouble and she&#39;s been convicted of a drug possession charge.\n\nHer long, straight, red hair with her green eyes makes you think she may be of Irish descent.  But, being ignored by her family, not even she can confirm this.  She&#39;s easy to get along with and the only person that seems to dislike her is Mrs. Ball, the PE teacher, who is often insulting Jessie about her large breasts.&quot;,
-	&quot;Hannah&quot;: &quot;Hannah is the identical twin sister of Anna.  They&#39;re both tall, skinny, and blond.  Once they noticed the perverted changes that were taking place at the school, they distanced themselves from each other to avoid being forced into incestuous acts, but this has put a strain on their relationship.\n\nThe twins are very similar to each other in appearance, but Hannah seems a little more perceptive and a little more sexually repressed than her sister.\n\nBefore they were convicted and sent to Saint Mary&#39;s, they would break into houses together and rob them.  They were both caught on the scene at the same time.&quot;,
-	&quot;Anna&quot;: &quot;Anna is the identical twin sister of Hannah.  They&#39;re both tall, skinny, and blond.  Once they noticed the perverted changes that were taking place at the school, they distanced themselves from each other to avoid being forced into incestuous acts, but this has put a strain on their relationship.\n\nThe twins are very similar to each other in appearance, but Anna seems a little less perceptive and a little more sexually open-minded than her sister.\n\nBefore they were convicted and sent to Saint Mary&#39;s, they would break into houses together and rob them.  They were both caught on the scene at the same time.&quot;,
-	&quot;Claire&quot;: &quot;Claire was a young mother who could not handle the stress of raising her child, Sarah, and gave her to her sister to raise.  In her words, she eventually felt mature enough to take care of Sarah and came back into her life.  Though, the timing of this is certainly suspicious.  Sarah was making a lot of money from stealing people&#39;s credit card numbers on the internet.  They both got caught and were convicted of computer crimes.\n\nDespite the abandonment, Sarah seems to adore her mother, and Claire seems to have taken up a more traditional maternal role in Sarah&#39;s life.&quot;,
-	&quot;Yuki&quot;: &quot;Yuki&#39;s a rail thin Asian woman with long black hair and bangs.  She&#39;s the mother of Mia and shares her open-mindedness to the extreme.  Her hypersexuality lead her to be convicted of sexual assault, prostitution, and you suspect she&#39;s guilty of other crimes she&#39;s never been on trial for.&quot;,
-	&quot;Eva&quot;: &quot;Eva is a young mother of a little boy.  She&#39;s not much older than the other students and they think of her as more of a big sister than a peer.\n\nShe was convicted of forgery and identity theft.&quot;,
-	&quot;Beth&quot;: &quot;Beth is Amy&#39;s mother and by all accounts she&#39;s a good one.  She was convicted soon after Amy for pyramid schemes and white collar crimes.&quot;,
-	&quot;Lucy&quot;: &quot;Lucy is a chubby, Caucasian trans girl from Saint Joseph&#39;s.  Saint Joseph&#39;s is not a prison like your school, but a lot of its students are convicted criminals that have served their time but are still deemed unfit for society.  As a result, the relatively innocent trans girls are often abused.  You imagine Saint Mary&#39;s must be a welcome change.&quot;,
-	&quot;Luna&quot;: &quot;Luna is a tall, muscular African-American trans girl from Saint Joseph&#39;s.  Saint Joseph&#39;s is not a prison like your school, but a lot of its students are convicted criminals that have served their time but are still deemed unfit for society.  As a result, the relatively innocent trans girls are often abused.  You imagine Saint Mary&#39;s must be a welcome change.&quot;,
-	&quot;Tiffany&quot;: &quot;Tiffany is a short Asian-American trans girl from Saint Joseph&#39;s.  She has a bad case of phimosis.  Saint Joseph&#39;s is not a prison like your school, but a lot of its students are convicted criminals that have served their time but are still deemed unfit for society.  As a result, the relatively innocent trans girls are often abused.  You imagine Saint Mary&#39;s must be a welcome change.&quot;,
-	&quot;Bailey&quot;: &quot;Bailey is a tall, Caucasian trans girl from Saint Joseph&#39;s.  Saint Joseph&#39;s is not a prison like your school, but a lot of its students are convicted criminals that have served their time but are still deemed unfit for society.  As a result, the relatively innocent trans girls are often abused.  You imagine Saint Mary&#39;s must be a welcome change.\n\nThere&#39;s rumors she inflicts a lot of self pain. Perhaps it&#39;s a coping mechanism to deal with the stresses of everyday life at Saint Joseph&#39;s.&quot;,
-	&quot;Fifa&quot;: &quot;Fifa is a medium sized, fit, bronze colored, Filipina trans girl from Saint Joseph&#39;s.  She still has her foreskin, but unlike Tiffany, she does not have a case of phimosis.  Saint Joseph&#39;s is not a prison like your school, but a lot of its students are convicted criminals that have served their time but are still deemed unfit for society.  As a result, the relatively innocent trans girls are often abused.  You imagine Saint Mary&#39;s must be a welcome change.&quot;
-}&gt;&gt;</tw-passagedata><tw-passagedata pid="9" name="CharacterData" tags="noskip" position="1100,100">! $character_name
+&lt;&lt;/nobr&gt;&gt;&lt;&lt;/widget&gt;&gt;\</tw-passagedata><tw-passagedata pid="6" name="CharacterData" tags="noskip" position="725,100">! $character_name
 !! Background
 &lt;&lt;nobr&gt;&gt;
 	&lt;&lt;if ndef $character_backgrounds[$character_name]&gt;&gt;
@@ -840,7 +782,7 @@ Dialog.open({top: 300});
 \&lt;&lt;/for&gt;&gt;&lt;&lt;if _details.length eq 1&gt;&gt;//Empty, for now//
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;back&gt;&gt;
-&lt;&lt;run setup.localStorage.setItem(&quot;yearbook&quot;, JSON.stringify(setup.yearbook))&gt;&gt;\</tw-passagedata><tw-passagedata pid="10" name="CharacterDetailsButton" tags="widget" position="1225,100">&lt;&lt;widget charDetailsButton&gt;&gt;&lt;&lt;nobr&gt;&gt;
+&lt;&lt;run setup.localStorage.setItem(&quot;yearbook&quot;, JSON.stringify(setup.yearbook))&gt;&gt;\</tw-passagedata><tw-passagedata pid="7" name="CharacterDetailsButton" tags="widget" position="850,100">&lt;&lt;widget charDetailsButton&gt;&gt;&lt;&lt;nobr&gt;&gt;
 /* &lt;&lt;charDetailsButton charName seen&gt;&gt; */
 &lt;&lt;capture $args[0] $args[1]&gt;&gt;
     &lt;&lt;if $args[1]&gt;&gt;
@@ -855,11 +797,11 @@ Dialog.open({top: 300});
         &lt;/span&gt;
     &lt;&lt;/if&gt;&gt;
 &lt;&lt;/capture&gt;&gt;
-&lt;&lt;/nobr&gt;&gt;&lt;&lt;/widget&gt;&gt;</tw-passagedata><tw-passagedata pid="11" name="CharAdd" tags="widget" position="100,225">&lt;&lt;widget charadd&gt;&gt;&lt;&lt;nobr&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;&lt;&lt;/widget&gt;&gt;</tw-passagedata><tw-passagedata pid="8" name="CharAdd" tags="widget" position="975,100">&lt;&lt;widget charadd&gt;&gt;&lt;&lt;nobr&gt;&gt;
 &lt;&lt;run setup.ybAdd($args[0])&gt;&gt;
-&lt;&lt;/nobr&gt;&gt;&lt;&lt;/widget&gt;&gt;\</tw-passagedata><tw-passagedata pid="12" name="CharDetail" tags="widget" position="225,225">&lt;&lt;widget chardetail&gt;&gt;&lt;&lt;nobr&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;&lt;&lt;/widget&gt;&gt;\</tw-passagedata><tw-passagedata pid="9" name="CharDetail" tags="widget" position="1100,100">&lt;&lt;widget chardetail&gt;&gt;&lt;&lt;nobr&gt;&gt;
 &lt;&lt;run setup.ybAddDetail($args[0], $args[1])&gt;&gt;
-&lt;&lt;/nobr&gt;&gt;&lt;&lt;/widget&gt;&gt;\</tw-passagedata><tw-passagedata pid="13" name="SkipSceneDialog" tags="" position="350,225">Immediately skip this scene and go back to your office?
+&lt;&lt;/nobr&gt;&gt;&lt;&lt;/widget&gt;&gt;\</tw-passagedata><tw-passagedata pid="10" name="SkipSceneDialog" tags="" position="1225,100">Immediately skip this scene and go back to your office?
 
 &lt;&lt;button &quot;Yes&quot; Office&gt;&gt;\
 	&lt;&lt;script&gt;&gt;
@@ -873,7 +815,7 @@ ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;skipped&#39;, State.
 &lt;&lt;print &quot;         &quot;&gt;&gt;\
 &lt;&lt;button &quot;No&quot;&gt;&gt;\
 	&lt;&lt;run Dialog.close()&gt;&gt;\
-&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="14" name="Player Character Creation" tags="" position="475,225">!!Paraphilic Clinic Intake Form
+&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="11" name="Player Character Creation" tags="" position="100,225">!!Paraphilic Clinic Intake Form
 /* TODO 
 &lt;label&gt;&lt;&lt;checkbox &quot;$player.collectData&quot; false true checked&gt;&gt; Send anonymous data to improve this program?&lt;/label&gt;
 */
@@ -951,20 +893,20 @@ ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;skipped&#39;, State.
 
 &lt;&lt;/linkappend&gt;&gt;
 
-[[Submit form. | Reception Submit Form]]</tw-passagedata><tw-passagedata pid="15" name="Clinic" tags="" position="600,225">The building is large, opaque glass double doors set into a beige wall. No descernable signage.
+[[Submit form. | Reception Submit Form]]</tw-passagedata><tw-passagedata pid="12" name="Clinic" tags="" position="225,225">The building is large, opaque glass double doors set into a beige wall. No descernable signage.
 
-[[Enter the doors. | Reception]]</tw-passagedata><tw-passagedata pid="16" name="Reception - Greeting, Holly" tags="" position="725,225">&quot;Good morning and welcome to Paraphilic Clinic!&quot; says a young nurse manning the front desk with an exceptionally chirpy tone. Her blonde hair is pulled back into a neat bun, with a white nurse cap sitting on it.
+[[Enter the doors. | Reception]]</tw-passagedata><tw-passagedata pid="13" name="Reception - Greeting, Holly" tags="" position="350,225">&quot;Good morning and welcome to Paraphilic Clinic!&quot; says a young nurse manning the front desk with an exceptionally chirpy tone. Her blonde hair is pulled back into a neat bun, with a white nurse cap sitting on it.
 
 &quot;Please fill out one of our intake forms and we can get your visit started.&quot;
 
-[[Fill out the form. | Player Character Creation]]</tw-passagedata><tw-passagedata pid="17" name="Reception Submit Form" tags="" position="850,225">&quot;Thank you so much!&quot; Holly takes the form from you and gives it a look before putting it into a folder and handing it off to the nurse behind her.
+[[Fill out the form. | Player Character Creation]]</tw-passagedata><tw-passagedata pid="14" name="Reception Submit Form" tags="" position="475,225">&quot;Thank you so much!&quot; Holly takes the form from you and gives it a look before putting it into a folder and handing it off to the nurse behind her.
 &quot;Did you want to take a tour of the facility?&quot; she asks as she turns back.
 
-[[Yes, please.|Holly Facility Tour]] [[No, thank you.| Clinic No Tour]]</tw-passagedata><tw-passagedata pid="18" name="Reception" tags="" position="975,225">The reception area is well lit with a large desk in front of a few chairs arranged along the walls and a coffe table with some magazines arranged on it.
+[[Yes, please.|Holly Facility Tour]] [[No, thank you.| Clinic No Tour]]</tw-passagedata><tw-passagedata pid="15" name="Reception" tags="" position="600,225">The reception area is well lit with a large desk in front of a few chairs arranged along the walls and a coffe table with some magazines arranged on it.
 
 Behind the desk is a wall of filing cabinents allong with a copier and other office parifinalia.
 
-[[Aproach the reception desk. | Reception - Greeting, Holly]]</tw-passagedata><tw-passagedata pid="19" name="Start" tags="" position="1100,225">!!WARNING!!
+[[Aproach the reception desk. | Reception - Greeting, Holly]]</tw-passagedata><tw-passagedata pid="16" name="Start" tags="" position="725,225">!!WARNING!!
 
 This game contains mature subject matter, intended for audiences over the age of 18, by continuing you acknowledge this and certify that you consuming this legally as prescribed by your local laws.
 
@@ -972,7 +914,7 @@ This is a work of fiction non of the following happened in real life and is not 
 
 Play safe, sane, and consensual. 
 
-[[I agree.| Clinic]] | &lt;a href=&quot;http://www.google.com&quot;&gt;GET ME OUT OF HERE!!!&lt;/a&gt;</tw-passagedata><tw-passagedata pid="20" name="StoryInit" tags="" position="1225,225">&lt;&lt;script&gt;&gt;
+[[I agree.| Clinic]] | &lt;a href=&quot;http://www.google.com&quot;&gt;GET ME OUT OF HERE!!!&lt;/a&gt;</tw-passagedata><tw-passagedata pid="17" name="StoryInit" tags="" position="850,225">&lt;&lt;script&gt;&gt;
 variables().browser_path = window.location.href;
 &lt;&lt;/script&gt;&gt;
 /* Jump to scenes */
@@ -1034,7 +976,6 @@ variables().browser_path = window.location.href;
 	&lt;&lt;run setup.testPassage($browser_path.match(&#39;passageName=([A-Za-z0-9_]+)&#39;)[1])&gt;&gt;
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;/if&gt;&gt;
-&lt;&lt;include &quot;YearbookInit&quot;&gt;&gt;
 &lt;&lt;set $office_visit_count to 0&gt;&gt;
 &lt;&lt;set $character_name to &quot;&quot;&gt;&gt;
 &lt;&lt;set $name to &quot;Shepard&quot;&gt;&gt;
@@ -1430,37 +1371,37 @@ variables().browser_path = window.location.href;
 &lt;&lt;set _search_result to $browser_path.includes(&#39;kira_vomited=true&#39;)&gt;&gt;
 &lt;&lt;if _search_result&gt;&gt;
     &lt;&lt;set $kira_vomited to true&gt;&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="21" name="her" tags="widget" position="100,350">&lt;&lt;widget her&gt;&gt;&lt;&lt;nobr&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="18" name="her" tags="widget" position="975,225">&lt;&lt;widget her&gt;&gt;&lt;&lt;nobr&gt;&gt;
 &lt;&lt;if $mc_gender === &quot;male&quot;&gt;&gt;his\
 &lt;&lt;elseif $mc_gender === &quot;female&quot;&gt;&gt;her\
 &lt;&lt;else&gt;&gt;their\
 &lt;&lt;/if&gt;&gt;
-&lt;&lt;/nobr&gt;&gt;&lt;&lt;/widget&gt;&gt;\</tw-passagedata><tw-passagedata pid="22" name="herthem" tags="widget" position="225,350">&lt;&lt;widget herthem&gt;&gt;&lt;&lt;nobr&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;&lt;&lt;/widget&gt;&gt;\</tw-passagedata><tw-passagedata pid="19" name="herthem" tags="widget" position="1100,225">&lt;&lt;widget herthem&gt;&gt;&lt;&lt;nobr&gt;&gt;
 &lt;&lt;if $mc_gender === &quot;male&quot;&gt;&gt;his\
 &lt;&lt;elseif $mc_gender === &quot;female&quot;&gt;&gt;her\
 &lt;&lt;else&gt;&gt;them\
 &lt;&lt;/if&gt;&gt;
-&lt;&lt;/nobr&gt;&gt;&lt;&lt;/widget&gt;&gt;\</tw-passagedata><tw-passagedata pid="23" name="maam" tags="widget" position="350,350">&lt;&lt;widget maam&gt;&gt;&lt;&lt;nobr&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;&lt;&lt;/widget&gt;&gt;\</tw-passagedata><tw-passagedata pid="20" name="maam" tags="widget" position="1225,225">&lt;&lt;widget maam&gt;&gt;&lt;&lt;nobr&gt;&gt;
 &lt;&lt;if $mc_gender === &quot;male&quot;&gt;&gt;sir\
 &lt;&lt;elseif $mc_gender === &quot;female&quot;&gt;&gt;ma&#39;am\
 &lt;&lt;else&gt;&gt;Principal\
 &lt;&lt;/if&gt;&gt;
-&lt;&lt;/nobr&gt;&gt;&lt;&lt;/widget&gt;&gt;\</tw-passagedata><tw-passagedata pid="24" name="Ms" tags="widget" position="475,350">&lt;&lt;widget Ms&gt;&gt;&lt;&lt;nobr&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;&lt;&lt;/widget&gt;&gt;\</tw-passagedata><tw-passagedata pid="21" name="Ms" tags="widget" position="100,350">&lt;&lt;widget Ms&gt;&gt;&lt;&lt;nobr&gt;&gt;
 &lt;&lt;if $mc_gender === &quot;male&quot;&gt;&gt;Mr.\
 &lt;&lt;elseif $mc_gender === &quot;female&quot;&gt;&gt;Ms.\
 &lt;&lt;else&gt;&gt;Principal\
 &lt;&lt;/if&gt;&gt;
-&lt;&lt;/nobr&gt;&gt;&lt;&lt;/widget&gt;&gt;\</tw-passagedata><tw-passagedata pid="25" name="Purse" tags="widget" position="600,350">&lt;&lt;widget purse&gt;&gt;&lt;&lt;nobr&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;&lt;&lt;/widget&gt;&gt;\</tw-passagedata><tw-passagedata pid="22" name="Purse" tags="widget" position="225,350">&lt;&lt;widget purse&gt;&gt;&lt;&lt;nobr&gt;&gt;
 &lt;&lt;if $mc_gender === &quot;male&quot;&gt;&gt;briefcase\
 &lt;&lt;elseif $mc_gender === &quot;female&quot;&gt;&gt;purse\
 &lt;&lt;else&gt;&gt;briefcase\
 &lt;&lt;/if&gt;&gt;
-&lt;&lt;/nobr&gt;&gt;&lt;&lt;/widget&gt;&gt;\</tw-passagedata><tw-passagedata pid="26" name="she" tags="widget" position="725,350">&lt;&lt;widget she&gt;&gt;&lt;&lt;nobr&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;&lt;&lt;/widget&gt;&gt;\</tw-passagedata><tw-passagedata pid="23" name="she" tags="widget" position="350,350">&lt;&lt;widget she&gt;&gt;&lt;&lt;nobr&gt;&gt;
 &lt;&lt;if $mc_gender === &quot;male&quot;&gt;&gt;he\
 &lt;&lt;elseif $mc_gender === &quot;female&quot;&gt;&gt;her\
 &lt;&lt;else&gt;&gt;they\
 &lt;&lt;/if&gt;&gt;
-&lt;&lt;/nobr&gt;&gt;&lt;&lt;/widget&gt;&gt;\</tw-passagedata><tw-passagedata pid="27" name="shestheyre" tags="widget" position="850,350">&lt;&lt;widget shestheyre&gt;&gt;&lt;&lt;nobr&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;&lt;&lt;/widget&gt;&gt;\</tw-passagedata><tw-passagedata pid="24" name="shestheyre" tags="widget" position="475,350">&lt;&lt;widget shestheyre&gt;&gt;&lt;&lt;nobr&gt;&gt;
 &lt;&lt;if $mc_gender === &quot;male&quot;&gt;&gt;he&#39;s\
 &lt;&lt;elseif $mc_gender === &quot;female&quot;&gt;&gt;she&#39;s\
 &lt;&lt;else&gt;&gt;they&#39;re\

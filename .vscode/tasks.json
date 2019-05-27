@@ -6,7 +6,7 @@
         {
             "label": "tweego",
             "type": "shell",
-            "command": "tweego -o builds/ParaphilicClinic.html src",
+            "command": "./build.bat",
             "group": {
                 "kind": "build",
                 "isDefault": true
@@ -15,7 +15,7 @@
         {
             "label": "viewHTML",
             "type": "shell",
-            "command": "builds/ParaphilicClinic.html"
+            "command": "docs/index.html"
         }
     ]
 }
