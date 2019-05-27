@@ -1,4 +1,4 @@
-# [Play the Game](/builds/ParaphilicClinic.html)
+# Paraphilic Clinic
 
 [Join us on Discord!](https://discord.gg/zfgvcKv)
 
