@@ -4,7 +4,7 @@
 
 Paraphilic Clinic is an adult first person text based choose your own adventure game, revolving around fetishes with a focus on medical ones.
 
-![Paraphilic Clinic](img/logo/paraphilic-clinic-banner.png?raw=true)
+![Paraphilic Clinic](docs/img/logo/paraphilic-clinic-banner.png)
 
 ## Contributing
 
