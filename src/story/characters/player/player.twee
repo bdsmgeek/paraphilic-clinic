@@ -1,0 +1,3 @@
+:: Player
+String.format("Your name is {0} {1}.", $player.name.first, $player.name.last)
+String.format("People use {0} pronouns when referring to you.", $player.pronouns)
