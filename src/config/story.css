@@ -1,3 +1,12 @@
+.passage img {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+.unseen button {
+    background-color: green;
+}
+
 #player-character-creation ul {
     padding: 0px;
 }
@@ -5,7 +14,6 @@
 #player-character-creation li {
     list-style-type: none;
 }
-
 
 #overlay-background {
     position: fixed; /* Sit on top of the page content */
