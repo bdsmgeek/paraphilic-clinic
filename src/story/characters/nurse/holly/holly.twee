@@ -1,0 +1,35 @@
+:: HollyInit [init nobr]
+
+/* Character Defaults */
+<<set $holly to {
+	"name": {
+		"first": "Holly",
+		"last": "Johnson"
+	},
+	"pronouns": "female",
+	"role": {
+		"doctor": false,
+		"patient": false,
+        "nurse": true
+	},
+    "holding":[],
+	"has":{
+		"penis": false,
+		"testicles": false,
+		"clitoris": true,
+		"vagina": true,
+		"breasts": true
+	},
+	"likes":{
+		"men": true,
+		"women": true,
+		"trans": {
+			"men": true,
+			"women": true
+		},
+
+	}
+}>>
+
+:: Holly
+

@@ -1,0 +1,39 @@
+::LydiaInit [init nobr]
+
+/* Character Defaults */
+<<set $lydia to {
+	"name": {
+		"first": "Holly",
+		"last": "Johnson"
+	},
+	"pronouns": "female",
+	"role": {
+		"doctor": false,
+		"patient": false,
+        "nurse": true
+	},
+	"has":{
+		"penis": false,
+		"testicles": false,
+		"clitoris": true,
+		"vagina": true,
+		"breasts": true,
+        "hair": {
+            "color": "black",
+            "length": "medium",
+            "style": "bun"
+        },
+        "eyes": "dark",
+	},
+	"likes":{
+		"men": true,
+		"women": true,
+		"trans": {
+			"men": true,
+			"women": true
+		},
+	},
+    "holding": []
+}>>
+
+:: Lydia

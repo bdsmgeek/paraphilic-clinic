@@ -5,6 +5,7 @@
   /* TODO 
   <label><<checkbox "$player.collectData" false true checked>> Send anonymous data to improve this program?</label>
   */
+  
   <table>
     <tr>
       <td>Your first name:</td>
@@ -42,7 +43,16 @@
     </tr>
   </table>
 
-  <h3>Interests:</h3>
+  <h3>You like:</h3>
+  
+  <h4>People:</h4>
+  <ul>
+    <li><label><<checkbox "$player.likes.men" false true>> Men</label></li>
+    <li><label><<checkbox "$player.likes.women" false true>> Women</label></li>
+    <li><label><<checkbox "$player.likes.trans.men" false true>> Trans Men</label></li>
+    <li><label><<checkbox "$player.likes.trans.women" false true>> Trans Women</label></li>
+  </ul>
+
   <h4>Body Parts:</h4>
   <table>
     <tr>

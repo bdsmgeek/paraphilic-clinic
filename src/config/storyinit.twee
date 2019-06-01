@@ -1,28 +1,7 @@
 ::  StoryInit
-/* Player Character Defaults */
-<<set $player to {
-	"name": {
-		"first": "Joe",
-		"last": "Blow"
-	},
-	"pronouns": "male",
-	"role": {
-		"doctor": true,
-		"patient": false
-	},
-	"has":{
-		"penis": true,
-		"testicles": true,
-		"clitoris": false,
-		"vagina": false,
-		"breasts": false
-	},
-	"likes":{
-		"men": false,
-		"women": true,
-		"trans": {
-			"men": false,
-			"women": true
-		}
-	}
-}>>
+<<set $list to Story.lookup("tags", "init")>>
+
+<<for $i to 0; $i lt $list.length; $i++>>
+	<<set $title to $list[$i].title>>
+	[[$title]]
+<</for>>
