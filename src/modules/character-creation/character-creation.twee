@@ -1,0 +1,80 @@
+:: Character Creation CSS [stylesheet]
+#passage-character-creation ul {
+    padding: 0px;
+}
+
+#passage-character-creation li {
+    list-style-type: none;
+}
+
+:: Character Creation [nobr]
+<h2>Paraphilic Clinic Intake Form</h2>
+
+<h3><<link "Reset Form to Defaults">><<forget $player>><<include "Player">><<goto "Character Creation">><</link>>
+</h3>
+
+<table>
+  <tr>
+    <td>Your first name:</td>
+    <td><<textbox "$player.name.first" $player.name.first autofocus>></td>
+  </tr>
+  <tr>
+    <td>Your last name:</td>
+    <td><<textbox "$player.name.last" $player.name.last >></td>
+  </tr>
+</table>
+
+<h3>Your Pronouns:</h3>
+<<switch $player.pronouns>>
+  <<case "male">><<set _male_selected to "selected">>
+  <<case "female">><<set _female_selected to "selected">>
+  <<default>> <<set _enby_selected to "selected">>
+<</switch>>
+
+<<listbox "$player.pronouns">>
+  <<option "He/Him/His" "male" _male_selected>>
+  <<option "She/Her/Hers" "female" _female_selected>>
+  <<option "They/Their/Theirs" "enby" _enby_selected>>
+<</listbox>>
+
+<h3>Role/s you are applying for:</h3>
+<ul>
+  <<set _doctor to "">>
+  <<set _patient to "">>
+  <<if $player.role.doctor>><<set _doctor to "checked">><</if>>
+  <<if $player.role.doctor>><<set _patient to "checked">><</if>>
+  <li><label><<checkbox "$player.role.doctor" false true _doctor>> Doctor</label></li>
+  <li><label><<checkbox "$player.role.patient" false true _patient>> Patient</label></li>
+</ul>
+
+<h3>You have:</h3>
+<table>
+  <tr>
+    <td><label><<checkbox "$player.has.penis" false true checked>> Penis</label></td>
+    <td><label><<checkbox "$player.has.clitoris" false true>> Clitoris</label></td>
+    <td><label><<checkbox "$player.has.breasts" false true>> Breasts</label></td>
+  </tr>
+  <tr>
+    <td><label><<checkbox "$player.has.testicles" false true checked>> Testicles</label></td>
+    <td><label><<checkbox "$player.has.vagina" false true>> Vagina</label></td>
+  </tr>
+</table>
+
+<h3>
+  <<color "red" "Hard Limits">>
+</h3>
+<p>You will always be in control of what you want to do and will be warned about potentially revolting situations. We do however want to ensure that if you are severely opposed to or traumatized by a subject that you do not get exposed to it. You may miss out on storyline content if you do select any of these.</p>
+<ul>
+  <li><label><<checkbox "$player.limit.fisting" false true>> Fisting</label></li>
+  <li><label><<checkbox "$player.limit.gaping" false true>> Gaping</label></li>
+  <li><label><<checkbox "$player.limit.urine" false true>> Urine/Watersports</label></li>
+  <li><label><<checkbox "$player.limit.urethra" false true>> Urethra Insertions</label></li>
+  <li><label><<checkbox "$player.limit.cervix" false true>> Cervix Insertions</label></li>
+  <li><label><<checkbox "$player.limit.enemas" false true>> Enemas</label></li>
+</ul>
+
+<h3>[[Submit form. | Character Submit]]</h3>
+
+:: Character Submit [nobr]
+<<remember $player>>
+<<include-tag "post_char_submit">>

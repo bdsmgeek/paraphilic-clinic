@@ -1,0 +1,9 @@
+:: Include Tag Widget [widget nobr]
+<<widget "include-tag">>
+/* Loads all passages tagged as "post_char_submit" */
+<<set _list to Story.lookup("tags", $args)>>
+<<for _i to 0; _i lt _list.length; _i++>>
+	<<set _title to _list[_i].title>>
+	<<include _title>>
+<</for>>
+<</widget>>

@@ -1,0 +1,10 @@
+:: Hub Init [init nobr]
+<<set $reception to {
+    name: "Central Hub",
+    description: "The center of navigation within the clinic, this is where you need to go first before getting anywhere.",
+}>>
+
+:: Hub
+The central intersection of the clinic.
+
+[[Medical Wing. | Medical Wing]]

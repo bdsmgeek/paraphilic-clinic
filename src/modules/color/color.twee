@@ -1,0 +1,12 @@
+/*  Text Coloring Widget
+    Author: BDSMGeek (info@bdsmgeek.com)
+    Description:
+        Changes the color of inputted text to the inputted color.
+    Arguments:
+        $args[0] must be the desired color.
+        $args[1] must be the text.
+    Usage:
+        <<color "red" "text">> output "text" that is red.
+*/
+:: Color Widget [widget nobr]
+<<widget "color">><<set _colored_text to "@@color:"+$args[0]+";"+$args[1]+"@@">><<print _colored_text>><</widget>>

@@ -1,0 +1,16 @@
+:: Exam Room 1 Init [init nobr]
+<<set $exam_room_1 to {
+    name: "Exam Room 1",
+    description: "A standard doctors office.",
+    parent: $medical_wing,
+    first_time: true
+}>>
+
+:: Exam Room 1
+<<set $player.location to $exam_room_1>>
+Fluorescent light illuminates what you could expect in a examination room. The examination table with its cover of paper stand against the right wall and a series of cabinets units with a sink stand to the left. You can see cotton balls and wooden tongue depressors in glass jars on the counters. 
+
+<<if $player.with.holly>>"Sometimes the basics are best." Holly comments.<</if>>
+
+<<if $player.with.holly>>[[Speak to Holly | Exam Room 1 Holly]]<</if>>
+[[Leave | Medical Wing]]

@@ -1,6 +1,15 @@
+:: Reception Init [init nobr]
+<<set $reception to {
+    name: "Reception",
+    description: "The gateway to the clinic, there is a seating area and a reception desk.",
+    parent: "Clinic",
+    first_time: true
+}>>
+
 :: Reception
+<<set $player.location to $reception>>
 The reception area is well lit with a large desk in front of a few chairs arranged along the walls and a coffee table with some magazines arranged on it.
 
 Behind the desk is a wall of filing cabinets along with a copier and other office paraphernalia.
 
-[[Approach the reception desk. | Reception - Greeting, Holly]]
+[[Enter Hub | Hub]]

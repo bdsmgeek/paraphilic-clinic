@@ -1,34 +1,32 @@
-:: PlayerInit [init]
-
+:: Player [init nobr character player]
 /* Player Character Defaults */
-<<set $player to {
-	"name": {
-		"first": "Joe",
-		"last": "Blow"
-	},
-	"pronouns": "male",
-	"role": {
-		"doctor": true,
-		"patient": false
-	},
-    "holding": [],
-	"has":{
-		"penis": true,
-		"testicles": true,
-		"clitoris": false,
-		"vagina": false,
-		"breasts": false
-	},
-	"likes":{
-		"men": false,
-		"women": true,
-		"trans": {
-			"men": false,
-			"women": true
-		}
-	}
-}>>
-
-:: Player
-String.format("Your name is {0} {1}.", $player.name.first, $player.name.last)
-String.format("People use {0} pronouns when referring to you.", $player.pronouns)
+<<if ndef $player>>
+	<<set $player to {
+		"name": {
+			"first": "Jo",
+			"last": "Blow"
+		},
+		"pronouns": "male",
+		"role": {
+			"doctor": true,
+			"patient": false
+		},
+		"has": {
+			"penis": true,
+			"testicles": true,
+			"clitoris": false,
+			"vagina": false,
+			"breasts": false
+		},
+		"likes": [
+			"men",
+			"women",
+			"trans-men",
+			"trans-women"
+		],
+		"met": [],
+		"with": [],
+		"holding": [],
+		"location": {}
+	}>>
+<</if>>

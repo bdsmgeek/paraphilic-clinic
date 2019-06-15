@@ -1,4 +1,17 @@
-:: Clinic
-The building is large, opaque glass double doors set into a beige wall. No discernable signage.
+:: Clinic Init [init nobr location]
+<<set $clinic to {
+    name: "Paraphilic Clinic",
+    description: "A world renown clinic for the study and facilitating of fetishes."
+}>>
 
+:: Clinic [location clinic]
+The building is large, opaque glass double doors set into a beige wall. The sign above the door states:
+
+!!$clinic.name
+!!!Your Kinks Matter.
+
+<<if visited() is 1>>
+[[Enter the doors. | Introduction]]
+<<else>>
 [[Enter the doors. | Reception]]
+<</if>>

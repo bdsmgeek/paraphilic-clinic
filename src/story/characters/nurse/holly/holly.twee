@@ -1,4 +1,4 @@
-:: HollyInit [init nobr]
+:: Holly [init nobr char]
 
 /* Character Defaults */
 <<set $holly to {
@@ -26,10 +26,6 @@
 		"trans": {
 			"men": true,
 			"women": true
-		},
-
+		}
 	}
 }>>
-
-:: Holly
-

@@ -1,0 +1,11 @@
+:: StoryCSS [stylesheet]
+.link-visited { /* Config.addVisitedLinkClass */
+	color: purple;
+}
+
+/*  UI Overrides 
+    See: http://www.motoslave.net/sugarcube/2/docs/#Built-in%20Stylesheets
+*/
+#ui-bar { /*Fixes UI Bar so there is no horizontal scroll bar.*/
+    width: 19em;
+}

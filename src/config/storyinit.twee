@@ -1,7 +1,2 @@
 ::  StoryInit
-<<set $list to Story.lookup("tags", "init")>>
-
-<<for $i to 0; $i lt $list.length; $i++>>
-	<<set $title to $list[$i].title>>
-	[[$title]]
-<</for>>
+<<include-tag "init">>

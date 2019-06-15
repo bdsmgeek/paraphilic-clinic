@@ -1,0 +1,13 @@
+:: Medical Wing Init [init nobr]
+<<set $medical_wing to {
+    name: "Medical Wing",
+    description: "The primary area for the day to day business of the clinic.",
+    parent: $hub,
+    first_time: true
+}>>
+
+:: Medical Wing
+<<set $player.location to $reception>>
+You step through into a similar corridor lined with doors, each sporting a placard to the side of it with a name along with a clipboard  below it, and a light above it.
+
+[[Exam Room 1]]

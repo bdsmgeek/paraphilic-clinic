@@ -1,0 +1,13 @@
+:: Exam Room 1 Investigate
+[[Investigate counter. | Exam Room 1 Investigate Counter]]
+[[Investigate upper cabinets. | Exam Room 1 Investigate Cabinets Upper]]
+[[Investigate under sink. | Exam Room 1 Investigate Under Sink]]
+
+:: Exam Room 1 Investigate Counter
+You look on the counter and find:
+* a doctors bag <<link>>
+* a jar of tongue depressors
+* a tube of lubricant
+* a jar of cotton balls
+
+[[Back | Exam Room 1 Investigate]]

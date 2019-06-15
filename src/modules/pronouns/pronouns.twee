@@ -1,0 +1,51 @@
+:: Pronouns [widget]
+/* Description:
+     Simple subject pronoun widget.
+   Options:
+     "male"     = he
+     "female"   = she
+     "enby"     = they
+   Use:
+   <<they "male">> = he
+*/
+<<widget "they">><<switch $args[0]>><<case "male">>he<<case "female">>she<<default>>they<</switch>><</widget>>
+/* Description:
+     Simple object pronoun widget.
+   Options:
+     "male"     = him
+     "female"   = her
+     "enby"     = them
+   Use:
+   <<them "male">> = him
+*/
+<<widget "them">><<switch $args[0]>><<case "male">>him<<case "female">>her<<default>>them<</switch>><</widget>>
+/* Description:
+     Simple possessive adjective widget.
+   Options:
+     "male"     = his
+     "female"   = her
+     "enby"     = their
+   Use:
+     <<their "male">> = his
+*/
+<<widget "their">><<switch $args[0]>><<case "male">>his<<case "female">>her<<default>>their<</switch>><</widget>>
+/* Description:
+     Simple possessive pronoun widget.
+   Options:
+     "male"     = his
+     "female"   = hers
+     "enby"     = theirs
+   Use:
+     <<theirs "male">> = his
+*/
+<<widget "theirs">><<switch $args[0]>><<case "male">>his<<case "female">>hers<<default>>theirs<</switch>><</widget>>
+/* Description:
+     Simple reflexive pronoun widget.
+   Options:
+     "male"     = himself
+     "female"   = herself
+     "enby"     = themselves
+   Use:
+     <<theirs "male">> = his
+*/
+<<widget "theirs">><<switch $args[0]>><<case "male">>himself<<case "female">>herself<<default>>themselves<</switch>><</widget>>

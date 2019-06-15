@@ -1,0 +1,11 @@
+/* :: Notes Widget [widget nobr]
+<<widget "notes">>
+    <ul>
+    <<set _keys to Object.keys($args[0])>>
+    <<for _i to 0; _i lt _keys.length; _i++>>
+        <<set _key to _keys[_i]>>
+        <<set _value to $args[0][_key]>>
+        <<capture _key _value>>
+            <li><<print _key>>
+
+<</widget>> */
