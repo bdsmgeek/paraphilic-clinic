@@ -1,0 +1,7 @@
+:: PassageFooter
+<<if passage() is "Start">>
+<<else>>
+----
+Inventory:
+<<inventory '$inventory'>>
+<</if>>

@@ -1,0 +1,111 @@
+:: Clinic Tour
+"Wonderful!" Holly exclaims and gets up from her chair and moves around the corner of the desk.
+"Lydia, I'm going to go give a tour, cover for me okay?" Holly calls out to a nurse that was filling some paperwork into the cabinets behind the desk.
+"Sure thing Holly!" the dark haired nurse replies, turning around to give you an encouraging smile and nod. "Enjoy the tour."
+Holly starts walking down the corridor, looking back to beckon you with her. You take a few quick steps to fall in behind her. The short skirt of her uniform hugs her white nylon covered butt, accentuating her hips as she walks.
+"Here at the Paraphilic Clinic we strive to create a safe and positive environment for both our patients and doctors. As you already saw that was our waiting and reception area. Either myself or Lydia should be there at all time to help anyone that needs it!” her voice taking on a still pleasant but businesslike tone, the kind that you develop from saying the same thing over and over again while getting paid to do it.
+Walking along the corridor that goes behind the reception area you come across a set of double doors, Holly proceeds to go through them.
+
+[[Follow her through the doors.| Clinic Tour Main Hub]]
+
+:: Clinic Tour Main Hub
+“Here we have main junction of the facility.” Holly turns around and looks at you. "We are still under construction so the room availability is limited."
+“What would you like to see first?” she asks. 
+
+[[Exam Room 1 - General Practitioner Office | Clinic Tour Exam Room 1]]
+
+:: Clinic Tour Exam Room 1
+Holly leads you to the door marked Exam Room 1 and opens the door.
+Fluorescent light illuminates what you could expect in a examination room. The examination table with its cover of paper stand against the right wall and a series of cabinets units with a sink stand to the left. On the counter you can see cotton balls and wooden tongue depressors in glass jars on the counters. A black leather doctors bag sits in a corner.
+
+<<include "Clinic Tour Exam Room 1 Options">>
+
+:: Clinic Tour Exam Room 1 Options
+
+<<if $player.role.doctor>>[["Nurse you look flush, I think you could use a check up." | "Perform Checkup"]]<</if>>
+<<if $player.role.patient>>[["Nurse I'm not feeling well I think I could use a check up." | "Get Checkup"]]<</if>>
+[["Take a look around." | "Investigate Exam Room 1"]]
+[[Return | Hub]]
+
+:: Investigate Exam Room 1
+What do you want to investigate? 
+[[Check Cabinets]]
+[[Check Doctors Bag]]
+[[Check Sink]]
+[[Return | Clinic Tour Exam Room 1]]
+
+:: Check Cabinets
+You check the cabinets and find nothing.
+
+<<include "Investigate Exam Room 1">>
+
+:: Check Doctors Bag
+Taking a look into the black leather bag, you find:
+
+<<include "Doctors Bag">>
+
+<<include "Investigate Exam Room 1">>
+
+:: Check Sink
+A stainless steel sink with a automatic soap dispenser.
+
+<<include "Investigate Exam Room 1">>
+
+:: Perform Checkup
+"Oh Doctor, I definitely feel a bit warm." a knowing grin adorns her plump lips, as a slight blush creeps up her cheeks. "Do you need anything for the examination Doctor? I'm sure there's something here to help you." 
+"Or do you think this needs a more personal touch?" she adds with a wink and lip bite.
+
+[[A doctor needs his tools. | Investigate Exam Room 1]]
+[[I got all the tools I need right here!| Perform Checkup Continued]]
+[[On second thought I not really interested.| Clinic Tour Exam Room 1]]
+
+:: Perform Checkup Continued
+Holly seems rather willing and excited, with all this. A little bit shy as well as she keeps casting her gaze down.
+"Well then Holly lets get you up on the table." you say pointing at the examination table to the side.
+Holly climbs the small stepping stool to get onto the table, her shapely behind bouncing with each step. The paper crinkles as she sits down on it and you catch a flash of white panties in the processes.
+"Now Holly can you tell me how you're feeling?"
+"Well Doctor, I feel all warm, hot even, my heart is going so fast..."
+"Hmm, anything else you're experiencing Holly?"
+"It's embarrassing..." her cheeks begin to become a darker shade of red. "but I'm getting all itchy."
+"Itchy how Holly? Where are you getting itchy?"
+"Ummm, you know..." she says, averting her eyes from yours.
+"No Holly, I don't dear. Maybe if you show me?"
+The paper cover of the examination table crinkles as Holly squirms.
+"Hmm, well it looks like we will need to do a thorough examination won't we?" 
+
+<<if $inventory.has("a glass thermometer")>>[[Check Holly's Temperature | Perform Checkup Thermometer]]<</if>>
+<<if $inventory.has("a stethoscope")>>[[Listen to Holly's Breathing | Perform Checkup Stethoscope]]<</if>>
+<<if $inventory.has("medical lubricant")>>[[Check Holly's "itchy spot". | Perform Checkup Lubricant]]<</if>>
+[[Go Back | Perform Checkup]]
+
+:: Perform Checkup Thermometer
+<<include "Under Construction">>
+
+:: Perform Checkup Stethoscope
+<<include "Under Construction">>
+
+:: Perform Checkup Lubricant
+<<include "Under Construction">>
+
+:: Get Checkup
+"Oh you poor thing!" Holly exclaims her generous breasts jiggling as she saunters over to you. Taking your hand she leads you over to the examination table. "What's wrong?"
+
+<<if not $inventory.has("a glass thermometer")>>
+[["I'm getting so hot!" | Get Checkup Thermometer]]
+<</if>>
+<<if $inventory.has("a stethoscope")>>
+[["My heart is going to fast." | Get Checkup Stethoscope]]
+<</if>>
+<<if $inventory.has("medical lubricant")>>
+[["I'm getting all itchy". | Get Checkup Lubricant]]
+<</if>>
+[[Go Back | Clinic Tour Exam Room 1 Options]]
+
+:: Get Checkup Thermometer
+<<include "Under Construction">>
+
+:: Get Checkup Stethoscope
+<<include "Under Construction">>
+
+:: Get Checkup Lubricant
+<<include "Under Construction">>

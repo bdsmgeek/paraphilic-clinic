@@ -1,0 +1,2 @@
+:: Inventory Init [init]
+<<newinventory '$inventory'>>

@@ -1,0 +1,36 @@
+:: Player Init [init nobr character player]
+/* Player Character Defaults */
+<<if ndef $player>>
+	<<include "Player Defaults">>
+<</if>>
+
+:: Player Defaults
+<<set $player to {
+	"name": {
+		"first": "Jo",
+		"last": "Blow"
+	},
+	"pronouns": "enby",
+	"role": {
+		"doctor": true,
+		"patient": true
+	},
+	"has": {
+		"penis": true,
+		"testicles": true,
+		"clitoris": true,
+		"vagina": true,
+		"breasts": true
+	},
+	"limit": {
+		"fisting": false,
+		"gaping": false,
+		"urine": false,
+		"urethra": false,
+		"cervix": false,
+		"enemas": false
+	}
+}>>
+
+:: Player
+The player character.

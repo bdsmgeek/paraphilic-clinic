@@ -1,0 +1,8 @@
+:: Reception Submit Form
+<<remember $player>>
+"Thank you so much!" Holly takes the form from you and gives it a look before putting it into a folder and handing it off to the nurse behind her.
+
+"Did you want to take a tour of the facility?" she asks as she turns back.
+
+[[Yes, please.| Holly Clinic Tour]]
+[[No, thank you.| Reception]]

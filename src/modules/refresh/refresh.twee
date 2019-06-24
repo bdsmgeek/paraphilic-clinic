@@ -1,0 +1,2 @@
+:: Refresh Widget [widget nobr]
+<<widget "refresh">><<set _passage to passage()>><<goto _passage>><</widget>>
