@@ -1,0 +1,41 @@
+name: CI
+
+on:
+  push:
+    branches: 
+      - master
+
+jobs:
+  test:
+    name: 🧪 Unit Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - run: npm install
+      - run: npm test
+  lint:
+    name: ✅ Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - run: npm install
+      - run: npm run lint
+  build:
+    name: 🛠 Build and Release 🚀
+    runs-on: ubuntu-latest
+    # This job will only run if both `test` and `lint` jobs run successfully.
+    needs: [test, lint]
+    steps:
+      - uses: actions/checkout@v1
+      - run: npm install
+      - run: npm run build
+      - name: Setup Tweego # https://bitbucket.org/tmedwards/tweego/src/release/
+      - uses: actions/setup-go@v1
+        with:
+          go-version: '1.13.5' # The Go version to download (if necessary) and use.
+      - run: go install bitbucket.org/tmedwards/tweego
+      - name: Compile Twine Game
+        run: tweego -o ./docs/prod/index.html /src
+        
+          
+    
