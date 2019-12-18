@@ -1,0 +1,21 @@
+name: CD
+
+on: [release]
+
+jobs:
+  deploy:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Install Itch.io Butler
+      # -L follows redirects
+      # -O specifies output name
+      # GNU unzip tends to not set the executable bit even though it's set in the .zip
+      # just a sanity check run (and also helpful in case you're sharing CI logs)
+      run: |
+        curl -L -o butler.zip https://broth.itch.ovh/butler/linux-amd64/LATEST/archive/default
+        unzip butler.zip
+        chmod +x butler 
+        ./butler -V
