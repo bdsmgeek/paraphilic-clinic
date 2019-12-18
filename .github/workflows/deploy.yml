@@ -10,6 +10,8 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Install Itch.io Butler
+      env:
+        BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
       # -L follows redirects
       # -O specifies output name
       # GNU unzip tends to not set the executable bit even though it's set in the .zip
@@ -19,3 +21,7 @@ jobs:
         unzip butler.zip
         chmod +x butler 
         ./butler -V
+    - name: Push Most Recent Releases to Itch
+      # butler push directory user/game:channel
+      run: butler push release.zip ${{ matrix.itch_username }}/${{ matrix.game_name }}:${{ matrix.channels }}
+        
