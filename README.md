@@ -1,6 +1,6 @@
 # Paraphilic Clinic
 
-![Build Status](https://github.com/your-owner/your-repo/workflows/Build/badge.svg)
+![Build Status](https://github.com/your-owner/your-repo/workflows/CI/badge.svg)
 
 [Join us on Discord!](https://discord.gg/zfgvcKv)
 
