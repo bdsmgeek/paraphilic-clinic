@@ -1,5 +1,7 @@
 # Paraphilic Clinic
 
+![Build Status](https://github.com/your-owner/your-repo/workflows/Build/badge.svg)
+
 [Join us on Discord!](https://discord.gg/zfgvcKv)
 
 Paraphilic Clinic is an adult first person text based choose your own adventure game, revolving around fetishes with a focus on medical ones.
