@@ -2,8 +2,11 @@ name: CI
 
 on:
   push:
+    paths:
+    - '!docs/**' #ignores the docs folder so we can host games on github pages.
     branches: 
-      - master
+    - master
+    
 
 jobs:
   test:
@@ -35,7 +38,18 @@ jobs:
           go-version: '1.13.5' # The Go version to download (if necessary) and use.
       - run: go install bitbucket.org/tmedwards/tweego
       - name: Compile Twine Game
-        run: tweego -o ./docs/prod/index.html /src
+        run: tweego -o ./docs/index.html /src
+      - name: Bundle for Release
+        run: zip Release.zip .docs/*
+      - name: Commit and Push compiled game to docs
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git commit -m "${{ github.ref }} build" -a
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
         
           
     
