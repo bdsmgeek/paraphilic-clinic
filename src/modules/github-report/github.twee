@@ -1,5 +1,5 @@
 :: Github Report Options [widget]
-<<widget "github-report-options"
+<<widget "github-report-options">>
 <<set $bugUrl to String.format("https://github.com/bdsmgeek/paraphilic-clinic/issues/new?labels={0}&title={1}:%20{2}&body=Passage%3A%20{2}%0ASeverity%3A%20Broke%20the%20Game%2C%20Threw%20An%20Error%2C%20Looks%20Bad%0AShort%20Description%20%28error%20codes%20and%20or%20screencaps%20apreciated%29%3A%0A%0ASteps%20to%20Reproduce%3A", "bug", "Bug%20Found%3A", passage())>>
 <<set $spellingErrorUrl to String.format("https://github.com/bdsmgeek/paraphilic-clinic/issues/new?labels={0}&title={1}:%20{2}&body=Passage%3A%20{2}%0ATarget%20Sentence%3A%20%0ACorrect%20Sentence%3A", "spellcheck", "Spelling%20Error", passage())>>
 <<set $featureUrl to String.format("https://github.com/bdsmgeek/paraphilic-clinic/issues/new?labels={0}&title={1}&body=Passage%3A%20{2}%0ADescription%20of%20the%20Feature%3A%0AInclude%20any%20references%20or%20possible%20libraries%20that%20may%20exist.%20Also%20make%20sure%20you%27ve%20searched%20in%20issues%20if%20someone%20hasn%27t%20already%20put%20in%20a%20similiar%20request%20upvote%20that%20if%20it%20exists%20instead.", "feature", "Feature%20Request%3A%20Provide%20a%20brief%20description%20of%20the%20feature", passage())>>

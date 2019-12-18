@@ -100,35 +100,19 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 		<div id="init-lacking">Your browser lacks required capabilities. Please upgrade it or switch to another to continue.</div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<div id="store-area" hidden><tw-storydata name="Paraphilic Clinic" startnode="25" creator="Tweego" creator-version="1.3.0" ifid="C2A1010F-4DFA-48D8-8B22-04B76D6878CE" zoom="1" format="SugarCube" format-version="2.28.2" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* twine-user-stylesheet #1: "StoryCSS" */
-.link-visited { /* Config.addVisitedLinkClass */
+	<div id="store-area" hidden><tw-storydata name="Paraphilic Clinic" startnode="5" creator="Tweego" creator-version="1.3.0" ifid="C2A1010F-4DFA-48D8-8B22-04B76D6878CE" zoom="1" format="SugarCube" format-version="2.28.2" options="debug" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* twine-user-stylesheet #1: "StoryCSS" */
+.link-visited {
 	color: purple;
 }
 
-/*  UI Overrides 
-    See: http://www.motoslave.net/sugarcube/2/docs/#Built-in%20Stylesheets
-*/
-#ui-bar { /*Fixes UI Bar so there is no horizontal scroll bar.*/
-    width: 19em;
+#player-character-creation ul {
+    padding: 0px;
 }
-/* twine-user-stylesheet #2: "jqueryui.css" */
-/*! jQuery UI - v1.12.1 - 2018-01-27
-* http://jqueryui.com
-* Includes: theme.css
-* To view and modify this theme, visit http://jqueryui.com/themeroller/?scope=&folderName=base&cornerRadiusShadow=8px&offsetLeftShadow=0px&offsetTopShadow=0px&thicknessShadow=5px&opacityShadow=30&bgImgOpacityShadow=0&bgTextureShadow=flat&bgColorShadow=666666&opacityOverlay=30&bgImgOpacityOverlay=0&bgTextureOverlay=flat&bgColorOverlay=aaaaaa&iconColorError=cc0000&fcError=5f3f3f&borderColorError=f1a899&bgTextureError=flat&bgColorError=fddfdf&iconColorHighlight=777620&fcHighlight=777620&borderColorHighlight=dad55e&bgTextureHighlight=flat&bgColorHighlight=fffa90&iconColorActive=ffffff&fcActive=ffffff&borderColorActive=003eff&bgTextureActive=flat&bgColorActive=007fff&iconColorHover=555555&fcHover=2b2b2b&borderColorHover=cccccc&bgTextureHover=flat&bgColorHover=ededed&iconColorDefault=777777&fcDefault=454545&borderColorDefault=c5c5c5&bgTextureDefault=flat&bgColorDefault=f6f6f6&iconColorContent=444444&fcContent=333333&borderColorContent=dddddd&bgTextureContent=flat&bgColorContent=ffffff&iconColorHeader=444444&fcHeader=333333&borderColorHeader=dddddd&bgTextureHeader=flat&bgColorHeader=e9e9e9&cornerRadius=3px&fwDefault=normal&fsDefault=1em&ffDefault=Arial%2CHelvetica%2Csans-serif
-* Copyright jQuery Foundation and other contributors; Licensed MIT */
 
-.ui-widget{font-family:Arial,Helvetica,sans-serif;font-size:1em}.ui-widget .ui-widget{font-size:1em}.ui-widget input,.ui-widget select,.ui-widget textarea,.ui-widget button{font-family:Arial,Helvetica,sans-serif;font-size:1em}.ui-widget.ui-widget-content{border:1px solid #c5c5c5}.ui-widget-content{border:1px solid #ddd;background:#fff;color:#333}.ui-widget-content a{color:#333}.ui-widget-header{border:1px solid #ddd;background:#e9e9e9;color:#333;font-weight:bold}.ui-widget-header a{color:#333}.ui-state-default,.ui-widget-content .ui-state-default,.ui-widget-header .ui-state-default,.ui-button,html .ui-button.ui-state-disabled:hover,html .ui-button.ui-state-disabled:active{border:1px solid #c5c5c5;background:#f6f6f6;font-weight:normal;color:#454545}.ui-state-default a,.ui-state-default a:link,.ui-state-default a:visited,a.ui-button,a:link.ui-button,a:visited.ui-button,.ui-button{color:#454545;text-decoration:none}.ui-state-hover,.ui-widget-content .ui-state-hover,.ui-widget-header .ui-state-hover,.ui-state-focus,.ui-widget-content .ui-state-focus,.ui-widget-header .ui-state-focus,.ui-button:hover,.ui-button:focus{border:1px solid #ccc;background:#ededed;font-weight:normal;color:#2b2b2b}.ui-state-hover a,.ui-state-hover a:hover,.ui-state-hover a:link,.ui-state-hover a:visited,.ui-state-focus a,.ui-state-focus a:hover,.ui-state-focus a:link,.ui-state-focus a:visited,a.ui-button:hover,a.ui-button:focus{color:#2b2b2b;text-decoration:none}.ui-visual-focus{box-shadow:0 0 3px 1px rgb(94,158,214)}.ui-state-active,.ui-widget-content .ui-state-active,.ui-widget-header .ui-state-active,a.ui-button:active,.ui-button:active,.ui-button.ui-state-active:hover{border:1px solid #003eff;background:#007fff;font-weight:normal;color:#fff}.ui-icon-background,.ui-state-active .ui-icon-background{border:#003eff;background-color:#fff}.ui-state-active a,.ui-state-active a:link,.ui-state-active a:visited{color:#fff;text-decoration:none}.ui-state-highlight,.ui-widget-content .ui-state-highlight,.ui-widget-header .ui-state-highlight{border:1px solid #dad55e;background:#fffa90;color:#777620}.ui-state-checked{border:1px solid #dad55e;background:#fffa90}.ui-state-highlight a,.ui-widget-content .ui-state-highlight a,.ui-widget-header .ui-state-highlight a{color:#777620}.ui-state-error,.ui-widget-content .ui-state-error,.ui-widget-header .ui-state-error{border:1px solid #f1a899;background:#fddfdf;color:#5f3f3f}.ui-state-error a,.ui-widget-content .ui-state-error a,.ui-widget-header .ui-state-error a{color:#5f3f3f}.ui-state-error-text,.ui-widget-content .ui-state-error-text,.ui-widget-header .ui-state-error-text{color:#5f3f3f}.ui-priority-primary,.ui-widget-content .ui-priority-primary,.ui-widget-header .ui-priority-primary{font-weight:bold}.ui-priority-secondary,.ui-widget-content .ui-priority-secondary,.ui-widget-header .ui-priority-secondary{opacity:.7;filter:Alpha(Opacity=70);font-weight:normal}.ui-state-disabled,.ui-widget-content .ui-state-disabled,.ui-widget-header .ui-state-disabled{opacity:.35;filter:Alpha(Opacity=35);background-image:none}.ui-state-disabled .ui-icon{filter:Alpha(Opacity=35)}.ui-icon{width:16px;height:16px}.ui-icon,.ui-widget-content .ui-icon{background-image:url("images/ui-icons_444444_256x240.png")}.ui-widget-header .ui-icon{background-image:url("images/ui-icons_444444_256x240.png")}.ui-state-hover .ui-icon,.ui-state-focus .ui-icon,.ui-button:hover .ui-icon,.ui-button:focus .ui-icon{background-image:url("images/ui-icons_555555_256x240.png")}.ui-state-active .ui-icon,.ui-button:active .ui-icon{background-image:url("images/ui-icons_ffffff_256x240.png")}.ui-state-highlight .ui-icon,.ui-button .ui-state-highlight.ui-icon{background-image:url("images/ui-icons_777620_256x240.png")}.ui-state-error .ui-icon,.ui-state-error-text .ui-icon{background-image:url("images/ui-icons_cc0000_256x240.png")}.ui-button .ui-icon{background-image:url("images/ui-icons_777777_256x240.png")}.ui-icon-blank{background-position:16px 16px}.ui-icon-caret-1-n{background-position:0 0}.ui-icon-caret-1-ne{background-position:-16px 0}.ui-icon-caret-1-e{background-position:-32px 0}.ui-icon-caret-1-se{background-position:-48px 0}.ui-icon-caret-1-s{background-position:-65px 0}.ui-icon-caret-1-sw{background-position:-80px 0}.ui-icon-caret-1-w{background-position:-96px 0}.ui-icon-caret-1-nw{background-position:-112px 0}.ui-icon-caret-2-n-s{background-position:-128px 0}.ui-icon-caret-2-e-w{background-position:-144px 0}.ui-icon-triangle-1-n{background-position:0 -16px}.ui-icon-triangle-1-ne{background-position:-16px -16px}.ui-icon-triangle-1-e{background-position:-32px -16px}.ui-icon-triangle-1-se{background-position:-48px -16px}.ui-icon-triangle-1-s{background-position:-65px -16px}.ui-icon-triangle-1-sw{background-position:-80px -16px}.ui-icon-triangle-1-w{background-position:-96px -16px}.ui-icon-triangle-1-nw{background-position:-112px -16px}.ui-icon-triangle-2-n-s{background-position:-128px -16px}.ui-icon-triangle-2-e-w{background-position:-144px -16px}.ui-icon-arrow-1-n{background-position:0 -32px}.ui-icon-arrow-1-ne{background-position:-16px -32px}.ui-icon-arrow-1-e{background-position:-32px -32px}.ui-icon-arrow-1-se{background-position:-48px -32px}.ui-icon-arrow-1-s{background-position:-65px -32px}.ui-icon-arrow-1-sw{background-position:-80px -32px}.ui-icon-arrow-1-w{background-position:-96px -32px}.ui-icon-arrow-1-nw{background-position:-112px -32px}.ui-icon-arrow-2-n-s{background-position:-128px -32px}.ui-icon-arrow-2-ne-sw{background-position:-144px -32px}.ui-icon-arrow-2-e-w{background-position:-160px -32px}.ui-icon-arrow-2-se-nw{background-position:-176px -32px}.ui-icon-arrowstop-1-n{background-position:-192px -32px}.ui-icon-arrowstop-1-e{background-position:-208px -32px}.ui-icon-arrowstop-1-s{background-position:-224px -32px}.ui-icon-arrowstop-1-w{background-position:-240px -32px}.ui-icon-arrowthick-1-n{background-position:1px -48px}.ui-icon-arrowthick-1-ne{background-position:-16px -48px}.ui-icon-arrowthick-1-e{background-position:-32px -48px}.ui-icon-arrowthick-1-se{background-position:-48px -48px}.ui-icon-arrowthick-1-s{background-position:-64px -48px}.ui-icon-arrowthick-1-sw{background-position:-80px -48px}.ui-icon-arrowthick-1-w{background-position:-96px -48px}.ui-icon-arrowthick-1-nw{background-position:-112px -48px}.ui-icon-arrowthick-2-n-s{background-position:-128px -48px}.ui-icon-arrowthick-2-ne-sw{background-position:-144px -48px}.ui-icon-arrowthick-2-e-w{background-position:-160px -48px}.ui-icon-arrowthick-2-se-nw{background-position:-176px -48px}.ui-icon-arrowthickstop-1-n{background-position:-192px -48px}.ui-icon-arrowthickstop-1-e{background-position:-208px -48px}.ui-icon-arrowthickstop-1-s{background-position:-224px -48px}.ui-icon-arrowthickstop-1-w{background-position:-240px -48px}.ui-icon-arrowreturnthick-1-w{background-position:0 -64px}.ui-icon-arrowreturnthick-1-n{background-position:-16px -64px}.ui-icon-arrowreturnthick-1-e{background-position:-32px -64px}.ui-icon-arrowreturnthick-1-s{background-position:-48px -64px}.ui-icon-arrowreturn-1-w{background-position:-64px -64px}.ui-icon-arrowreturn-1-n{background-position:-80px -64px}.ui-icon-arrowreturn-1-e{background-position:-96px -64px}.ui-icon-arrowreturn-1-s{background-position:-112px -64px}.ui-icon-arrowrefresh-1-w{background-position:-128px -64px}.ui-icon-arrowrefresh-1-n{background-position:-144px -64px}.ui-icon-arrowrefresh-1-e{background-position:-160px -64px}.ui-icon-arrowrefresh-1-s{background-position:-176px -64px}.ui-icon-arrow-4{background-position:0 -80px}.ui-icon-arrow-4-diag{background-position:-16px -80px}.ui-icon-extlink{background-position:-32px -80px}.ui-icon-newwin{background-position:-48px -80px}.ui-icon-refresh{background-position:-64px -80px}.ui-icon-shuffle{background-position:-80px -80px}.ui-icon-transfer-e-w{background-position:-96px -80px}.ui-icon-transferthick-e-w{background-position:-112px -80px}.ui-icon-folder-collapsed{background-position:0 -96px}.ui-icon-folder-open{background-position:-16px -96px}.ui-icon-document{background-position:-32px -96px}.ui-icon-document-b{background-position:-48px -96px}.ui-icon-note{background-position:-64px -96px}.ui-icon-mail-closed{background-position:-80px -96px}.ui-icon-mail-open{background-position:-96px -96px}.ui-icon-suitcase{background-position:-112px -96px}.ui-icon-comment{background-position:-128px -96px}.ui-icon-person{background-position:-144px -96px}.ui-icon-print{background-position:-160px -96px}.ui-icon-trash{background-position:-176px -96px}.ui-icon-locked{background-position:-192px -96px}.ui-icon-unlocked{background-position:-208px -96px}.ui-icon-bookmark{background-position:-224px -96px}.ui-icon-tag{background-position:-240px -96px}.ui-icon-home{background-position:0 -112px}.ui-icon-flag{background-position:-16px -112px}.ui-icon-calendar{background-position:-32px -112px}.ui-icon-cart{background-position:-48px -112px}.ui-icon-pencil{background-position:-64px -112px}.ui-icon-clock{background-position:-80px -112px}.ui-icon-disk{background-position:-96px -112px}.ui-icon-calculator{background-position:-112px -112px}.ui-icon-zoomin{background-position:-128px -112px}.ui-icon-zoomout{background-position:-144px -112px}.ui-icon-search{background-position:-160px -112px}.ui-icon-wrench{background-position:-176px -112px}.ui-icon-gear{background-position:-192px -112px}.ui-icon-heart{background-position:-208px -112px}.ui-icon-star{background-position:-224px -112px}.ui-icon-link{background-position:-240px -112px}.ui-icon-cancel{background-position:0 -128px}.ui-icon-plus{background-position:-16px -128px}.ui-icon-plusthick{background-position:-32px -128px}.ui-icon-minus{background-position:-48px -128px}.ui-icon-minusthick{background-position:-64px -128px}.ui-icon-close{background-position:-80px -128px}.ui-icon-closethick{background-position:-96px -128px}.ui-icon-key{background-position:-112px -128px}.ui-icon-lightbulb{background-position:-128px -128px}.ui-icon-scissors{background-position:-144px -128px}.ui-icon-clipboard{background-position:-160px -128px}.ui-icon-copy{background-position:-176px -128px}.ui-icon-contact{background-position:-192px -128px}.ui-icon-image{background-position:-208px -128px}.ui-icon-video{background-position:-224px -128px}.ui-icon-script{background-position:-240px -128px}.ui-icon-alert{background-position:0 -144px}.ui-icon-info{background-position:-16px -144px}.ui-icon-notice{background-position:-32px -144px}.ui-icon-help{background-position:-48px -144px}.ui-icon-check{background-position:-64px -144px}.ui-icon-bullet{background-position:-80px -144px}.ui-icon-radio-on{background-position:-96px -144px}.ui-icon-radio-off{background-position:-112px -144px}.ui-icon-pin-w{background-position:-128px -144px}.ui-icon-pin-s{background-position:-144px -144px}.ui-icon-play{background-position:0 -160px}.ui-icon-pause{background-position:-16px -160px}.ui-icon-seek-next{background-position:-32px -160px}.ui-icon-seek-prev{background-position:-48px -160px}.ui-icon-seek-end{background-position:-64px -160px}.ui-icon-seek-start{background-position:-80px -160px}.ui-icon-seek-first{background-position:-80px -160px}.ui-icon-stop{background-position:-96px -160px}.ui-icon-eject{background-position:-112px -160px}.ui-icon-volume-off{background-position:-128px -160px}.ui-icon-volume-on{background-position:-144px -160px}.ui-icon-power{background-position:0 -176px}.ui-icon-signal-diag{background-position:-16px -176px}.ui-icon-signal{background-position:-32px -176px}.ui-icon-battery-0{background-position:-48px -176px}.ui-icon-battery-1{background-position:-64px -176px}.ui-icon-battery-2{background-position:-80px -176px}.ui-icon-battery-3{background-position:-96px -176px}.ui-icon-circle-plus{background-position:0 -192px}.ui-icon-circle-minus{background-position:-16px -192px}.ui-icon-circle-close{background-position:-32px -192px}.ui-icon-circle-triangle-e{background-position:-48px -192px}.ui-icon-circle-triangle-s{background-position:-64px -192px}.ui-icon-circle-triangle-w{background-position:-80px -192px}.ui-icon-circle-triangle-n{background-position:-96px -192px}.ui-icon-circle-arrow-e{background-position:-112px -192px}.ui-icon-circle-arrow-s{background-position:-128px -192px}.ui-icon-circle-arrow-w{background-position:-144px -192px}.ui-icon-circle-arrow-n{background-position:-160px -192px}.ui-icon-circle-zoomin{background-position:-176px -192px}.ui-icon-circle-zoomout{background-position:-192px -192px}.ui-icon-circle-check{background-position:-208px -192px}.ui-icon-circlesmall-plus{background-position:0 -208px}.ui-icon-circlesmall-minus{background-position:-16px -208px}.ui-icon-circlesmall-close{background-position:-32px -208px}.ui-icon-squaresmall-plus{background-position:-48px -208px}.ui-icon-squaresmall-minus{background-position:-64px -208px}.ui-icon-squaresmall-close{background-position:-80px -208px}.ui-icon-grip-dotted-vertical{background-position:0 -224px}.ui-icon-grip-dotted-horizontal{background-position:-16px -224px}.ui-icon-grip-solid-vertical{background-position:-32px -224px}.ui-icon-grip-solid-horizontal{background-position:-48px -224px}.ui-icon-gripsmall-diagonal-se{background-position:-64px -224px}.ui-icon-grip-diagonal-se{background-position:-80px -224px}.ui-corner-all,.ui-corner-top,.ui-corner-left,.ui-corner-tl{border-top-left-radius:3px}.ui-corner-all,.ui-corner-top,.ui-corner-right,.ui-corner-tr{border-top-right-radius:3px}.ui-corner-all,.ui-corner-bottom,.ui-corner-left,.ui-corner-bl{border-bottom-left-radius:3px}.ui-corner-all,.ui-corner-bottom,.ui-corner-right,.ui-corner-br{border-bottom-right-radius:3px}.ui-widget-overlay{background:#aaa;opacity:.3;filter:Alpha(Opacity=30)}.ui-widget-shadow{-webkit-box-shadow:0 0 5px #666;box-shadow:0 0 5px #666}
-/* twine-user-stylesheet #3: "image.css" */
-.passage img {
-    max-width: 100%;
-    display: block;
-    margin: auto;
+#player-character-creation li {
+    list-style-type: none;
 }
-.unseen button {
-    background-color: green;
-}
-/* twine-user-stylesheet #4: "Keyboard Links CSS" */
+
 #overlay-background {
     position: fixed; /* Sit on top of the page content */
     display: none; /* Hidden by default */
@@ -174,16 +158,32 @@ sup {
         display: none;
     }
 }
-/* twine-user-stylesheet #5: "Character Creation CSS" */
-#passage-character-creation ul {
+/* twine-user-stylesheet #2: "jqueryui.css" */
+/*! jQuery UI - v1.12.1 - 2018-01-27
+* http://jqueryui.com
+* Includes: theme.css
+* To view and modify this theme, visit http://jqueryui.com/themeroller/?scope=&folderName=base&cornerRadiusShadow=8px&offsetLeftShadow=0px&offsetTopShadow=0px&thicknessShadow=5px&opacityShadow=30&bgImgOpacityShadow=0&bgTextureShadow=flat&bgColorShadow=666666&opacityOverlay=30&bgImgOpacityOverlay=0&bgTextureOverlay=flat&bgColorOverlay=aaaaaa&iconColorError=cc0000&fcError=5f3f3f&borderColorError=f1a899&bgTextureError=flat&bgColorError=fddfdf&iconColorHighlight=777620&fcHighlight=777620&borderColorHighlight=dad55e&bgTextureHighlight=flat&bgColorHighlight=fffa90&iconColorActive=ffffff&fcActive=ffffff&borderColorActive=003eff&bgTextureActive=flat&bgColorActive=007fff&iconColorHover=555555&fcHover=2b2b2b&borderColorHover=cccccc&bgTextureHover=flat&bgColorHover=ededed&iconColorDefault=777777&fcDefault=454545&borderColorDefault=c5c5c5&bgTextureDefault=flat&bgColorDefault=f6f6f6&iconColorContent=444444&fcContent=333333&borderColorContent=dddddd&bgTextureContent=flat&bgColorContent=ffffff&iconColorHeader=444444&fcHeader=333333&borderColorHeader=dddddd&bgTextureHeader=flat&bgColorHeader=e9e9e9&cornerRadius=3px&fwDefault=normal&fsDefault=1em&ffDefault=Arial%2CHelvetica%2Csans-serif
+* Copyright jQuery Foundation and other contributors; Licensed MIT */
+
+.ui-widget{font-family:Arial,Helvetica,sans-serif;font-size:1em}.ui-widget .ui-widget{font-size:1em}.ui-widget input,.ui-widget select,.ui-widget textarea,.ui-widget button{font-family:Arial,Helvetica,sans-serif;font-size:1em}.ui-widget.ui-widget-content{border:1px solid #c5c5c5}.ui-widget-content{border:1px solid #ddd;background:#fff;color:#333}.ui-widget-content a{color:#333}.ui-widget-header{border:1px solid #ddd;background:#e9e9e9;color:#333;font-weight:bold}.ui-widget-header a{color:#333}.ui-state-default,.ui-widget-content .ui-state-default,.ui-widget-header .ui-state-default,.ui-button,html .ui-button.ui-state-disabled:hover,html .ui-button.ui-state-disabled:active{border:1px solid #c5c5c5;background:#f6f6f6;font-weight:normal;color:#454545}.ui-state-default a,.ui-state-default a:link,.ui-state-default a:visited,a.ui-button,a:link.ui-button,a:visited.ui-button,.ui-button{color:#454545;text-decoration:none}.ui-state-hover,.ui-widget-content .ui-state-hover,.ui-widget-header .ui-state-hover,.ui-state-focus,.ui-widget-content .ui-state-focus,.ui-widget-header .ui-state-focus,.ui-button:hover,.ui-button:focus{border:1px solid #ccc;background:#ededed;font-weight:normal;color:#2b2b2b}.ui-state-hover a,.ui-state-hover a:hover,.ui-state-hover a:link,.ui-state-hover a:visited,.ui-state-focus a,.ui-state-focus a:hover,.ui-state-focus a:link,.ui-state-focus a:visited,a.ui-button:hover,a.ui-button:focus{color:#2b2b2b;text-decoration:none}.ui-visual-focus{box-shadow:0 0 3px 1px rgb(94,158,214)}.ui-state-active,.ui-widget-content .ui-state-active,.ui-widget-header .ui-state-active,a.ui-button:active,.ui-button:active,.ui-button.ui-state-active:hover{border:1px solid #003eff;background:#007fff;font-weight:normal;color:#fff}.ui-icon-background,.ui-state-active .ui-icon-background{border:#003eff;background-color:#fff}.ui-state-active a,.ui-state-active a:link,.ui-state-active a:visited{color:#fff;text-decoration:none}.ui-state-highlight,.ui-widget-content .ui-state-highlight,.ui-widget-header .ui-state-highlight{border:1px solid #dad55e;background:#fffa90;color:#777620}.ui-state-checked{border:1px solid #dad55e;background:#fffa90}.ui-state-highlight a,.ui-widget-content .ui-state-highlight a,.ui-widget-header .ui-state-highlight a{color:#777620}.ui-state-error,.ui-widget-content .ui-state-error,.ui-widget-header .ui-state-error{border:1px solid #f1a899;background:#fddfdf;color:#5f3f3f}.ui-state-error a,.ui-widget-content .ui-state-error a,.ui-widget-header .ui-state-error a{color:#5f3f3f}.ui-state-error-text,.ui-widget-content .ui-state-error-text,.ui-widget-header .ui-state-error-text{color:#5f3f3f}.ui-priority-primary,.ui-widget-content .ui-priority-primary,.ui-widget-header .ui-priority-primary{font-weight:bold}.ui-priority-secondary,.ui-widget-content .ui-priority-secondary,.ui-widget-header .ui-priority-secondary{opacity:.7;filter:Alpha(Opacity=70);font-weight:normal}.ui-state-disabled,.ui-widget-content .ui-state-disabled,.ui-widget-header .ui-state-disabled{opacity:.35;filter:Alpha(Opacity=35);background-image:none}.ui-state-disabled .ui-icon{filter:Alpha(Opacity=35)}.ui-icon{width:16px;height:16px}.ui-icon,.ui-widget-content .ui-icon{background-image:url("images/ui-icons_444444_256x240.png")}.ui-widget-header .ui-icon{background-image:url("images/ui-icons_444444_256x240.png")}.ui-state-hover .ui-icon,.ui-state-focus .ui-icon,.ui-button:hover .ui-icon,.ui-button:focus .ui-icon{background-image:url("images/ui-icons_555555_256x240.png")}.ui-state-active .ui-icon,.ui-button:active .ui-icon{background-image:url("images/ui-icons_ffffff_256x240.png")}.ui-state-highlight .ui-icon,.ui-button .ui-state-highlight.ui-icon{background-image:url("images/ui-icons_777620_256x240.png")}.ui-state-error .ui-icon,.ui-state-error-text .ui-icon{background-image:url("images/ui-icons_cc0000_256x240.png")}.ui-button .ui-icon{background-image:url("images/ui-icons_777777_256x240.png")}.ui-icon-blank{background-position:16px 16px}.ui-icon-caret-1-n{background-position:0 0}.ui-icon-caret-1-ne{background-position:-16px 0}.ui-icon-caret-1-e{background-position:-32px 0}.ui-icon-caret-1-se{background-position:-48px 0}.ui-icon-caret-1-s{background-position:-65px 0}.ui-icon-caret-1-sw{background-position:-80px 0}.ui-icon-caret-1-w{background-position:-96px 0}.ui-icon-caret-1-nw{background-position:-112px 0}.ui-icon-caret-2-n-s{background-position:-128px 0}.ui-icon-caret-2-e-w{background-position:-144px 0}.ui-icon-triangle-1-n{background-position:0 -16px}.ui-icon-triangle-1-ne{background-position:-16px -16px}.ui-icon-triangle-1-e{background-position:-32px -16px}.ui-icon-triangle-1-se{background-position:-48px -16px}.ui-icon-triangle-1-s{background-position:-65px -16px}.ui-icon-triangle-1-sw{background-position:-80px -16px}.ui-icon-triangle-1-w{background-position:-96px -16px}.ui-icon-triangle-1-nw{background-position:-112px -16px}.ui-icon-triangle-2-n-s{background-position:-128px -16px}.ui-icon-triangle-2-e-w{background-position:-144px -16px}.ui-icon-arrow-1-n{background-position:0 -32px}.ui-icon-arrow-1-ne{background-position:-16px -32px}.ui-icon-arrow-1-e{background-position:-32px -32px}.ui-icon-arrow-1-se{background-position:-48px -32px}.ui-icon-arrow-1-s{background-position:-65px -32px}.ui-icon-arrow-1-sw{background-position:-80px -32px}.ui-icon-arrow-1-w{background-position:-96px -32px}.ui-icon-arrow-1-nw{background-position:-112px -32px}.ui-icon-arrow-2-n-s{background-position:-128px -32px}.ui-icon-arrow-2-ne-sw{background-position:-144px -32px}.ui-icon-arrow-2-e-w{background-position:-160px -32px}.ui-icon-arrow-2-se-nw{background-position:-176px -32px}.ui-icon-arrowstop-1-n{background-position:-192px -32px}.ui-icon-arrowstop-1-e{background-position:-208px -32px}.ui-icon-arrowstop-1-s{background-position:-224px -32px}.ui-icon-arrowstop-1-w{background-position:-240px -32px}.ui-icon-arrowthick-1-n{background-position:1px -48px}.ui-icon-arrowthick-1-ne{background-position:-16px -48px}.ui-icon-arrowthick-1-e{background-position:-32px -48px}.ui-icon-arrowthick-1-se{background-position:-48px -48px}.ui-icon-arrowthick-1-s{background-position:-64px -48px}.ui-icon-arrowthick-1-sw{background-position:-80px -48px}.ui-icon-arrowthick-1-w{background-position:-96px -48px}.ui-icon-arrowthick-1-nw{background-position:-112px -48px}.ui-icon-arrowthick-2-n-s{background-position:-128px -48px}.ui-icon-arrowthick-2-ne-sw{background-position:-144px -48px}.ui-icon-arrowthick-2-e-w{background-position:-160px -48px}.ui-icon-arrowthick-2-se-nw{background-position:-176px -48px}.ui-icon-arrowthickstop-1-n{background-position:-192px -48px}.ui-icon-arrowthickstop-1-e{background-position:-208px -48px}.ui-icon-arrowthickstop-1-s{background-position:-224px -48px}.ui-icon-arrowthickstop-1-w{background-position:-240px -48px}.ui-icon-arrowreturnthick-1-w{background-position:0 -64px}.ui-icon-arrowreturnthick-1-n{background-position:-16px -64px}.ui-icon-arrowreturnthick-1-e{background-position:-32px -64px}.ui-icon-arrowreturnthick-1-s{background-position:-48px -64px}.ui-icon-arrowreturn-1-w{background-position:-64px -64px}.ui-icon-arrowreturn-1-n{background-position:-80px -64px}.ui-icon-arrowreturn-1-e{background-position:-96px -64px}.ui-icon-arrowreturn-1-s{background-position:-112px -64px}.ui-icon-arrowrefresh-1-w{background-position:-128px -64px}.ui-icon-arrowrefresh-1-n{background-position:-144px -64px}.ui-icon-arrowrefresh-1-e{background-position:-160px -64px}.ui-icon-arrowrefresh-1-s{background-position:-176px -64px}.ui-icon-arrow-4{background-position:0 -80px}.ui-icon-arrow-4-diag{background-position:-16px -80px}.ui-icon-extlink{background-position:-32px -80px}.ui-icon-newwin{background-position:-48px -80px}.ui-icon-refresh{background-position:-64px -80px}.ui-icon-shuffle{background-position:-80px -80px}.ui-icon-transfer-e-w{background-position:-96px -80px}.ui-icon-transferthick-e-w{background-position:-112px -80px}.ui-icon-folder-collapsed{background-position:0 -96px}.ui-icon-folder-open{background-position:-16px -96px}.ui-icon-document{background-position:-32px -96px}.ui-icon-document-b{background-position:-48px -96px}.ui-icon-note{background-position:-64px -96px}.ui-icon-mail-closed{background-position:-80px -96px}.ui-icon-mail-open{background-position:-96px -96px}.ui-icon-suitcase{background-position:-112px -96px}.ui-icon-comment{background-position:-128px -96px}.ui-icon-person{background-position:-144px -96px}.ui-icon-print{background-position:-160px -96px}.ui-icon-trash{background-position:-176px -96px}.ui-icon-locked{background-position:-192px -96px}.ui-icon-unlocked{background-position:-208px -96px}.ui-icon-bookmark{background-position:-224px -96px}.ui-icon-tag{background-position:-240px -96px}.ui-icon-home{background-position:0 -112px}.ui-icon-flag{background-position:-16px -112px}.ui-icon-calendar{background-position:-32px -112px}.ui-icon-cart{background-position:-48px -112px}.ui-icon-pencil{background-position:-64px -112px}.ui-icon-clock{background-position:-80px -112px}.ui-icon-disk{background-position:-96px -112px}.ui-icon-calculator{background-position:-112px -112px}.ui-icon-zoomin{background-position:-128px -112px}.ui-icon-zoomout{background-position:-144px -112px}.ui-icon-search{background-position:-160px -112px}.ui-icon-wrench{background-position:-176px -112px}.ui-icon-gear{background-position:-192px -112px}.ui-icon-heart{background-position:-208px -112px}.ui-icon-star{background-position:-224px -112px}.ui-icon-link{background-position:-240px -112px}.ui-icon-cancel{background-position:0 -128px}.ui-icon-plus{background-position:-16px -128px}.ui-icon-plusthick{background-position:-32px -128px}.ui-icon-minus{background-position:-48px -128px}.ui-icon-minusthick{background-position:-64px -128px}.ui-icon-close{background-position:-80px -128px}.ui-icon-closethick{background-position:-96px -128px}.ui-icon-key{background-position:-112px -128px}.ui-icon-lightbulb{background-position:-128px -128px}.ui-icon-scissors{background-position:-144px -128px}.ui-icon-clipboard{background-position:-160px -128px}.ui-icon-copy{background-position:-176px -128px}.ui-icon-contact{background-position:-192px -128px}.ui-icon-image{background-position:-208px -128px}.ui-icon-video{background-position:-224px -128px}.ui-icon-script{background-position:-240px -128px}.ui-icon-alert{background-position:0 -144px}.ui-icon-info{background-position:-16px -144px}.ui-icon-notice{background-position:-32px -144px}.ui-icon-help{background-position:-48px -144px}.ui-icon-check{background-position:-64px -144px}.ui-icon-bullet{background-position:-80px -144px}.ui-icon-radio-on{background-position:-96px -144px}.ui-icon-radio-off{background-position:-112px -144px}.ui-icon-pin-w{background-position:-128px -144px}.ui-icon-pin-s{background-position:-144px -144px}.ui-icon-play{background-position:0 -160px}.ui-icon-pause{background-position:-16px -160px}.ui-icon-seek-next{background-position:-32px -160px}.ui-icon-seek-prev{background-position:-48px -160px}.ui-icon-seek-end{background-position:-64px -160px}.ui-icon-seek-start{background-position:-80px -160px}.ui-icon-seek-first{background-position:-80px -160px}.ui-icon-stop{background-position:-96px -160px}.ui-icon-eject{background-position:-112px -160px}.ui-icon-volume-off{background-position:-128px -160px}.ui-icon-volume-on{background-position:-144px -160px}.ui-icon-power{background-position:0 -176px}.ui-icon-signal-diag{background-position:-16px -176px}.ui-icon-signal{background-position:-32px -176px}.ui-icon-battery-0{background-position:-48px -176px}.ui-icon-battery-1{background-position:-64px -176px}.ui-icon-battery-2{background-position:-80px -176px}.ui-icon-battery-3{background-position:-96px -176px}.ui-icon-circle-plus{background-position:0 -192px}.ui-icon-circle-minus{background-position:-16px -192px}.ui-icon-circle-close{background-position:-32px -192px}.ui-icon-circle-triangle-e{background-position:-48px -192px}.ui-icon-circle-triangle-s{background-position:-64px -192px}.ui-icon-circle-triangle-w{background-position:-80px -192px}.ui-icon-circle-triangle-n{background-position:-96px -192px}.ui-icon-circle-arrow-e{background-position:-112px -192px}.ui-icon-circle-arrow-s{background-position:-128px -192px}.ui-icon-circle-arrow-w{background-position:-144px -192px}.ui-icon-circle-arrow-n{background-position:-160px -192px}.ui-icon-circle-zoomin{background-position:-176px -192px}.ui-icon-circle-zoomout{background-position:-192px -192px}.ui-icon-circle-check{background-position:-208px -192px}.ui-icon-circlesmall-plus{background-position:0 -208px}.ui-icon-circlesmall-minus{background-position:-16px -208px}.ui-icon-circlesmall-close{background-position:-32px -208px}.ui-icon-squaresmall-plus{background-position:-48px -208px}.ui-icon-squaresmall-minus{background-position:-64px -208px}.ui-icon-squaresmall-close{background-position:-80px -208px}.ui-icon-grip-dotted-vertical{background-position:0 -224px}.ui-icon-grip-dotted-horizontal{background-position:-16px -224px}.ui-icon-grip-solid-vertical{background-position:-32px -224px}.ui-icon-grip-solid-horizontal{background-position:-48px -224px}.ui-icon-gripsmall-diagonal-se{background-position:-64px -224px}.ui-icon-grip-diagonal-se{background-position:-80px -224px}.ui-corner-all,.ui-corner-top,.ui-corner-left,.ui-corner-tl{border-top-left-radius:3px}.ui-corner-all,.ui-corner-top,.ui-corner-right,.ui-corner-tr{border-top-right-radius:3px}.ui-corner-all,.ui-corner-bottom,.ui-corner-left,.ui-corner-bl{border-bottom-left-radius:3px}.ui-corner-all,.ui-corner-bottom,.ui-corner-right,.ui-corner-br{border-bottom-right-radius:3px}.ui-widget-overlay{background:#aaa;opacity:.3;filter:Alpha(Opacity=30)}.ui-widget-shadow{-webkit-box-shadow:0 0 5px #666;box-shadow:0 0 5px #666}
+/* twine-user-stylesheet #3: "character-creation.css" */
+#player-character-creation ul {
     padding: 0px;
 }
 
-#passage-character-creation li {
+#player-character-creation li {
     list-style-type: none;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript">/* twine-user-script #1: "Analytics" */
-/* twine-user-script #2: "StoryConfig" */
-/* Required by Twine */
+}
+/* twine-user-stylesheet #4: "image.css" */
+.passage img {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+.unseen button {
+    background-color: green;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript">/* twine-user-script #1: "StoryConfig" */
+/* Reqiured by Twine */
 State.initPRNG();
 
 /* Sugarcube Config http://www.motoslave.net/sugarcube/2/docs/#config-api */
@@ -264,7 +264,7 @@ Config.addVisitedLinkClass = false;
 Config.cleanupWikifierOutput = false;
 Config.debug = false;
 Config.loadDelay = 0;
-/* twine-user-script #3: "jqueryui.js" */
+/* twine-user-script #2: "jqueryui.js" */
 /*! jQuery UI - v1.12.1 - 2018-01-27
 * http://jqueryui.com
 * Includes: effect.js, effects/effect-highlight.js
@@ -408,675 +408,7 @@ n},Mn.prototype.reverse=function(){if(this.__filtered__){var n=new Mn(this);n.__
 o=u?f:o-1,f=this.__iteratees__,c=f.length,a=0,l=Mi(n,this.__takeCount__),!e||!u&&i==n&&l==n)return kr(t,this.__actions__);e=[];n:for(;n--&&a<l;){for(o+=r,u=-1,i=t[o];++u<c;){var h=f[u],s=h.type,h=(0,h.iteratee)(i);if(2==s)i=h;else if(!h){if(1==s)continue n;break n}}e[a++]=i}return e},On.prototype.at=Fo,On.prototype.chain=function(){return Xe(this)},On.prototype.commit=function(){return new zn(this.value(),this.__chain__)},On.prototype.next=function(){this.__values__===F&&(this.__values__=ku(this.value()));
 var n=this.__index__>=this.__values__.length;return{done:n,value:n?F:this.__values__[this.__index__++]}},On.prototype.plant=function(n){for(var t,r=this;r instanceof Sn;){var e=Pe(r);e.__index__=0,e.__values__=F,t?u.__wrapped__=e:t=e;var u=e,r=r.__wrapped__}return u.__wrapped__=n,t},On.prototype.reverse=function(){var n=this.__wrapped__;return n instanceof Mn?(this.__actions__.length&&(n=new Mn(this)),n=n.reverse(),n.__actions__.push({func:nu,args:[Je],thisArg:F}),new zn(n,this.__chain__)):this.thru(Je);
 },On.prototype.toJSON=On.prototype.valueOf=On.prototype.value=function(){return kr(this.__wrapped__,this.__actions__)},On.prototype.first=On.prototype.head,Ai&&(On.prototype[Ai]=tu),On}();typeof define=="function"&&typeof define.amd=="object"&&define.amd?(Zn._=it, define(function(){return it})):Vn?((Vn.exports=it)._=it,qn._=it):Zn._=it}).call(this);
-/* twine-user-script #4: "simple-inventory.js" */
-(function () {
-    // simple-inventory.js, by chapel; for sugarcube 2
-    // version 2.3.0
-    'use strict';
-
-    // options object
-
-    var options = {
-        tryGlobal : true,
-        defaultStrings : {
-            empty     : 'The inventory is empty...',
-            listDrop  : 'Discard',
-            separator : '\n'
-        }
-    };
-
-    // private functions
-
-    function _attachEvent (inv, loc, items, cont) {
-        // attach special inventory change events to the document
-        $(document).trigger({
-            type       : (cont === 'initialized') ?  ':inventory-init' : ':inventory-update', // the event name
-            instance   : inv, // the calling instance; the giver in transfers
-            receiving  : loc, // the inventory recieving transfers, or null
-            moved      : items, // the items moved to or from the calling inventory, or null
-            context    : cont // drop, pickup, transfer, or initialized
-        });
-    }
-
-    function _getUID (name, i) {
-        // generates a random, unique-enough-for-this-purpose ID
-        var key = Math.random().toString(36).substring(7);
-        if (arguments.length < 2) {
-            // we'll generate an id anyway, but it might not be as unique as i'd like.
-            name = Math.random().toString(36).substring(7);
-            i    = random(99);
-        }
-        return ('simple-inv-' + i + '-' + Date.now() + '-' + name.replace(/[^A-Za-z0-9]/g, '') + '-' + key);
-    }
-
-    // constructor
-
-    function Inventory (array) {
-        if (array) {
-            // some number of arguments were passed
-            array = [].slice.call(arguments);
-            array = array.flatten();
-        } else { 
-            // no arguments were passed
-            array = [];
-        }
-        
-        if (this instanceof Inventory) {
-            this.inv = array;
-            array = (array.length) ? array : null;
-            // run the event only if assignement is successful
-            _attachEvent(this, null, array, 'initialized');
-        } else { // if the author forgets the 'new' operator, add it for them
-            return new Inventory(array);
-        }
-    }
-
-    // static methods
-
-    Object.assign(Inventory, {
-        is : function (inv) {
-            // test to see if passed object is an inventory instance
-            return (inv instanceof Inventory);
-        },
-        log : function (inv) {
-            // logs the inventory to the console (for debugging)
-            var string = (Inventory.is(inv)) ?
-                ('Inventory.log() -> ' + inv.toArray().join(' - ')) : 
-                ('Inventory.log() -> object is not an inventory...');
-            return string;
-        },
-        removeDuplicates : function (inv) {
-            // removes duplicate items from an inventory
-            if (!Inventory.is(inv)) {
-                return; // not an inventory
-            }
-            var items = inv.toArray();
-            var uniq  = (function (i) {
-                var ret = [];
-                i.forEach( function (item) {
-                    if (!ret.includes(item)) {
-                        ret.push(item);
-                    }
-                });
-                return ret;
-            }(items));
-            
-            return uniq;
-        }
-    });
-
-    Object.assign(Inventory.prototype, {
-        transfer : function (loc) {
-            // transfer items from this inventory to a specified inventory
-            if (arguments.length < 2) {
-                return this; // error in args, do nothing
-            }   
-            if (!Inventory.is(loc)) {
-                return this; // error in args, do nothing
-            }
-            
-            var items = [].slice.call(arguments);
-            items = items.slice(1).flatten();
-            
-            var pushed = [];
-            for (var i = 0, l = items.length; i < l; i++) {
-                // only transfer the item if it exists
-                if (this.inv.includes(items[i])) { 
-                    this.inv.delete(items[i]);
-                    pushed.push(items[i]);
-                }
-            }
-            
-            if (pushed.length) {
-                loc.inv = loc.inv.concat(pushed);
-                _attachEvent(this, loc, pushed, 'transfer');
-                return this; // for chaining
-            }
-            return this; // for chaining
-        },
-        
-        has : function () { // this inventory has any of the passed items
-            var items = [].slice.call(arguments).flatten();
-            if (items && items.length) {
-                return this.inv.includesAny(items);
-            }
-            return false;
-        },
-        
-        hasAll : function () { // this inventory has all of the passed items
-            var items = [].slice.call(arguments).flatten();
-            if (items && items.length) {
-                return this.inv.includesAll(items);
-            }
-            return false;
-        },
-        
-        pickUp : function (unique) { // add items to this inventory
-            var items = [].slice.call(arguments).flatten(), inventory = this;
-            if (items && items.length) {
-                if (unique === 'unique' || items[0] === 'unique') { // items must be unique in each inventory instance
-                    items = items.splice(1);
-                    items = (function (items) { 
-                        var ret = []; // this code could use some cleanup
-                        items.forEach(function (item) {
-                            if (!inventory.inv.includes(item) && !ret.includes(item)) {
-                                ret.push(item);
-                            }
-                        });
-                        return ret;
-                    }(items));
-                }
-                // concat the arrays and call the event
-                this.inv = this.inv.concat(items);
-                _attachEvent(this, null, items, 'pickup');
-            }
-            return this; // for chaining
-        },
-        
-        drop : function () { // remove items from this inventory
-            var items = [].slice.call(arguments).flatten(),
-                inventory = this, del; // we need to access this in the <array>.forEach()
-            if (items && items.length) {
-                var moved = [];
-                items.forEach(function (item) {
-                    if (inventory.has(item)) {
-                        moved.push(item); // for the event below
-                        del = inventory.inv.indexOf(item);
-                        inventory.inv.deleteAt(del);
-                    }
-                });
-                _attachEvent(this, null, moved, 'drop');
-            }
-            return this; // for chaining
-        },
-        
-        sort : function () { // sorts this inventory
-            this.inv = this.inv.sort();
-            _attachEvent(this, null, null, 'sort');
-            return this;
-        },
-        
-        show : function (sep) { // returns a string representing the inventory
-            if (!sep || typeof sep !== 'string') {
-                sep = options.defaultStrings.separator; // default
-            }
-            if (this.inv.length) {
-                return this.inv.join(sep);
-            }
-            return options.defaultStrings.empty; // nothing is in this inventory
-        },
-        
-        empty : function () { // remove all items from this inventory
-            var temp = clone(this.inv); // for the event
-            this.inv = []; 
-            // this is still technically a 'drop' event
-            _attachEvent(this, null, temp, 'drop');
-            return this; // for that sweet chaining action
-        },
-        
-        toArray : function () { // not super necessary
-            return (this.inv);
-        },
-
-        count : function (item) {
-            // if item, count the number of duplicates
-            if (item && typeof item === 'string') {
-                var cnt = 0;
-                this.toArray().forEach( function (i) {
-                    if (i === item) {
-                        cnt++;
-                    }
-                });
-                return cnt;
-            }
-            // else return the length
-            return this.toArray().length;
-        },
-
-        isEmpty : function () {
-            return this.toArray().length === 0;
-        },
-        
-        linkedList : function (loc, action) { // construct the list elements to keep the macro call clean-ish
-            if (!loc || !Inventory.is(loc)) {
-                loc = false; // if no loc, then no transferring
-            }
-            
-            // set up vars
-            var list = this.toArray();
-            var inv = this;
-            var $wrapper = $(document.createElement('span'));
-            
-            // if inventory is empty, append message and return element
-            if (!list || !list.length) {
-                $wrapper.wiki(options.defaultStrings.empty);
-                return $wrapper;
-            }
-            
-            // construct the link list
-            list.forEach(function (item, idx, arr) {
-                var $listing = $(document.createElement('span')),
-                    $link    = $(document.createElement('a')),
-                    drop     = (action) ? action : options.defaultStrings.drop, // the action name or default
-                    UID      = _getUID(item, idx); // create a unique element ID 
-                
-                $link // create the drop link
-                    .wiki(drop)
-                    .addClass('simple-inv drop-link');
-                
-                // add click event handler
-                $link.ariaClick(function () {
-                    if (loc) {
-                        inv.transfer(loc, item);
-                    } else {
-                        inv.drop(item);
-                    }
-                    $('#' + UID).empty(); // empty the listing by its UID
-                });
-                
-                // set up the listing element, which contains the name and the link
-                $listing
-                    .attr('id', UID)
-                    .addClass('simple-inv link-listing')
-                    .wiki(item + ' ')
-                    .append($link);
-                
-                // add newline via <br> for listings that aren't last
-                // this also allows the newline to disappear with its associated listing when dropped
-                if (idx < arr.length - 1) {
-                    $listing.wiki('<br />');
-                }
-                
-                // attach to the return element
-                $wrapper.append($listing);
-            });
-            
-            // return the whole element
-            return $wrapper;
-        },
-        
-        // we need to reassign this since we may have clobbered it using the prototype
-        constructor : Inventory,
-        
-        toJSON : function () { // the custom revive wrapper for SugarCube's state tracking
-            // use `setup` version in case the global version is unavailable
-            return JSON.reviveWrapper('new setup.Inventory(' + JSON.stringify(this.inv) + ')');
-        },
-        
-        clone : function () { return new Inventory(this.inv); }
-    });
-
-    // JS APIs
-
-    setup.Inventory = Inventory;
-    setup.simpleInv = { inventory : Inventory }; // legacy
-
-    if (options.tryGlobal) {
-        // this allows authors to access the JS API using the global Inventory function
-        window.Inventory = window.Inventory || Inventory;
-        // ... but only if window.Inventory is undefined
-    }
-
-    // macros
-
-    // <<newinventory '$var' '(optional) list of items'>>
-    Macro.add('newinventory', {
-        handler : function () {
-
-            if (this.args.length < 1) {
-                return this.error('incorrect number of arguments');
-            }
-            var varName = this.args[0].trim();
-            // check variable string
-            if (varName[0] !== '$' && varName[0] !== '_') {
-                return this.error('variable name "' + this.args[0] + '" is missing its sigil ($ or _)');
-            }
-            
-            // set up new inventory
-            Wikifier.setValue(varName, new Inventory(this.args.slice(1).flatten()));
-        }
-    });
-
-    // <<pickup '$var' 'list of items'>>
-    Macro.add('pickup', {
-        handler : function () {
-            
-            if (this.args.length < 2) {
-                return this.error('incorrect number of arguments');
-            }
-            
-            var varName = this.args[0].trim();
-            // check variable string
-            if (varName[0] !== '$' && varName[0] !== '_') {
-                return this.error('variable name "' + this.args[0] + '" is missing its sigil ($ or _)');
-            }
-            
-            // check if story var is an inventory instance
-            var inv = Wikifier.getValue(varName);
-            if (!Inventory.is(inv)) {
-                return this.error('variable ' + varName + ' is not an inventory!');
-            }
-            
-            inv.pickUp(this.args.slice(1).flatten());
-        }
-    });
-
-    // <<drop '$var' 'list of items'>>
-    Macro.add('drop', {
-        handler : function () {
-            
-            if (this.args.length < 2) {
-                return this.error('incorrect number of arguments');
-            }
-            
-            var varName = this.args[0].trim();
-            // check variable string
-            if (varName[0] !== '$' && varName[0] !== '_') {
-                return this.error('variable name "' + this.args[0] + '" is missing its sigil ($ or _)');
-            }
-            
-            // check if story var is an inventory instance
-            var inv = Wikifier.getValue(varName);
-            if (!Inventory.is(inv)) {
-                return this.error('variable ' + varName + ' is not an inventory!');
-            }
-            
-            inv.drop(this.args.slice(1).flatten());
-        }
-    });
-
-    // <<transfer '$var' '$anotherVar' 'list of items'>>
-    Macro.add('transfer', {
-        handler : function () {
-            
-            if (this.args.length < 3) {
-                return this.error('incorrect number of arguments');
-            }
-            
-            var varName = this.args[0].trim();
-            // check variable string
-            if (varName[0] !== '$' && varName[0] !== '_') {
-                return this.error('variable name "' + this.args[0] + '" is missing its sigil ($ or _)');
-            }
-            
-            // check if story var is an inventory instance
-            var inv = Wikifier.getValue(varName);
-            if (!Inventory.is(inv)) {
-                return this.error('variable ' + varName + ' is not an inventory!');
-            }
-            
-            /* the receiving inventory */
-            var recVarName = this.args[1].trim();
-            // check variable string
-            if (recVarName[0] !== '$' && recVarName[0] !== '_') {
-                return this.error('variable name "' + this.args[1] + '" is missing its sigil ($ or _)');
-            }
-            
-            // check if story var is an inventory instance
-            var recInv = Wikifier.getValue(recVarName);
-            if (!Inventory.is(recInv)) {
-                return this.error('variable ' + recVarName + ' is not an inventory!');
-            }
-            
-            inv.transfer(recInv, this.args.slice(2).flatten());
-        }
-    });
-
-    // <<dropall '$var'>>
-    Macro.add('dropall', {
-        handler : function () {
-            
-            if (this.args.length !== 1) {
-                return this.error('incorrect number of arguments');
-            }
-            
-            var varName = this.args[0].trim();
-            // check variable string
-            if (varName[0] !== '$' && varName[0] !== '_') {
-                return this.error('variable name "' + this.args[0] + '" is missing its sigil ($ or _)');
-            }
-            
-            // check if story var is an inventory instance
-            var inv = Wikifier.getValue(varName);
-            if (!Inventory.is(inv)) {
-                return this.error('variable ' + varName + ' is not an inventory!');
-            }
-            
-            inv.empty();
-        }
-    });
-
-    // <<clear>> (same as <<dropall>>)
-    Macro.add('clear', 'dropall', false);
-
-    // <<sort '$var'>>
-    Macro.add('sort', {
-        handler : function () {
-            
-            if (this.args.length !== 1) {
-                return this.error('incorrect number of arguments');
-            }
-            
-            var varName = this.args[0].trim();
-            // check variable string
-            if (varName[0] !== '$' && varName[0] !== '_') {
-                return this.error('variable name "' + this.args[0] + '" is missing its sigil ($ or _)');
-            }
-            
-            // check if story var is an inventory instance
-            var inv = Wikifier.getValue(varName);
-            if (!Inventory.is(inv)) {
-                return this.error('variable ' + varName + ' is not an inventory!');
-            }
-            
-            inv.sort();
-        }
-    });
-
-    // <<inventory '$var' 'separator'>>
-    Macro.add('inventory', {
-        handler : function () {
-            
-            if (this.args.length < 1 || this.args.length > 2) {
-                return this.error('incorrect number of arguments');
-            }
-            
-            var varName = this.args[0].trim();
-            // check variable string
-            if (varName[0] !== '$' && varName[0] !== '_') {
-                return this.error('variable name "' + this.args[0] + '" is missing its sigil ($ or _)');
-            }
-            
-            // check if story var is an inventory instance
-            var inv = Wikifier.getValue(varName);
-            if (!Inventory.is(inv)) {
-                return this.error('variable ' + varName + ' is not an inventory!');
-            }
-            
-            // create output element and add to DOM
-            var $wrapper = $(document.createElement('span')), 
-                sep = (this.args[1]) ? this.args[1] : false;
-            
-            $wrapper
-                .wiki(inv.show(sep))
-                .addClass('macro-' + this.name)
-                .appendTo(this.output);
-        }
-    });
-
-    // <<linkedinventory 'action name' '$var' '(optional) $anotherVar'
-    Macro.add('linkedinventory', {
-        handler : function () {
-            
-            if (this.args.length < 2 || this.args.length > 3) {
-                return this.error('incorrect number of arguments');
-            }
-            
-            var recInv = false,
-                recVarName = '',
-                varName = this.args[1].trim(),
-                action = (typeof this.args[0] === 'string') ? this.args[0] : false; // the action name, which is required
-            
-            if (!action) { // just in case
-                return this.error('first argument should be the link text');
-            }
-            
-            // check variable string
-            if (varName[0] !== '$' && varName[0] !== '_') {
-                return this.error('variable name "' + this.args[1] + '" is missing its sigil ($ or _)');
-            }
-            
-            // use a varID for linked lists
-            var varID = Util.slugify(varName); 
-            varID = this.name + '-' + varID;
-            
-            // check if story var is an inventory instance
-            var inv = Wikifier.getValue(varName);
-            if (!Inventory.is(inv)) {
-                return this.error('variable ' + varName + ' is not an inventory!');
-            }
-            
-            if (this.args.length > 2) {
-                // the receiving inventory, if applicable
-                recVarName = this.args[2].trim();
-                // check variable string
-                if (recVarName[0] !== '$' && recVarName[0] !== '_') {
-                    return this.error('variable name "' + this.args[2] + '" is missing its sigil ($ or _)');
-                }
-                
-                // check if story var is an inventory instance
-                recInv = Wikifier.getValue(recVarName);
-                if (!Inventory.is(recInv)) {
-                    return this.error('variable ' + recVarName + ' is not an inventory!');
-                }
-            }
-            
-            // create output and att to DOM
-            var $list = inv.linkedList(recInv, action);
-            $list
-                .attr({ // add data to reconstruct the call via an event
-                    id : varID,
-                    'data-rec' : recVarName,
-                    'data-self' : varName,
-                    'data-action' : action
-                })
-                .addClass('macro-' + this.name)
-                .appendTo(this.output);
-        }
-    });
-
-}());
-/* twine-user-script #5: "ui-macro.js" */
-(function () {
-    // ui macro, for SugarCube 2, by Chapel, v1.0.0
-    
-    var ui = {
-        update : UIBar.setStoryElements,
-        stow : UIBar.stow,
-        unstow :  UIBar.unstow,
-        toggle : function () {
-            if ($('#ui-bar').hasClass('stowed')) {
-                UIBar.unstow();
-            } else {
-                UIBar.stow();
-            }
-        },
-        hide : function () {
-            $('#ui-bar').css('display', 'none');
-        },
-        show : function () {
-            $('#ui-bar').css('display', 'block');
-        },
-        kill : function () {
-            $('#ui-bar').css('display', 'none');
-            $('#story').css('margin-left', '2.5em');
-        },
-        restore : function () {
-            $('#ui-bar').css('display', 'block');
-            $('#story').css('margin-left', '20em');
-        },
-        jump : UI.jumpto,
-        saves : UI.saves,
-        restart : UI.restart,
-        settings : UI.settings,
-        share : UI.share,
-        aliases : {
-            refresh : 'update',
-            reload : 'update',
-            destroy : 'kill',
-            revive : 'restore',
-            jumpto : 'jump',
-            save : 'saves',
-            load : 'saves',
-            setting : 'settings',
-            sharing : 'share'
-        },
-    };
-
-    var validCommands = Object.keys(ui);
-
-    function isValid (command) {
-        return validCommands.includes(command);
-    }
-
-    function alias (command) {
-        return ui.aliases[command] || null;
-    }
-
-    function runCommand (command) {
-        if (!command || typeof command !== 'string') {
-            return 'Command is not a string.'; // error
-        }
-        command = command.toLowerCase().trim();
-        if (!isValid(command)) {
-            command = alias(command);
-            if (!command) {
-                return 'Command "' + command + '" is not a valid command.'; // error
-            }
-        }
-        ui[command]();
-        return false;
-    }
-
-    function processCommandList (arr) {
-        if (!Array.isArray(arr)) {
-            return 'Command list error.';
-        }
-        var check = [];
-        arr.forEach( function (cmd) {
-            check.push(runCommand(cmd));
-        });
-        return check;
-    }
-
-    Macro.add('ui', {
-        handler : function () {
-
-            if (!Array.isArray(this.args) || !this.args.length) {
-                this.error('No commands passed to macro.');
-            }
-
-            var cmdList = this.args.flatten();
-
-            var ret = processCommandList(cmdList);
-
-            var errors = '';
-
-            ret = ret.filter( function (result) {
-                return typeof result === 'string';
-            });
-
-            errors = ret.join(' ');
-
-            if (ret.length && errors) {
-                this.error(errors);
-            }
-
-        }
-    });
-
-}());
-/* twine-user-script #6: "analytics.js" */
+/* twine-user-script #3: "analytics.js" */
 /*Google Analytics*/
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -1089,14 +421,14 @@ ga('set', 'checkStorageTask', null); // Disable cookie storage checking.
 ga('set', 'historyImportTask', null); // Disable history checking (requires reading from cookies).
 ga('send', 'pageview');
 window.pageviewSent = true;
-/* twine-user-script #7: "favicon.js" */
+/* twine-user-script #4: "favicon.js" */
 /* Favicon */
 $(document.createElement("link")).attr({
     rel  : "icon",
     type : "ico",
     href : "img/favicon.ico",
 }).appendTo(document.head);
-/* twine-user-script #8: "Keyboard Links" */
+/* twine-user-script #5: "keyboard-links.js" */
 /*  Keyboard links - Start */
 var KBIntervalID = 0;
 $(document).on(":passagerender", function (ev) {
@@ -1189,7 +521,7 @@ $(document).on("keyup", function (e) {
     }
 });
 /* Keyboard links - End */
-/* twine-user-script #9: "versioning.js" */
+/* twine-user-script #6: "versioning.js" */
 /* setup.versionString = function() {
     var versionNumber = Config.saves.version;
     var minorPatch = parseFloat(versionNumber / 100).toFixed(2);
@@ -1199,163 +531,7 @@ $(document).on("keyup", function (e) {
     } else {
         return "0." + minorPatch;
     }
-}; */</script><tw-passagedata pid="1" name="Holly" tags="init nobr char" position="100,100">/* Character Defaults */
-&lt;&lt;set $holly to {
-	&quot;name&quot;: {
-		&quot;first&quot;: &quot;Holly&quot;,
-		&quot;last&quot;: &quot;Johnson&quot;
-	},
-	&quot;pronouns&quot;: &quot;female&quot;,
-	&quot;role&quot;: {
-		&quot;doctor&quot;: false,
-		&quot;patient&quot;: false,
-        &quot;nurse&quot;: true
-	},
-    &quot;holding&quot;:[],
-	&quot;has&quot;:{
-		&quot;penis&quot;: false,
-		&quot;testicles&quot;: false,
-		&quot;clitoris&quot;: true,
-		&quot;vagina&quot;: true,
-		&quot;breasts&quot;: true
-	},
-	&quot;likes&quot;:{
-		&quot;men&quot;: true,
-		&quot;women&quot;: true,
-		&quot;trans&quot;: {
-			&quot;men&quot;: true,
-			&quot;women&quot;: true
-		}
-	},
-	&quot;arousal&quot;:  0
-}&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="Player Init" tags="init nobr character player" position="225,100">/* Player Character Defaults */
-&lt;&lt;if ndef $player&gt;&gt;
-	&lt;&lt;include &quot;Player Defaults&quot;&gt;&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="3" name="Player Defaults" tags="" position="350,100">&lt;&lt;set $player to {
-	&quot;name&quot;: {
-		&quot;first&quot;: &quot;Jo&quot;,
-		&quot;last&quot;: &quot;Blow&quot;
-	},
-	&quot;pronouns&quot;: &quot;enby&quot;,
-	&quot;role&quot;: {
-		&quot;doctor&quot;: true,
-		&quot;patient&quot;: true
-	},
-	&quot;has&quot;: {
-		&quot;penis&quot;: true,
-		&quot;testicles&quot;: true,
-		&quot;clitoris&quot;: true,
-		&quot;vagina&quot;: true,
-		&quot;breasts&quot;: true
-	},
-	&quot;limit&quot;: {
-		&quot;fisting&quot;: false,
-		&quot;gaping&quot;: false,
-		&quot;urine&quot;: false,
-		&quot;urethra&quot;: false,
-		&quot;cervix&quot;: false,
-		&quot;enemas&quot;: false
-	},
-	&quot;clothing&quot; : {
-		&quot;hat&quot;: &quot;&quot;,
-		&quot;glasses&quot;: &quot;&quot;,
-		&quot;top&quot;: &quot;shirt&quot;,
-		&quot;coat&quot;: &quot;lap coat&quot;,
-		&quot;hands&quot;: &quot;&quot;,
-		&quot;bra&quot;: &quot;bra&quot;,
-		&quot;underwear&quot;: &quot;briefs&quot;,
-		&quot;bottoms&quot;: &quot;pants&quot;,
-		&quot;socks&quot;: &quot;socks&quot;,
-		&quot;shoes&quot;: &quot;&quot;
-	},
-	&quot;arousal&quot;: 0
-}&gt;&gt;</tw-passagedata><tw-passagedata pid="4" name="Player" tags="" position="475,100">The player character.</tw-passagedata><tw-passagedata pid="5" name="Inventory Init" tags="init" position="600,100">&lt;&lt;newinventory &#39;$inventory&#39;&gt;&gt;</tw-passagedata><tw-passagedata pid="6" name="Doctors Bag" tags="nobr" position="725,100">&lt;&lt;if not $inventory.hasAll(&quot;a glass thermometer&quot;, &quot;a stethoscope&quot;, &quot;medical lubricant&quot;)&gt;&gt;
-&lt;ul&gt;
-    &lt;&lt;if not $inventory.has(&quot;a glass thermometer&quot;)&gt;&gt;
-        &lt;li&gt;
-            [[A glass thermometer | Glass Thermometer]]
-            &lt;&lt;linkreplace &quot;Take&quot;&gt;&gt;
-                &lt;&lt;pickup &#39;$inventory&#39; &#39;a glass thermometer&#39;&gt;&gt;
-                &lt;&lt;refresh&gt;&gt;
-            &lt;&lt;/linkreplace&gt;&gt;
-        &lt;/li&gt;
-    &lt;&lt;/if&gt;&gt;
-    &lt;&lt;if not $inventory.has(&quot;a stethoscope&quot;)&gt;&gt;
-        &lt;li&gt;
-            [[A stethoscope | Stethoscope]]
-            &lt;&lt;linkreplace&quot;Take&quot;&gt;&gt;
-                &lt;&lt;pickup &#39;$inventory&#39; &#39;a stethoscope&#39;&gt;&gt;
-                &lt;&lt;refresh&gt;&gt;
-            &lt;&lt;/linkreplace&gt;&gt;
-        &lt;/li&gt;
-    &lt;&lt;/if&gt;&gt;
-    &lt;&lt;if not $inventory.has(&quot;medical lubricant&quot;)&gt;&gt;
-        &lt;li&gt;
-            [[A tube of medical lubricant. | Medical Lubricant]]
-            &lt;&lt;linkreplace &quot;Take&quot;&gt;&gt;
-                &lt;&lt;pickup &#39;$inventory&#39; &#39;medical lubricant&#39;&gt;&gt;
-                &lt;&lt;refresh&gt;&gt;
-            &lt;&lt;/linkreplace&gt;&gt;
-        &lt;/li&gt;
-    &lt;&lt;/if&gt;&gt;
-&lt;/ul&gt;
-&lt;&lt;else&gt;&gt;
-Nothing, it&#39;s empty.
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="7" name="Glass Thermometer" tags="" position="850,100">A medical thermometer made of tempered glass enclosed red dyed alcohol, with stainless steel tip. Regular increments indicate the temperature as the alcohol is warmed and expands when the metal tip in inserted into a orifice or placed under an armpit.
-
-[[Return | previous()]]</tw-passagedata><tw-passagedata pid="8" name="Medical Lubricant" tags="" position="975,100">A blue and white tube of surgical lubricant, used by medical professional to lessen discomfort to the patient during medical and surgical procedures such as vaginal or rectal examinations.
-
-[[Return | previous()]]</tw-passagedata><tw-passagedata pid="9" name="Stethoscope" tags="" position="1100,100">A staple of doctors, this instrument is for listening to the action of someone&#39;s heart or breathing, has small disk-shaped resonator that is placed against the chest, and two tubes connected to earpieces.
-
-[[Return | previous()]]</tw-passagedata><tw-passagedata pid="10" name="Clinic Init" tags="init nobr location" position="1225,100">&lt;&lt;set $clinic to {
-    name: &quot;Paraphilic Clinic&quot;,
-    description: &quot;A world renown clinic for the study and facilitating of fetishes.&quot;
-}&gt;&gt;</tw-passagedata><tw-passagedata pid="11" name="Clinic" tags="location clinic" position="100,225">The building is large, opaque glass double doors set into a beige wall. The sign above the door states:
-
-!!$clinic.name
-!!!Your Kinks Matter.
-
-&lt;&lt;if visited() is 1&gt;&gt;
-[[Enter the doors. | Introduction]]
-&lt;&lt;else&gt;&gt;
-[[Enter the doors. | Reception]]
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="12" name="Hub Init" tags="init nobr" position="225,225">&lt;&lt;set $reception to {
-    name: &quot;Central Hub&quot;,
-    description: &quot;The center of navigation within the clinic, this is where you need to go first before getting anywhere.&quot;,
-}&gt;&gt;</tw-passagedata><tw-passagedata pid="13" name="Hub" tags="" position="350,225">The central intersection of the clinic.
-
-[[Medical Wing. | Medical Wing]]</tw-passagedata><tw-passagedata pid="14" name="Exam Room 1 Init" tags="init nobr" position="475,225">&lt;&lt;set $exam_room_1 to {
-    name: &quot;Exam Room 1&quot;,
-    description: &quot;A standard doctors office.&quot;,
-    parent: $medical_wing,
-    first_time: true
-}&gt;&gt;</tw-passagedata><tw-passagedata pid="15" name="Exam Room 1" tags="" position="600,225">&lt;&lt;set $player.location to $exam_room_1&gt;&gt;
-Fluorescent light illuminates what you could expect in a examination room. The examination table with its cover of paper stand against the right wall and a series of cabinets units with a sink stand to the left. You can see cotton balls and wooden tongue depressors in glass jars on the counters. 
-
-[[Leave | Medical Wing]]</tw-passagedata><tw-passagedata pid="16" name="Medical Wing Init" tags="init nobr" position="725,225">&lt;&lt;set $medical_wing to {
-    name: &quot;Medical Wing&quot;,
-    description: &quot;The primary area for the day to day business of the clinic.&quot;,
-    parent: $hub,
-    first_time: true
-}&gt;&gt;</tw-passagedata><tw-passagedata pid="17" name="Medical Wing" tags="" position="850,225">&lt;&lt;set $player.location to $reception&gt;&gt;
-You step through into a similar corridor lined with doors, each sporting a placard to the side of it with a name along with a clipboard  below it, and a light above it.
-
-[[Exam Room 1]]</tw-passagedata><tw-passagedata pid="18" name="Reception Init" tags="init nobr" position="975,225">&lt;&lt;set $reception to {
-    name: &quot;Reception&quot;,
-    description: &quot;The gateway to the clinic, there is a seating area and a reception desk.&quot;,
-    parent: &quot;Clinic&quot;,
-    first_time: true
-}&gt;&gt;</tw-passagedata><tw-passagedata pid="19" name="Reception" tags="" position="1100,225">&lt;&lt;set $player.location to $reception&gt;&gt;
-The reception area is well lit with a large desk in front of a few chairs arranged along the walls and a coffee table with some magazines arranged on it.
-
-Behind the desk is a wall of filing cabinets along with a copier and other office paraphernalia.
-
-[[Enter Hub | Hub]]</tw-passagedata><tw-passagedata pid="20" name="Locations Init" tags="init nobr" position="1225,225">&lt;&lt;set $locations to []&gt;&gt;</tw-passagedata><tw-passagedata pid="21" name="PassageDone" tags="" position="100,350"></tw-passagedata><tw-passagedata pid="22" name="PassageFooter" tags="" position="225,350">&lt;&lt;if passage() is &quot;Start&quot;&gt;&gt;
-&lt;&lt;else&gt;&gt;
-----
-Inventory:
-&lt;&lt;inventory &#39;$inventory&#39;&gt;&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="23" name="PassageHeader" tags="" position="350,350">&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;passage&#39;, &#39;loaded&#39;, passage());&gt;&gt;</tw-passagedata><tw-passagedata pid="24" name="PassageReady" tags="" position="475,350"></tw-passagedata><tw-passagedata pid="25" name="Start" tags="" position="600,350">[img[img/paraphilic-clinic-logo.svg]]
+}; */</script><tw-passagedata pid="1" name="PassageDone" tags="" position="100,100"></tw-passagedata><tw-passagedata pid="2" name="PassageFooter" tags="" position="225,100"></tw-passagedata><tw-passagedata pid="3" name="PassageHeader" tags="" position="350,100"></tw-passagedata><tw-passagedata pid="4" name="PassageReady" tags="" position="475,100"></tw-passagedata><tw-passagedata pid="5" name="Start" tags="" position="600,100">[img[img/paraphilic-clinic-logo.svg]]
 !&lt;&lt;print Story.title&gt;&gt;
 !!Your Kinks Matter
 
@@ -1363,7 +539,7 @@ Inventory:
 
 As a open source game you can view the source code, fork your own version, or contribute to making this one even better. If you&#39;re interested in any of that head on over to our [[Github|https://github.com/bdsmgeek/paraphilic-clinic/]].
 
-!!&lt;&lt;color &quot;red&quot; &quot;WARNING!!&quot;&gt;&gt;
+!!&lt;span style=&quot;color:red&quot;&gt;WARNING!!&lt;/span&gt;
 This game contains mature subject matter, intended for audiences over the age of 18, by continuing you acknowledge this and certify that you consuming this legally as prescribed by your local laws.
 
 This is a work of fiction non of the following happened in real life and is not intended as educational material, some acts portrayed in this work of fiction are either impossible in real life or can cause severe health complications. All characters are over the age of 18.
@@ -1371,9 +547,64 @@ This is a work of fiction non of the following happened in real life and is not 
 Play safe, sane, and consensual. 
 
 [[I agree.| Introduction]]
-[[GET ME OUT OF HERE!!!| http://www.google.com]]</tw-passagedata><tw-passagedata pid="26" name="StoryAuthor" tags="" position="725,350">BDSMGeek is a kinky geek trying his hand at writing a fetish game.
-[img[img/lib/GitHub-Mark-Light-32px.png][https://github.com/bdsmgeek/paraphilic-clinic/]][img[img/lib/Discord-Logo-White-32px.png][https://discord.gg/zfgvcKv]][img[img/lib/Patreon_Mark_White-32px.png][https://www.patreon.com/bdsmgeek]]</tw-passagedata><tw-passagedata pid="27" name="StoryBanner" tags="" position="850,350">[img[img/paraphilic-clinic-logo.svg]]</tw-passagedata><tw-passagedata pid="28" name="StoryInit" tags="" position="975,350">&lt;&lt;include-tag &quot;init&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="29" name="StoryMenu" tags="" position="1100,350">&lt;&lt;github-report-options&gt;&gt;
-[[Credits]]</tw-passagedata><tw-passagedata pid="30" name="StorySubtitle" tags="" position="1225,350">Your Kinks Matter.</tw-passagedata><tw-passagedata pid="31" name="Color Widget" tags="widget nobr" position="100,475">&lt;&lt;widget &quot;color&quot;&gt;&gt;&lt;&lt;set _colored_text to &quot;@@color:&quot;+$args[0]+&quot;;&quot;+$args[1]+&quot;@@&quot;&gt;&gt;&lt;&lt;print _colored_text&gt;&gt;&lt;&lt;/widget&gt;&gt;</tw-passagedata><tw-passagedata pid="32" name="Github Report Options" tags="widget" position="225,475">&lt;&lt;widget &quot;github-report-options&quot;&gt;&gt;
+[[GET ME OUT OF HERE!!!| http://www.google.com]]</tw-passagedata><tw-passagedata pid="6" name="StoryAuthor" tags="" position="725,100">BDSMGeek is a kinky geek trying his hand at writing a fetish game.
+[img[img/lib/GitHub-Mark-Light-32px.png][https://github.com/bdsmgeek/paraphilic-clinic/]][img[img/lib/Discord-Logo-White-32px.png][https://discord.gg/zfgvcKv]][img[img/lib/Patreon_Mark_White-32px.png][https://www.patreon.com/bdsmgeek]]</tw-passagedata><tw-passagedata pid="7" name="StoryBanner" tags="" position="850,100">[img[img/paraphilic-clinic-logo.svg]]</tw-passagedata><tw-passagedata pid="8" name="StoryInit" tags="" position="975,100">/* Loads all passages tagged as &quot;init&quot; */
+&lt;&lt;set _list to Story.lookup(&quot;tags&quot;, &quot;init&quot;)&gt;&gt;
+&lt;&lt;for _i to 0; _i lt _list.length; _i++&gt;&gt;
+	&lt;&lt;set _title to _list[_i].title&gt;&gt;
+	&lt;&lt;include _title&gt;&gt;
+&lt;&lt;/for&gt;&gt;</tw-passagedata><tw-passagedata pid="9" name="StoryMenu" tags="" position="1100,100">&lt;&lt;github-report-options&gt;&gt;
+[[Credits]]</tw-passagedata><tw-passagedata pid="10" name="StorySubtitle" tags="" position="1225,100">Your Kinks Matter.</tw-passagedata><tw-passagedata pid="11" name="Character Creation" tags="nobr" position="100,225">&lt;&lt;set _exit_passage to Story.lookup(&quot;tag&quot;, &quot;character_submit&quot;).title&gt;&gt;
+&lt;&lt;print _exit_passage&gt;&gt;
+&lt;div id=&quot;player-character-creation&quot;&gt;
+  &lt;h2&gt;Paraphilic Clinic Intake Form&lt;/h2&gt;
+  
+  &lt;table&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Your first name:&lt;/td&gt;
+      &lt;td&gt;&lt;&lt;textbox &quot;$player.name.first&quot; &quot;John&quot; autofocus&gt;&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Your last name:&lt;/td&gt;
+      &lt;td&gt;&lt;&lt;textbox &quot;$player.name.last&quot; &quot;Doe&quot; &gt;&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/table&gt;
+
+  &lt;h3&gt;Your Pronouns:&lt;/h3&gt;
+  &lt;&lt;listbox &quot;$player.pronouns&quot; autoselect&gt;&gt;
+    &lt;&lt;option &quot;He/Him/His&quot; &quot;male&quot;&gt;&gt;
+    &lt;&lt;option &quot;She/Her/Hers&quot; &quot;female&quot;&gt;&gt;
+    &lt;&lt;option &quot;They/Their/Theirs&quot; &quot;enby&quot;&gt;&gt;
+  &lt;&lt;/listbox&gt;&gt;
+
+  &lt;h3&gt;Role/s you are applying for:&lt;/h3&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;label&gt;&lt;&lt;checkbox &quot;$player.role.doctor&quot; false true checked&gt;&gt; Doctor&lt;/label&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;label&gt;&lt;&lt;checkbox &quot;$player.role.patient&quot; false true &gt;&gt; Patient&lt;/label&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;h3&gt;You have:&lt;/h3&gt;
+  &lt;table&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;label&gt;&lt;&lt;checkbox &quot;$player.has.penis&quot; false true checked&gt;&gt; Penis&lt;/label&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;label&gt;&lt;&lt;checkbox &quot;$player.has.clitoris&quot; false true&gt;&gt; Clitoris&lt;/label&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;label&gt;&lt;&lt;checkbox &quot;$player.has.breasts&quot; false true&gt;&gt; Breasts&lt;/label&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;label&gt;&lt;&lt;checkbox &quot;$player.has.testicles&quot; false true checked&gt;&gt; Testicles&lt;/label&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;label&gt;&lt;&lt;checkbox &quot;$player.has.vagina&quot; false true&gt;&gt; Vagina&lt;/label&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/table&gt;
+  &lt;h3&gt;
+    Hard Limits 
+    &lt;span&gt;(things you do not want to see/read about)&lt;/span&gt;
+  &lt;/h3&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;label&gt;&lt;&lt;checkbox &quot;$player.limit.urine&quot; false true&gt;&gt; Urine&lt;/label&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+  
+  &lt;h3&gt;[[Submit form. | _exit_passage]]&lt;/h3&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="12" name="Character Load" tags="" position="225,225"></tw-passagedata><tw-passagedata pid="13" name="Github Report Options" tags="widget" position="350,225">&lt;&lt;widget &quot;github-report-options&quot;
 &lt;&lt;set $bugUrl to String.format(&quot;https://github.com/bdsmgeek/paraphilic-clinic/issues/new?labels={0}&amp;title={1}:%20{2}&amp;body=Passage%3A%20{2}%0ASeverity%3A%20Broke%20the%20Game%2C%20Threw%20An%20Error%2C%20Looks%20Bad%0AShort%20Description%20%28error%20codes%20and%20or%20screencaps%20apreciated%29%3A%0A%0ASteps%20to%20Reproduce%3A&quot;, &quot;bug&quot;, &quot;Bug%20Found%3A&quot;, passage())&gt;&gt;
 &lt;&lt;set $spellingErrorUrl to String.format(&quot;https://github.com/bdsmgeek/paraphilic-clinic/issues/new?labels={0}&amp;title={1}:%20{2}&amp;body=Passage%3A%20{2}%0ATarget%20Sentence%3A%20%0ACorrect%20Sentence%3A&quot;, &quot;spellcheck&quot;, &quot;Spelling%20Error&quot;, passage())&gt;&gt;
 &lt;&lt;set $featureUrl to String.format(&quot;https://github.com/bdsmgeek/paraphilic-clinic/issues/new?labels={0}&amp;title={1}&amp;body=Passage%3A%20{2}%0ADescription%20of%20the%20Feature%3A%0AInclude%20any%20references%20or%20possible%20libraries%20that%20may%20exist.%20Also%20make%20sure%20you%27ve%20searched%20in%20issues%20if%20someone%20hasn%27t%20already%20put%20in%20a%20similiar%20request%20upvote%20that%20if%20it%20exists%20instead.&quot;, &quot;feature&quot;, &quot;Feature%20Request%3A%20Provide%20a%20brief%20description%20of%20the%20feature&quot;, passage())&gt;&gt;
@@ -1385,14 +616,31 @@ Play safe, sane, and consensual.
 [[Request A Feature | $featureUrl]]
 [[Request A Story | $storyUrl]]
 &lt;&lt;/capture&gt;&gt;
-&lt;&lt;/widget&gt;&gt;</tw-passagedata><tw-passagedata pid="33" name="Include Tag Widget" tags="widget nobr" position="350,475">&lt;&lt;widget &quot;include-tag&quot;&gt;&gt;
-/* Loads all passages tagged as &quot;post_char_submit&quot; */
-&lt;&lt;set _list to Story.lookup(&quot;tags&quot;, $args)&gt;&gt;
+&lt;&lt;/widget&gt;&gt;</tw-passagedata><tw-passagedata pid="14" name="Exam Room 1 Investigate" tags="" position="475,225">[[Investigate counter. | Exam Room 1 Investigate Counter]]
+[[Investigate upper cabinets. | Exam Room 1 Investigate Cabinets Upper]]
+[[Investigate under sink. | Exam Room 1 Investigate Under Sink]]</tw-passagedata><tw-passagedata pid="15" name="Exam Room 1 Investigate Counter" tags="" position="600,225">You look on the counter and find:
+* a doctors bag &lt;&lt;link&gt;&gt;
+* a jar of tongue depressors
+* a tube of lubricant
+* a jar of cotton balls
+
+[[Back | Exam Room 1 Investigate]]</tw-passagedata><tw-passagedata pid="16" name="Investigate" tags="" position="725,225">/*TODO*/</tw-passagedata><tw-passagedata pid="17" name="Navigation" tags="widget" position="850,225">/*
+  Description:
+    Simple Navigation System using tags.
+  Options:
+  Usage:
+    &lt;&lt;nav &quot;room&quot;&gt;&gt; will load all passages with the room tag and the &quot;nav&quot; tag
+    Example Navigation Passage:
+      :: Room Navigation [nav room]
+      [[Other Room]]
+*/
+&lt;&lt;widget &quot;nav&quot;&gt;&gt;
+&lt;&lt;set _list to Story.lookup(&quot;tags&quot;, [$arg[0], &quot;nav&quot;])&gt;&gt;
 &lt;&lt;for _i to 0; _i lt _list.length; _i++&gt;&gt;
 	&lt;&lt;set _title to _list[_i].title&gt;&gt;
-	&lt;&lt;include _title&gt;&gt;
+	&lt;&lt;include [[_title]]&gt;&gt;
 &lt;&lt;/for&gt;&gt;
-&lt;&lt;/widget&gt;&gt;</tw-passagedata><tw-passagedata pid="34" name="Pronouns" tags="widget" position="475,475">/* Description:
+&lt;&lt;/widget&gt;&gt;</tw-passagedata><tw-passagedata pid="18" name="Pronouns" tags="widget" position="975,225">/* Description:
      Simple subject pronoun widget.
    Options:
      &quot;male&quot;     = he
@@ -1441,174 +689,35 @@ Play safe, sane, and consensual.
    Use:
      &lt;&lt;theirs &quot;male&quot;&gt;&gt; = his
 */
-&lt;&lt;widget &quot;theirs&quot;&gt;&gt;&lt;&lt;switch $args[0]&gt;&gt;&lt;&lt;case &quot;male&quot;&gt;&gt;himself&lt;&lt;case &quot;female&quot;&gt;&gt;herself&lt;&lt;default&gt;&gt;themselves&lt;&lt;/switch&gt;&gt;&lt;&lt;/widget&gt;&gt;</tw-passagedata><tw-passagedata pid="35" name="Refresh Widget" tags="widget nobr" position="600,475">&lt;&lt;widget &quot;refresh&quot;&gt;&gt;&lt;&lt;set _passage to passage()&gt;&gt;&lt;&lt;goto _passage&gt;&gt;&lt;&lt;/widget&gt;&gt;</tw-passagedata><tw-passagedata pid="36" name="Character Creation" tags="nobr" position="725,475">&lt;h2&gt;Paraphilic Clinic Intake Form&lt;/h2&gt;
+&lt;&lt;widget &quot;theirs&quot;&gt;&gt;&lt;&lt;switch $args[0]&gt;&gt;&lt;&lt;case &quot;male&quot;&gt;&gt;himself&lt;&lt;case &quot;female&quot;&gt;&gt;herself&lt;&lt;default&gt;&gt;themselves&lt;&lt;/switch&gt;&gt;&lt;&lt;/widget&gt;&gt;</tw-passagedata><tw-passagedata pid="19" name="Holly Clinic Tour Main Hub" tags="" position="1100,225">“Here we have main junction of the facility, on our left we have the entrance to the residential section, your rooms will be that way. Ahead is our dining and recreational center, it exits out onto our lovey green space. On our right are the entrances to the examination rooms and labs, our doctors also have offices there.”
 
-&lt;h3&gt;&lt;&lt;link &quot;Reset Form to Defaults&quot;&gt;&gt;&lt;&lt;forget $player&gt;&gt;&lt;&lt;include &quot;Player Defaults&quot;&gt;&gt;&lt;&lt;refresh&gt;&gt;&lt;&lt;/link&gt;&gt;
-&lt;/h3&gt;
+Holly turns around and looks at you.
 
-&lt;table&gt;
-  &lt;tr&gt;
-    &lt;td&gt;Your first name:&lt;/td&gt;
-    &lt;td&gt;&lt;&lt;textbox &quot;$player.name.first&quot; $player.name.first autofocus&gt;&gt;&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;Your last name:&lt;/td&gt;
-    &lt;td&gt;&lt;&lt;textbox &quot;$player.name.last&quot; $player.name.last &gt;&gt;&lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/table&gt;
+“What would you like to see first?” she asks. 
 
-&lt;h3&gt;Your Pronouns:&lt;/h3&gt;
-&lt;&lt;switch $player.pronouns&gt;&gt;
-  &lt;&lt;case &quot;male&quot;&gt;&gt;&lt;&lt;set _male_selected to &quot;selected&quot;&gt;&gt;
-  &lt;&lt;case &quot;female&quot;&gt;&gt;&lt;&lt;set _female_selected to &quot;selected&quot;&gt;&gt;
-  &lt;&lt;default&gt;&gt; &lt;&lt;set _enby_selected to &quot;selected&quot;&gt;&gt;
-&lt;&lt;/switch&gt;&gt;
+&lt;&lt;include &quot;Main Hub Nav&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="20" name="Exam Room 1 Holly Bottom" tags="" position="1225,225">&quot;Oh Doctor, I definitely feel a bit warm.&quot; she looks at you with a knowing grin.
 
-&lt;&lt;listbox &quot;$player.pronouns&quot;&gt;&gt;
-  &lt;&lt;option &quot;He/Him/His&quot; &quot;male&quot; _male_selected&gt;&gt;
-  &lt;&lt;option &quot;She/Her/Hers&quot; &quot;female&quot; _female_selected&gt;&gt;
-  &lt;&lt;option &quot;They/Their/Theirs&quot; &quot;enby&quot; _enby_selected&gt;&gt;
-&lt;&lt;/listbox&gt;&gt;
+&quot;Do you need anything for the examination Doctor? I&#39;m sure there&#39;s something here to help you.&quot; 
 
-&lt;h3&gt;Role/s you are applying for:&lt;/h3&gt;
-&lt;&lt;set _doctor to &quot;&quot;&gt;&gt;
-&lt;&lt;set _patient to &quot;&quot;&gt;&gt;
-&lt;&lt;if $player.role.doctor&gt;&gt;&lt;&lt;set _doctor to &quot;checked&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;
-&lt;&lt;if $player.role.patient&gt;&gt;&lt;&lt;set _patient to &quot;checked&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;
+&quot;Or do you think this needs a more personal touch?&quot; she adds with a wink and lip bite.
 
-&lt;ul&gt;
-  &lt;li&gt;&lt;label&gt;&lt;&lt;checkbox &quot;$player.role.doctor&quot; false true _doctor&gt;&gt; Doctor&lt;/label&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;label&gt;&lt;&lt;checkbox &quot;$player.role.patient&quot; false true _patient&gt;&gt; Patient&lt;/label&gt;&lt;/li&gt;
-&lt;/ul&gt;
+[[Return|previous()]]</tw-passagedata><tw-passagedata pid="21" name="Clinic Tour Exam Room 1" tags="dialog" position="100,350">&lt;&lt;if $player.role.doctor&gt;&gt;[[Nurse you look flush, I think you could use a check up. | &quot;Exam Room 1 Holly Bottom&quot;]]&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $player.role.patient&gt;&gt;[[Nurse I&#39;m not feeling well I think I could use a check up. | &quot;Exam Room 1 Holly Top&quot;]]&lt;&lt;/if&gt;&gt;
+[[Return | previous()]]</tw-passagedata><tw-passagedata pid="22" name="Clinic Tour" tags="" position="225,350">&lt;&lt;set $player.with.holly to true&gt;&gt;
 
-&lt;h3&gt;You have:&lt;/h3&gt;
-  &lt;&lt;set _penis to &quot;&quot;&gt;&gt;
-  &lt;&lt;set _testicles to &quot;&quot;&gt;&gt;
-  &lt;&lt;set _clitoris to &quot;&quot;&gt;&gt;
-  &lt;&lt;set _vagina to &quot;&quot;&gt;&gt;
-  &lt;&lt;set _breasts to &quot;&quot;&gt;&gt;
-  &lt;&lt;if $player.has.penis&gt;&gt;&lt;&lt;set _penis to &quot;checked&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;
-  &lt;&lt;if $player.has.testicles&gt;&gt;&lt;&lt;set _testicles to &quot;checked&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;
-  &lt;&lt;if $player.has.clitoris&gt;&gt;&lt;&lt;set _clitoris to &quot;checked&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;
-  &lt;&lt;if $player.has.vagina&gt;&gt;&lt;&lt;set _vagina to &quot;checked&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;
-  &lt;&lt;if $player.has.breasts&gt;&gt;&lt;&lt;set _breasts to &quot;checked&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;
+&quot;Wonderful!&quot; Holly exclaims and gets up from her chair and moves around the corner of the desk.
 
-&lt;table&gt;
-  &lt;tr&gt;
-    &lt;td&gt;&lt;label&gt;&lt;&lt;checkbox &quot;$player.has.penis&quot; false true _penis&gt;&gt; Penis&lt;/label&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;label&gt;&lt;&lt;checkbox &quot;$player.has.clitoris&quot; false true _clitoris&gt;&gt; Clitoris&lt;/label&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;label&gt;&lt;&lt;checkbox &quot;$player.has.breasts&quot; false true _breasts&gt;&gt; Breasts&lt;/label&gt;&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;&lt;label&gt;&lt;&lt;checkbox &quot;$player.has.testicles&quot; false true _testicles&gt;&gt; Testicles&lt;/label&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;label&gt;&lt;&lt;checkbox &quot;$player.has.vagina&quot; false true _vagina&gt;&gt; Vagina&lt;/label&gt;&lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/table&gt;
-
-&lt;h3&gt;
-  &lt;&lt;color &quot;red&quot; &quot;Hard Limits&quot;&gt;&gt;
-&lt;/h3&gt;
-&lt;p&gt;You will always be in control of what you want to do and will be warned about potentially revolting situations. We do however want to ensure that if you are severely opposed to or traumatized by a subject that you do not get exposed to it. You may miss out on storyline content if you do select any of these.&lt;/p&gt;
-
-&lt;&lt;set _fisting to &quot;&quot;&gt;&gt;
-&lt;&lt;set _gaping to &quot;&quot;&gt;&gt;
-&lt;&lt;set _urine to &quot;&quot;&gt;&gt;
-&lt;&lt;set _urethra to &quot;&quot;&gt;&gt;
-&lt;&lt;set _cervix to &quot;&quot;&gt;&gt;
-&lt;&lt;set _enemas to &quot;&quot;&gt;&gt;
-&lt;&lt;if $player.limit.fisting&gt;&gt;&lt;&lt;set _fisting to &quot;checked&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;
-&lt;&lt;if $player.limit.gaping&gt;&gt;&lt;&lt;set _gaping to &quot;checked&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;
-&lt;&lt;if $player.limit.urine&gt;&gt;&lt;&lt;set _urine to &quot;checked&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;
-&lt;&lt;if $player.limit.urethra&gt;&gt;&lt;&lt;set _urethra to &quot;checked&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;
-&lt;&lt;if $player.limit.cervix&gt;&gt;&lt;&lt;set _cervix to &quot;checked&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;
-&lt;&lt;if $player.limit.enemas&gt;&gt;&lt;&lt;set _enemas to &quot;checked&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;label&gt;&lt;&lt;checkbox &quot;$player.limit.fisting&quot; false true _fisting&gt;&gt; Fisting&lt;/label&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;label&gt;&lt;&lt;checkbox &quot;$player.limit.gaping&quot; false true _gaping&gt;&gt; Gaping&lt;/label&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;label&gt;&lt;&lt;checkbox &quot;$player.limit.urine&quot; false true _urine&gt;&gt; Urine/Watersports&lt;/label&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;label&gt;&lt;&lt;checkbox &quot;$player.limit.urethra&quot; false true _urethra&gt;&gt; Urethra Insertions&lt;/label&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;label&gt;&lt;&lt;checkbox &quot;$player.limit.cervix&quot; false true _cervix&gt;&gt; Cervix Insertions&lt;/label&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;label&gt;&lt;&lt;checkbox &quot;$player.limit.enemas&quot; false true _enemas&gt;&gt; Enemas&lt;/label&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt;[[Submit form. | Character Submit]]&lt;/h3&gt;</tw-passagedata><tw-passagedata pid="37" name="Character Submit" tags="nobr" position="850,475">&lt;&lt;remember $player&gt;&gt;&lt;&lt;set ga(&#39;send&#39;, &#39;event&#39;, &#39;player&#39;, &#39;created&#39;, $player)&gt;&gt;
-&lt;&lt;include-tag &quot;post_char_submit&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="38" name="Clinic Tour" tags="" position="975,475">&quot;Wonderful!&quot; Holly exclaims and gets up from her chair and moves around the corner of the desk. &quot;Lydia, I&#39;m going to go give $player.name.first here a tour, cover for me okay?&quot; Holly calls out to a nurse that was filling some paperwork into the cabinets behind the desk.
+&quot;Lydia, I&#39;m going to go give a tour, cover for me okay?&quot; Holly calls out to a nurse that was filling some paperwork into the cabinets behind the desk.
 
 &quot;Sure thing Holly!&quot; the dark haired nurse replies, turning around to give you an encouraging smile and nod. &quot;Enjoy the tour.&quot;
 
-Holly starts walking down the corridor, looking back to beckon you with her. You take a few quick steps to fall in behind her. The short skirt of her uniform hugs her white nylon covered butt, accentuating her hips as she walks. 
+Holly starts walking down the corridor, looking back to beckon you with her. You take a few quick steps to fall in behind her. The short skirt of her uniform hugs her white nylon covered butt, accentuating her hips as she walks.
 
-&quot;Here at the Paraphilic Clinic we strive to create a safe and positive environment for both our patients and doctors. As you already saw that was our waiting and reception area. Either myself or Lydia should be there at all time to help anyone that needs it!” her voice taking on a still pleasant but businesslike tone, the kind that you develop from saying the same thing over and over again while getting paid to do it. Walking along the corridor that goes behind the reception area you come across a set of double doors, Holly proceeds to go through them.
+&quot;Here at the Paraphilic Clinic we strive to create a safe and positive environment for both our patients and doctors. As you already saw that was our waiting and reception area. Either myself or Lydia should be there at all time to help anyone that needs it!” her voice taking on a still pleasant but businesslike tone, the kind that you develop from saying the same thing over and over again while getting paid to do it.
 
-[[Follow her through the doors.| Clinic Tour Main Hub]]</tw-passagedata><tw-passagedata pid="39" name="Clinic Tour Main Hub" tags="" position="1100,475">“Here we have main junction of the facility.” Holly turns around and looks at you. &quot;We are still under construction so the room availability is limited. What would you like to see first?”
+Walking along the corridor that goes behind the reception area you come across a set of double doors, Holly  proceeds to go through them.
 
-[[Exam Room 1 - General Practitioner Office | Clinic Tour Exam Room 1]]</tw-passagedata><tw-passagedata pid="40" name="Clinic Tour Exam Room 1" tags="" position="1225,475">Holly leads you to the door marked Exam Room 1 and opens the door. Fluorescent light illuminates what you could expect in a examination room. The examination table with its cover of paper stand against the right wall and a series of cabinets units with a sink stand to the left. On the counter you can see cotton balls and wooden tongue depressors in glass jars on the counters. A black leather doctors bag sits in a corner.
-
-&lt;&lt;include &quot;Clinic Tour Exam Room 1 Options&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="41" name="Clinic Tour Exam Room 1 Options" tags="" position="100,600">&lt;&lt;if $player.role.doctor&gt;&gt;[[&quot;Nurse you look flush, I think you could use a check up.&quot; | &quot;Perform Checkup&quot;]]&lt;&lt;/if&gt;&gt;
-&lt;&lt;if $player.role.patient&gt;&gt;[[&quot;Nurse I&#39;m not feeling well I think I could use a check up.&quot; | &quot;Get Checkup&quot;]]&lt;&lt;/if&gt;&gt;
-[[&quot;Take a look around.&quot; | &quot;Investigate Exam Room 1&quot;]]
-&lt;&lt;return&gt;&gt;</tw-passagedata><tw-passagedata pid="42" name="Investigate Exam Room 1" tags="" position="225,600">What do you want to investigate?
-
-[[Check Cabinets]]
-[[Check Doctors Bag]]
-[[Check Sink]]
-[[Return | Clinic Tour Exam Room 1]]</tw-passagedata><tw-passagedata pid="43" name="Check Cabinets" tags="" position="350,600">You check the cabinets and find nothing.
-
-&lt;&lt;include &quot;Investigate Exam Room 1&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="44" name="Check Doctors Bag" tags="" position="475,600">Taking a look into the black leather bag, you find:
-
-&lt;&lt;include &quot;Doctors Bag&quot;&gt;&gt;
-&lt;&lt;include &quot;Investigate Exam Room 1&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="45" name="Check Sink" tags="" position="600,600">A stainless steel sink with a automatic soap dispenser.
-
-&lt;&lt;include &quot;Investigate Exam Room 1&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="46" name="Perform Checkup" tags="" position="725,600">&quot;Oh Doctor, I definitely feel a bit warm.&quot; a knowing grin adorns her plump lips, as a slight blush creeps up her cheeks. &quot;Do you need anything for the examination Doctor? I&#39;m sure there&#39;s something here to help you. Or do you think this needs a more personal touch?&quot; she adds with a wink and lip bite.
-
-[[A doctor needs his tools. | Investigate Exam Room 1]]
-[[I got all the tools I need right here!| Perform Checkup Continued]]
-[[I&#39;ve changed my mind. | Clinic Tour Exam Room 1]]</tw-passagedata><tw-passagedata pid="47" name="Perform Checkup Continued" tags="" position="850,600">Holly seems rather willing and excited, with all this. A little bit shy as well as she keeps casting her gaze down.
-
-&quot;Well then Holly lets get you up on the table.&quot; you say pointing at the examination table to the side. Holly climbs the small stepping stool to get onto the table, her shapely behind bouncing with each step. The paper crinkles as she sits down on it and you catch a flash of white panties in the processes. &quot;Now Holly can you tell me how you&#39;re feeling?&quot;
-
-&quot;Well Doctor, I feel all warm, hot even, my heart is going so fast...&quot;
-
-&quot;Mhm, anything else you&#39;re experiencing Holly?&quot;
-
-&quot;It&#39;s embarrassing...&quot; her cheeks begin to become a darker shade of red. &quot;but I&#39;m getting all itchy.&quot;
-
-&quot;Itchy how Holly? Where are you getting itchy?&quot;
-
-&quot;Umm, you know...&quot; she says, averting her eyes from yours.
-
-&quot;No Holly, I don&#39;t dear. Maybe if you show me?&quot; The paper cover of the examination table crinkles as Holly squirms. &quot;Hmm, well it looks like we will need to do a thorough examination won&#39;t we?&quot;
-&lt;&lt;include &quot;Perform Checkup Nav&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="48" name="Perform Checkup Nav" tags="" position="975,600">&lt;&lt;nobr&gt;&gt;
-&lt;&lt;set _base to &quot;You Check Holly&#39;s&quot;&gt;&gt;
-&lt;&lt;set _temperature to _base+&quot; Temperature&quot;&gt;&gt;
-&lt;&lt;if $inventory.has(&quot;a glass thermometer&quot;)&gt;&gt;&lt;&lt;set _temperature to _temperature+&quot; With Thermometer&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;
-&lt;&lt;set _heartbeat to _base+&quot; Heartbeat&quot;&gt;&gt;
-&lt;&lt;if $inventory.has(&quot;a stethoscope&quot;)&gt;&gt;&lt;&lt;set _heartbeat to _heartbeat+&quot; With Stethoscope&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;
-&lt;&lt;set _itchy to _base+&quot; Itchy Spots&quot;&gt;&gt;
-&lt;&lt;if $inventory.has(&quot;medical lubricant&quot;)&gt;&gt;&lt;&lt;set _itchy to _itchy+&quot; With Lubricant&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;
-&lt;&lt;/nobr&gt;&gt;
-&lt;&lt;actions [[&quot;Check Holly&#39;s Temperature&quot; | _temperature]] [[&quot;Listen to Holly&#39;s Heartbeat&quot; | _heartbeat]] [[&quot;Check Holly&#39;s &#39;itchy spots&#39;.&quot; | _itchy]]&gt;&gt;
-[[All done. | Clinic Tour Exam Room 1]]</tw-passagedata><tw-passagedata pid="49" name="You Check Holly&#39;s Temperature" tags="" position="1100,600">You smile at Holly reassuringly. &quot;Now Holly lets check your temperature.&quot; You raise you hand to her forehead and place it against the warm, smooth pale skin moving a few of the golden hairs that have came loose from her nurses cap. Holly closes her eyes and seems to enjoy the cooler temperature of your hand as it caresses her forehead. You lean in and place your forehead against the back of hand so that your face is barely inch away from Holly&#39;s, her eyes pop open as she feels the shift and is now looking into your eyes.
-
-&lt;&lt;linkreplace &quot;Kiss her.&quot;&gt;&gt;&lt;&lt;set $holly.arousal += 1&gt;&gt;You lean in slightly closing the gap between you two, gently placing a kiss on her plump red lips. Holly shivers, and grabs the from of your $player.clothing.top holding onto you as her lips push into yours with a lustful eagerness. It doesn&#39;t take long for your tongues to start dancing within the moist confines of your lip lock. Holly moans into your mouth, you can&#39;t help but feel yourself get aroused. &lt;&lt;if $player.has.penis or $player.has.clitoris&gt;&gt;Your &lt;&lt;if $player.has.penis and $player.has.clitoris&gt;&gt;cock and clit have&lt;&lt;elseif $player.has.clitoris&gt;&gt;clit has&lt;&lt;elseif $player.has.penis&gt;&gt;dick has&lt;&lt;/if&gt;&gt; gone hard in the confines of your &lt;&lt;print $player.clothing.underwear&gt;&gt;.&lt;&lt;/if&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;
-
-&quot;Oh my nurse, you&#39;re definitely hot.&quot; you smile as you pull away. The beautiful nurse smiles back.
-
-[[Continue | Perform Checkup Nav]]</tw-passagedata><tw-passagedata pid="50" name="You Check Holly&#39;s Temperature With Thermometer" tags="" position="1225,600">&lt;&lt;include &quot;Under Construction&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="51" name="You Check Holly&#39;s Heartbeat" tags="" position="100,725">&quot;Let&#39;s check that heartbeat and breathing of yours Holly. Sit up straight please. I&#39;m going to have to listen in.&quot; &lt;&lt;if $holly.arousal &gt;= 1&gt;&gt;As you move closer Holly proceeds to remove her top, loosening a few strands of hair and giving you a full view of of her generous breast, restrained only by a lacy white bra.&lt;&lt;else&gt;&gt;You proceed to listen to her breathing through her top.&lt;&lt;/if&gt;&gt;
-
-&quot;Well nothing to worry about here, you have a fine pair of ... lungs, Holly.&quot;
-
-[[Continue | Perform Checkup Nav]]</tw-passagedata><tw-passagedata pid="52" name="You Check Holly&#39;s Heartbeat With Stethoscope" tags="" position="225,725">&lt;&lt;include &quot;Under Construction&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="53" name="You Check Holly&#39;s Itchy Spots" tags="" position="350,725">&lt;&lt;include &quot;Under Construction&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="54" name="You Check Holly&#39;s Itchy Spots With Lubricant" tags="" position="475,725">&lt;&lt;include &quot;Under Construction&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="55" name="Get Checkup" tags="" position="600,725">&quot;Oh you poor thing!&quot; Holly exclaims her generous breasts jiggling as she saunters over to you. Taking your hand she leads you over to the examination table. &quot;What&#39;s wrong?&quot;&lt;&lt;nobr&gt;&gt;
-&lt;&lt;set _temperature to &quot;Holly Checks Your Temperature&quot;&gt;&gt;
-&lt;&lt;if $inventory.has(&quot;a glass thermometer&quot;)&gt;&gt;&lt;&lt;set _temperature to _temperature+&quot; With Thermometer&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;
-&lt;&lt;set _heartbeat to &quot;Holly Checks Your Heartbeat&quot;&gt;&gt;
-&lt;&lt;if $inventory.has(&quot;a stethoscope&quot;)&gt;&gt;&lt;&lt;set _heartbeat to _heartbeat+&quot; With Stethoscope&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;
-&lt;&lt;set _itchy to &quot;Holly Checks Your Itchy Spots&quot;&gt;&gt;
-&lt;&lt;if $inventory.has(&quot;medical lubricant&quot;)&gt;&gt;&lt;&lt;set _itchy to _itchy+&quot; With Lubricant&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;
-&lt;&lt;/nobr&gt;&gt;
-&lt;&lt;actions [[&quot;I&#39;m getting so hot!&quot; | _temperature]] [[&quot;My heart is going to fast.&quot; | _heartbeat]] [[&quot;I&#39;m getting all itchy.&quot; | _itchy]]&gt;&gt;
-&lt;&lt;return&gt;&gt;</tw-passagedata><tw-passagedata pid="56" name="Holly Checks Your Temperature" tags="" position="725,725">&lt;&lt;include &quot;Under Construction&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="57" name="Holly Checks Your Temperature With Thermometer" tags="" position="850,725">&lt;&lt;include &quot;Under Construction&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="58" name="Holly Checks Your Heartbeat" tags="" position="975,725">&lt;&lt;include &quot;Under Construction&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="59" name="Holly Checks Your Heartbeat With Stethoscope" tags="" position="1100,725">&lt;&lt;include &quot;Under Construction&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="60" name="Holly Checks Your Itchy Spots" tags="" position="1225,725">&lt;&lt;include &quot;Under Construction&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="61" name="Holly Checks Your Itchy Spots With Lubricant" tags="" position="100,850">&lt;&lt;include &quot;Under Construction&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="62" name="Credits" tags="DisableKeyLinks" position="225,850">Thank you for playing Paraphilic Clinic, I hope you liked it!
+[[Follow her through the doors.| Holly Clinic Tour Main Hub]]</tw-passagedata><tw-passagedata pid="23" name="Credits" tags="DisableKeyLinks" position="350,350">Thank you for playing Paraphilic Clinic, I hope you liked it!
 
 What you can do next:
 
@@ -1622,15 +731,125 @@ Shout out to AoF who&#39;s game inspired me and who&#39;s unwavering support and
 [img[Summertime Saga | https://summertimesaga.com/assets/img/logo.png][https://summertimesaga.com]]
 Shout out to DarkCookie and crew who&#39;s professionalism and hard work create a goal for me to strive toward.
 
-[[Play Again!|Start]]</tw-passagedata><tw-passagedata pid="63" name="Under Construction" tags="" position="350,850">[img[Under Construction | img/under-construction.svg]]
+[[Play Again!|Start]]</tw-passagedata><tw-passagedata pid="24" name="InDevelopment" tags="" position="475,350">[img[Under Construction | img/under-construction.svg]]
 This section is currently under development, feel free to subscribe to our Discord or Patreon to get updates.
 
-&lt;&lt;return&gt;&gt;
-[[Finish|Credits]]</tw-passagedata><tw-passagedata pid="64" name="Introduction" tags="" position="475,850">&quot;Good morning!&quot; says a young nurse manning the front desk with an exceptionally welcoming tone. Her blonde hair is pulled back into a neat bun, with a white nurse cap sitting on it. She hands you a tablet &quot;Please sign in.&quot; 
+[[Go Back|previous()]]
+[[Finish|Credits]]</tw-passagedata><tw-passagedata pid="25" name="Introduction" tags="" position="600,350">&quot;Good morning!&quot; says a young nurse manning the front desk with an exceptionally welcoming tone. Her blonde hair is pulled back into a neat bun, with a white nurse cap sitting on it.
 
-[[Sign in. | Character Creation]]</tw-passagedata><tw-passagedata pid="65" name="Introduction Signed In" tags="post_char_submit" position="600,850">&quot;Thank you so much!&quot; Holly takes the form from you and gives it a look before putting it into a folder and handing it off to the nurse behind her. When she turns back she asks &quot;Did you want to take a tour of the facility?&quot;
+&quot;Please sign in.&quot; she says as she hands you a tablet.
 
-[[Yes, please.| Clinic Tour]]</tw-passagedata></tw-storydata></div>
+[[Sign in. | Character Creation]]</tw-passagedata><tw-passagedata pid="26" name="Introduction Signed In" tags="character_submit" position="725,350">&lt;&lt;remember $player&gt;&gt;
+&quot;Thank you so much!&quot; Holly takes the form from you and gives it a look before putting it into a folder and handing it off to the nurse behind her.
+
+&quot;Did you want to take a tour of the facility?&quot; she asks as she turns back.
+
+[[Yes, please.| Holly Clinic Tour]]
+[[No, thank you.| Reception]]</tw-passagedata><tw-passagedata pid="27" name="Holly" tags="init nobr char" position="850,350">/* Character Defaults */
+&lt;&lt;set $holly to {
+	&quot;name&quot;: {
+		&quot;first&quot;: &quot;Holly&quot;,
+		&quot;last&quot;: &quot;Johnson&quot;
+	},
+	&quot;pronouns&quot;: &quot;female&quot;,
+	&quot;role&quot;: {
+		&quot;doctor&quot;: false,
+		&quot;patient&quot;: false,
+        &quot;nurse&quot;: true
+	},
+    &quot;holding&quot;:[],
+	&quot;has&quot;:{
+		&quot;penis&quot;: false,
+		&quot;testicles&quot;: false,
+		&quot;clitoris&quot;: true,
+		&quot;vagina&quot;: true,
+		&quot;breasts&quot;: true
+	},
+	&quot;likes&quot;:{
+		&quot;men&quot;: true,
+		&quot;women&quot;: true,
+		&quot;trans&quot;: {
+			&quot;men&quot;: true,
+			&quot;women&quot;: true
+		}
+	}
+}&gt;&gt;</tw-passagedata><tw-passagedata pid="28" name="Player" tags="init nobr character player" position="975,350">/* Player Character Defaults */
+&lt;&lt;if ndef $player&gt;&gt;
+	&lt;&lt;set $player to {
+		&quot;name&quot;: {
+			&quot;first&quot;: &quot;Jo&quot;,
+			&quot;last&quot;: &quot;Blow&quot;
+		},
+		&quot;pronouns&quot;: &quot;male&quot;,
+		&quot;role&quot;: {
+			&quot;doctor&quot;: true,
+			&quot;patient&quot;: false
+		},
+		&quot;has&quot;: {
+			&quot;penis&quot;: true,
+			&quot;testicles&quot;: true,
+			&quot;clitoris&quot;: false,
+			&quot;vagina&quot;: false,
+			&quot;breasts&quot;: false
+		},
+		&quot;likes&quot;: [
+			&quot;men&quot;,
+			&quot;women&quot;,
+			&quot;trans-men&quot;,
+			&quot;trans-women&quot;
+		],
+		&quot;met&quot;: [],
+		&quot;with&quot;: [],
+		&quot;holding&quot;: [],
+		&quot;location&quot;: {}
+	}&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="29" name="Clinic Init" tags="init nobr location" position="1100,350">&lt;&lt;set $clinic to {
+    name: &quot;Paraphilic Clinic&quot;,
+    description: &quot;A world renown clinic for the study and facilitating of fetishes.&quot;
+}&gt;&gt;</tw-passagedata><tw-passagedata pid="30" name="Clinic" tags="location clinic" position="1225,350">The building is large, opaque glass double doors set into a beige wall. The sign above the door states:
+
+!!$clinic.name
+!!!Your Kinks Matter.
+
+&lt;&lt;if visited() is 1&gt;&gt;
+[[Enter the doors. | Introduction]]
+&lt;&lt;else&gt;&gt;
+[[Enter the doors. | Reception]]
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="31" name="Hub Init" tags="init nobr" position="100,475">&lt;&lt;set $reception to {
+    name: &quot;Central Hub&quot;,
+    description: &quot;The center of navigation within the clinic, this is where you need to go first before getting anywhere.&quot;,
+}&gt;&gt;</tw-passagedata><tw-passagedata pid="32" name="Hub" tags="" position="225,475">The central intersection of the clinic.
+
+[[Medical Wing. | Medical Wing]]</tw-passagedata><tw-passagedata pid="33" name="Exam Room 1 Init" tags="init nobr" position="350,475">&lt;&lt;set $exam_room_1 to {
+    name: &quot;Exam Room 1&quot;,
+    description: &quot;A standard doctors office.&quot;,
+    parent: $medical_wing,
+    first_time: true
+}&gt;&gt;</tw-passagedata><tw-passagedata pid="34" name="Exam Room 1" tags="" position="475,475">&lt;&lt;set $player.location to $exam_room_1&gt;&gt;
+Fluorescent light illuminates what you could expect in a examination room. The examination table with its cover of paper stand against the right wall and a series of cabinets units with a sink stand to the left. You can see cotton balls and wooden tongue depressors in glass jars on the counters. 
+
+&lt;&lt;if $player.with.holly&gt;&gt;&quot;Sometimes the basics are best.&quot; Holly comments.&lt;&lt;/if&gt;&gt;
+
+&lt;&lt;if $player.with.holly&gt;&gt;[[Speak to Holly | Exam Room 1 Holly]]&lt;&lt;/if&gt;&gt;
+[[Leave | Medical Wing]]</tw-passagedata><tw-passagedata pid="35" name="Medical Wing Init" tags="init nobr" position="600,475">&lt;&lt;set $medical_wing to {
+    name: &quot;Medical Wing&quot;,
+    description: &quot;The primary area for the day to day business of the clinic.&quot;,
+    parent: $hub,
+    first_time: true
+}&gt;&gt;</tw-passagedata><tw-passagedata pid="36" name="Medical Wing" tags="" position="725,475">&lt;&lt;set $player.location to $reception&gt;&gt;
+You step through into a similar corridor lined with doors, each sporting a placard to the side of it with a name along with a clipboard  below it, and a light above it.
+
+[[Exam Room 1]]</tw-passagedata><tw-passagedata pid="37" name="Reception Init" tags="init nobr" position="850,475">&lt;&lt;set $reception to {
+    name: &quot;Reception&quot;,
+    description: &quot;The gateway to the clinic, there is a seating area and a reception desk.&quot;,
+    parent: &quot;Clinic&quot;,
+    first_time: true
+}&gt;&gt;</tw-passagedata><tw-passagedata pid="38" name="Reception" tags="" position="975,475">&lt;&lt;set $player.location to $reception&gt;&gt;
+The reception area is well lit with a large desk in front of a few chairs arranged along the walls and a coffee table with some magazines arranged on it.
+
+Behind the desk is a wall of filing cabinets along with a copier and other office paraphernalia.
+
+[[Enter Hub | Hub]]</tw-passagedata><tw-passagedata pid="39" name="Locations Init" tags="init nobr" position="1100,475">&lt;&lt;set $locations to []&gt;&gt;</tw-passagedata></tw-storydata></div>
 	<script id="script-sugarcube" type="text/javascript">
 	/*! SugarCube JS */
 	if(document.documentElement.getAttribute("data-init")==="loading"){!function(window,document,jQuery,undefined){"use strict";function _classCallCheck(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,r=Array(e.length);t<e.length;t++)r[t]=e[t];return r}return Array.from(e)}var _createClass=function(){function e(e,t){for(var r=0;r<t.length;r++){var n=t[r];n.enumerable=n.enumerable||!1,n.configurable=!0,"value"in n&&(n.writable=!0),Object.defineProperty(e,n.key,n)}}return function(t,r,n){return r&&e(t.prototype,r),n&&e(t,n),t}}(),_slicedToArray=function(){function e(e,t){var r=[],n=!0,a=!1,i=undefined;try{for(var o,s=e[Symbol.iterator]();!(n=(o=s.next()).done)&&(r.push(o.value),!t||r.length!==t);n=!0);}catch(e){a=!0,i=e}finally{try{!n&&s.return&&s.return()}finally{if(a)throw i}}return r}return function(t,r){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,r);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},errorPrologRegExp=/^(?:(?:uncaught\s+(?:exception:\s+)?)?\w*(?:error|exception|_err):\s+)+/i,Alert=function(){function e(e,t,r,n){var a="fatal"===e,i="Apologies! "+(a?"A fatal":"An")+" error has occurred.";i+=a?" Aborting.":" You may be able to continue, but some parts may not work properly.",null==t&&null==r||(i+="\n\nError",null!=t&&(i+=" ["+t+"]"),i+=null!=r?": "+r.replace(errorPrologRegExp,"")+".":": unknown error."),"object"===(void 0===n?"undefined":_typeof(n))&&n.stack&&(i+="\n\nStack Trace:\n"+n.stack),window.alert(i)}function t(t,r,n){e(null,t,r,n)}function r(t,r,n){e("fatal",t,r,n)}return function(e){window.onerror=function(n,a,i,o,s){"complete"===document.readyState?t(null,n,s):(r(null,n,s),window.onerror=e,"function"==typeof window.onerror&&window.onerror.apply(this,arguments))}}(window.onerror),Object.freeze(Object.defineProperties({},{error:{value:t},fatal:{value:r}}))}(),Patterns=function(){var e=function(){var e=new Map([[" ","\\u0020"],["\f","\\f"],["\n","\\n"],["\r","\\r"],["\t","\\t"],["\v","\\v"],[" ","\\u00a0"],[" ","\\u1680"],["᠎","\\u180e"],[" ","\\u2000"],[" ","\\u2001"],[" ","\\u2002"],[" ","\\u2003"],[" ","\\u2004"],[" ","\\u2005"],[" ","\\u2006"],[" ","\\u2007"],[" ","\\u2008"],[" ","\\u2009"],[" ","\\u200a"],["\u2028","\\u2028"],["\u2029","\\u2029"],[" ","\\u202f"],[" ","\\u205f"],["　","\\u3000"],["\ufeff","\\ufeff"]]),t=/^\s$/,r="";return e.forEach(function(e,n){t.test(n)||(r+=e)}),r?"[\\s"+r+"]":"\\s"}(),t="\\s"===e?"\\S":e.replace(/^\[/,"[^"),r="[0-9A-Z_a-z\\-\\u00c0-\\u00d6\\u00d8-\\u00f6\\u00f8-\\u00ff\\u0150\\u0170\\u0151\\u0171]",n=r.replace("\\-",""),a=function(){return"("+r+"+)\\(([^\\)\\|\\n]+)\\):|("+r+"+):([^;\\|\\n]+);|((?:\\."+r+"+)+);|((?:#"+r+"+)+);"}();return Object.freeze({space:e,spaceNoTerminator:"[\\u0020\\f\\t\\v\\u00a0\\u1680\\u180e\\u2000-\\u200a\\u202f\\u205f\\u3000\\ufeff]",lineTerminator:"[\\n\\r\\u2028\\u2029]",notSpace:t,anyLetter:r,anyLetterStrict:n,identifierFirstChar:"[$A-Z_a-z]",identifier:"[$A-Z_a-z][$0-9A-Z_a-z]*",variableSigil:"[$_]",variable:"[$_][$A-Z_a-z][$0-9A-Z_a-z]*",macroName:"[A-Za-z][\\w-]*|[=-]",cssImage:"\\[[<>]?[Ii][Mm][Gg]\\[(?:\\s|\\S)*?\\]\\]+",inlineCss:a,url:"(?:file|https?|mailto|ftp|javascript|irc|news|data):[^\\s'\"]+"})}();!function(){!function(e){if(e&&e.prototype&&null==e.prototype.firstElementChild){var t=Node.ELEMENT_NODE;Object.defineProperty(e.prototype,"firstElementChild",{get:function(){for(var e=this.childNodes,r=0;r<e.length;++r){var n=e[r];if(n.nodeType===t)return n}return null}})}}(window.Node||window.Element)}(),function(){function e(e,t){var r=Number.parseInt(e,10)||0;if(r<1)return"";var n=void 0===t?"":String(t);for(""===n&&(n=" ");n.length<r;){var a=n.length,i=r-a;n+=a>i?n.slice(0,i):n}return n.length>r&&(n=n.slice(0,r)),n}var t=function(){function e(e,n){var a=String(e);if(!a)return a;switch(n){case"start":return t.test(a)?a.replace(t,""):a;case"end":return r.test(a)?a.replace(r,""):a;default:throw new Error('_trimString called with incorrect where parameter value: "'+n+'"')}}var t=new RegExp("^"+Patterns.space+Patterns.space+"*"),r=new RegExp(""+Patterns.space+Patterns.space+"*$");return e}();Array.prototype.includes||Object.defineProperty(Array.prototype,"includes",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.includes called on null or undefined");if(0===arguments.length)return!1;var e=this.length>>>0;if(0===e)return!1;var t=arguments[0],r=Number(arguments[1])||0;for(r<0&&(r=Math.max(0,e+r));r<e;++r){var n=this[r];if(n===t||n!==n&&t!==t)return!0}return!1}}),String.prototype.padStart||Object.defineProperty(String.prototype,"padStart",{configurable:!0,writable:!0,value:function(t,r){if(null==this)throw new TypeError("String.prototype.padStart called on null or undefined");var n=String(this),a=n.length,i=Number.parseInt(t,10);return i<=a?n:e(i-a,r)+n}}),String.prototype.padEnd||Object.defineProperty(String.prototype,"padEnd",{configurable:!0,writable:!0,value:function(t,r){if(null==this)throw new TypeError("String.prototype.padEnd called on null or undefined");var n=String(this),a=n.length,i=Number.parseInt(t,10);return i<=a?n:n+e(i-a,r)}}),String.prototype.trimStart||Object.defineProperty(String.prototype,"trimStart",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.trimStart called on null or undefined");return t(this,"start")}}),String.prototype.trimLeft||Object.defineProperty(String.prototype,"trimLeft",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.trimLeft called on null or undefined");return t(this,"start")}}),String.prototype.trimEnd||Object.defineProperty(String.prototype,"trimEnd",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.trimEnd called on null or undefined");return t(this,"end")}}),String.prototype.trimRight||Object.defineProperty(String.prototype,"trimRight",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.trimRight called on null or undefined");return t(this,"end")}})}(),function(){function _random(){var e=void 0,t=void 0;switch(arguments.length){case 0:throw new Error("_random called with insufficient parameters");case 1:e=0,t=arguments[0];break;default:e=arguments[0],t=arguments[1]}if(e>t){var r=[t,e];e=r[0],t=r[1]}return Math.floor(_nativeMathRandom()*(t-e+1))+e}function _randomIndex(e,t){var r=void 0,n=void 0;switch(t.length){case 1:r=0,n=e-1;break;case 2:r=0,n=Math.trunc(t[1]);break;default:r=Math.trunc(t[1]),n=Math.trunc(t[2])}return Number.isNaN(r)?r=0:!Number.isFinite(r)||r>=e?r=e-1:r<0&&(r=e+r)<0&&(r=0),Number.isNaN(n)?n=0:!Number.isFinite(n)||n>=e?n=e-1:n<0&&(n=e+n)<0&&(n=e-1),_random(r,n)}function _getCodePointStartAndEnd(e,t){var r=e.charCodeAt(t);if(Number.isNaN(r))return{char:"",start:-1,end:-1};if(r<55296||r>57343)return{char:e.charAt(t),start:t,end:t};if(r>=55296&&r<=56319){var n=t+1;if(n>=e.length)throw new Error("high surrogate without trailing low surrogate");var a=e.charCodeAt(n);if(a<56320||a>57343)throw new Error("high surrogate without trailing low surrogate");return{char:e.charAt(t)+e.charAt(n),start:t,end:n}}if(0===t)throw new Error("low surrogate without leading high surrogate");var i=t-1,o=e.charCodeAt(i);if(o<55296||o>56319)throw new Error("low surrogate without leading high surrogate");return{char:e.charAt(i)+e.charAt(t),start:i,end:t}}var _nativeMathRandom=Math.random;Object.defineProperty(Array,"random",{configurable:!0,writable:!0,value:function(e){if("object"!==(void 0===e?"undefined":_typeof(e))||null===e||!Object.prototype.hasOwnProperty.call(e,"length"))throw new TypeError("Array.random array parameter must be an array or array-lke object");var t=e.length>>>0;if(0!==t){return e[0===arguments.length?_random(0,t-1):_randomIndex(t,Array.prototype.slice.call(arguments,1))]}}}),Object.defineProperty(Array.prototype,"concatUnique",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.concatUnique called on null or undefined");var e=Array.from(this);if(0===arguments.length)return e;var t=Array.prototype.reduce.call(arguments,function(e,t){return e.concat(t)},[]),r=t.length;if(0===r)return e;for(var n=Array.prototype.indexOf,a=Array.prototype.push,i=0;i<r;++i){var o=t[i];-1===n.call(e,o)&&a.call(e,o)}return e}}),Object.defineProperty(Array.prototype,"count",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.count called on null or undefined");for(var e=Array.prototype.indexOf,t=arguments[0],r=Number(arguments[1])||0,n=0;-1!==(r=e.call(this,t,r));)++n,++r;return n}}),Object.defineProperty(Array.prototype,"delete",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.delete called on null or undefined");if(0===arguments.length)return[];var e=this.length>>>0;if(0===e)return[];for(var t=Array.prototype.concat.apply([],arguments),r=t.length,n=[],a=0;a<e;++a)for(var i=this[a],o=0;o<r;++o){var s=t[o];if(i===s||i!==i&&s!==s){n.push(a);break}}for(var u=[],l=0,c=n.length;l<c;++l)u[l]=this[n[l]];for(var d=Array.prototype.splice,f=n.length-1;f>=0;--f)d.call(this,n[f],1);return u}}),Object.defineProperty(Array.prototype,"deleteAt",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.deleteAt called on null or undefined");if(0===arguments.length)return[];var e=this.length>>>0;if(0===e)return[];for(var t=Array.prototype.splice,r=[].concat(_toConsumableArray(new Set(Array.prototype.concat.apply([],arguments).map(function(t){return t<0?Math.max(0,e+t):t})).values())),n=[].concat(_toConsumableArray(r)).sort(function(e,t){return t-e}),a=[],i=0,o=r.length;i<o;++i)a[i]=this[r[i]];for(var s=0,u=n.length;s<u;++s)t.call(this,n[s],1);return a}}),Object.defineProperty(Array.prototype,"deleteWith",{configurable:!0,writable:!0,value:function(e,t){if(null==this)throw new TypeError("Array.prototype.deleteWith called on null or undefined");if("function"!=typeof e)throw new Error("Array.prototype.deleteWith predicate parameter must be a function");var r=this.length>>>0;if(0===r)return[];for(var n=Array.prototype.splice,a=[],i=[],o=0;o<r;++o)e.call(t,this[o],o,this)&&(i.push(this[o]),a.push(o));for(var s=a.length-1;s>=0;--s)n.call(this,a[s],1);return i}}),Object.defineProperty(Array.prototype,"first",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.first called on null or undefined");if(0!=this.length>>>0)return this[0]}}),Object.defineProperty(Array.prototype,"flatten",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.flatten called on null or undefined");return Array.prototype.reduce.call(this,function(e,t){return e.concat(Array.isArray(t)?t.flatten():t)},[])}}),Object.defineProperty(Array.prototype,"includesAll",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.includesAll called on null or undefined");if(1===arguments.length)return Array.isArray(arguments[0])?Array.prototype.includesAll.apply(this,arguments[0]):Array.prototype.includes.apply(this,arguments);for(var e=0,t=arguments.length;e<t;++e)if(!Array.prototype.some.call(this,function(e){return e===this.val||e!==e&&this.val!==this.val},{val:arguments[e]}))return!1;return!0}}),Object.defineProperty(Array.prototype,"includesAny",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.includesAny called on null or undefined");if(1===arguments.length)return Array.isArray(arguments[0])?Array.prototype.includesAny.apply(this,arguments[0]):Array.prototype.includes.apply(this,arguments);for(var e=0,t=arguments.length;e<t;++e)if(Array.prototype.some.call(this,function(e){return e===this.val||e!==e&&this.val!==this.val},{val:arguments[e]}))return!0;return!1}}),Object.defineProperty(Array.prototype,"last",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.last called on null or undefined");var e=this.length>>>0;if(0!==e)return this[e-1]}}),Object.defineProperty(Array.prototype,"pluck",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.pluck called on null or undefined");var e=this.length>>>0;if(0!==e){var t=0===arguments.length?_random(0,e-1):_randomIndex(e,[].concat(Array.prototype.slice.call(arguments)));return Array.prototype.splice.call(this,t,1)[0]}}}),Object.defineProperty(Array.prototype,"pluckMany",{configurable:!0,writable:!0,value:function(e){if(null==this)throw new TypeError("Array.prototype.pluckMany called on null or undefined");var t=this.length>>>0;if(0===t)return[];var r=Math.trunc(e);if(!Number.isInteger(r))throw new Error("Array.prototype.pluckMany want parameter must be an integer");if(r<1)return[];r>t&&(r=t);var n=Array.prototype.splice,a=[],i=t-1;do{a.push(n.call(this,_random(0,i--),1)[0])}while(a.length<r);return a}}),Object.defineProperty(Array.prototype,"pushUnique",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.pushUnique called on null or undefined");var e=arguments.length;if(0===e)return this.length>>>0;for(var t=Array.prototype.indexOf,r=Array.prototype.push,n=0;n<e;++n){var a=arguments[n];-1===t.call(this,a)&&r.call(this,a)}return this.length>>>0}}),Object.defineProperty(Array.prototype,"random",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.random called on null or undefined");var e=this.length>>>0;if(0!==e){return this[0===arguments.length?_random(0,e-1):_randomIndex(e,[].concat(Array.prototype.slice.call(arguments)))]}}}),Object.defineProperty(Array.prototype,"randomMany",{configurable:!0,writable:!0,value:function(e){if(null==this)throw new TypeError("Array.prototype.randomMany called on null or undefined");var t=this.length>>>0;if(0===t)return[];var r=Math.trunc(e);if(!Number.isInteger(r))throw new Error("Array.prototype.randomMany want parameter must be an integer");if(r<1)return[];r>t&&(r=t);var n=new Map,a=[],i=t-1;do{var o=void 0;do{o=_random(0,i)}while(n.has(o));n.set(o,!0),a.push(this[o])}while(a.length<r);return a}}),Object.defineProperty(Array.prototype,"shuffle",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.shuffle called on null or undefined");var e=this.length>>>0;if(0===e)return this;for(var t=e-1;t>0;--t){var r=Math.floor(_nativeMathRandom()*(t+1));if(t!==r){var n=this[t];this[t]=this[r],this[r]=n}}return this}}),Object.defineProperty(Array.prototype,"unshiftUnique",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.unshiftUnique called on null or undefined");var e=arguments.length;if(0===e)return this.length>>>0;for(var t=Array.prototype.indexOf,r=Array.prototype.unshift,n=0;n<e;++n){var a=arguments[n];-1===t.call(this,a)&&r.call(this,a)}return this.length>>>0}}),Object.defineProperty(Function.prototype,"partial",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Function.prototype.partial called on null or undefined");var e=Array.prototype.slice,t=this,r=e.call(arguments,0);return function(){for(var n=[],a=0,i=0;i<r.length;++i)n.push(r[i]===undefined?arguments[a++]:r[i]);return t.apply(this,n.concat(e.call(arguments,a)))}}}),Object.defineProperty(Math,"clamp",{configurable:!0,writable:!0,value:function(e,t,r){var n=Number(e);return Number.isNaN(n)?NaN:n.clamp(t,r)}}),Object.defineProperty(Math,"easeInOut",{configurable:!0,writable:!0,value:function(e){return 1-(Math.cos(Number(e)*Math.PI)+1)/2}}),Object.defineProperty(Number.prototype,"clamp",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Number.prototype.clamp called on null or undefined");if(2!==arguments.length)throw new Error("Number.prototype.clamp called with an incorrect number of parameters");var e=Number(arguments[0]),t=Number(arguments[1]);if(e>t){var r=[t,e];e=r[0],t=r[1]}return Math.min(Math.max(this,e),t)}}),RegExp.escape||function(){var e=/[\\^$*+?.()|[\]{}]/g,t=new RegExp(e.source);Object.defineProperty(RegExp,"escape",{configurable:!0,writable:!0,value:function(r){var n=String(r);return n&&t.test(n)?n.replace(e,"\\$&"):n}})}(),function(){var e=/{(\d+)(?:,([+-]?\d+))?}/g,t=new RegExp(e.source);Object.defineProperty(String,"format",{configurable:!0,writable:!0,value:function(r){function n(e,t,r){if(!t)return e;var n=Math.abs(t)-e.length;if(n<1)return e;var a=String(r).repeat(n);return t<0?e+a:a+e}if(arguments.length<2)return 0===arguments.length?"":r;var a=2===arguments.length&&Array.isArray(arguments[1])?[].concat(_toConsumableArray(arguments[1])):Array.prototype.slice.call(arguments,1);return 0===a.length?r:t.test(r)?(e.lastIndex=0,r.replace(e,function(e,t,r){var i=a[t];if(null==i)return"";for(;"function"==typeof i;)i=i();switch(void 0===i?"undefined":_typeof(i)){case"string":break;case"object":i=JSON.stringify(i);break;default:i=String(i)}return n(i,r?Number.parseInt(r,10):0," ")})):r}})}(),Object.defineProperty(String.prototype,"contains",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.contains called on null or undefined");return-1!==String.prototype.indexOf.apply(this,arguments)}}),Object.defineProperty(String.prototype,"count",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.count called on null or undefined");var e=String(arguments[0]||"");if(""===e)return 0;for(var t=String.prototype.indexOf,r=e.length,n=Number(arguments[1])||0,a=0;-1!==(n=t.call(this,e,n));)++a,n+=r;return a}}),Object.defineProperty(String.prototype,"first",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.first called on null or undefined");return _getCodePointStartAndEnd(String(this),0).char}}),Object.defineProperty(String.prototype,"last",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.last called on null or undefined");var e=String(this);return _getCodePointStartAndEnd(e,e.length-1).char}}),Object.defineProperty(String.prototype,"splice",{configurable:!0,writable:!0,value:function(e,t,r){if(null==this)throw new TypeError("String.prototype.splice called on null or undefined");var n=this.length>>>0;if(0===n)return"";var a=Number(e);Number.isSafeInteger(a)?a<0&&(a+=n)<0&&(a=0):a=0,a>n&&(a=n);var i=Number(t);(!Number.isSafeInteger(i)||i<0)&&(i=0);var o=this.slice(0,a);return void 0!==r&&(o+=r),a+i<n&&(o+=this.slice(a+i)),o}}),Object.defineProperty(String.prototype,"splitOrEmpty",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.splitOrEmpty called on null or undefined");return""===String(this)?[]:String.prototype.split.apply(this,arguments)}}),Object.defineProperty(String.prototype,"toLocaleUpperFirst",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.toLocaleUpperFirst called on null or undefined");var e=String(this),t=_getCodePointStartAndEnd(e,0),r=t.char,n=t.end;return-1===n?"":r.toLocaleUpperCase()+e.slice(n+1)}}),Object.defineProperty(String.prototype,"toUpperFirst",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.toUpperFirst called on null or undefined");var e=String(this),t=_getCodePointStartAndEnd(e,0),r=t.char,n=t.end;return-1===n?"":r.toUpperCase()+e.slice(n+1)}}),Object.defineProperty(Date.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:date)",this.toISOString()]}}),Object.defineProperty(Function.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:eval)","("+this.toString()+")"]}}),Object.defineProperty(Map.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:map)",[].concat(_toConsumableArray(this))]}}),Object.defineProperty(RegExp.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:eval)",this.toString()]}}),Object.defineProperty(Set.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:set)",[].concat(_toConsumableArray(this))]}}),Object.defineProperty(JSON,"reviveWrapper",{configurable:!0,writable:!0,value:function(e,t){if("string"!=typeof e)throw new TypeError("JSON.reviveWrapper code parameter must be a string");return["(revive:eval)",[e,t]]}}),Object.defineProperty(JSON,"_real_parse",{value:JSON.parse}),Object.defineProperty(JSON,"parse",{configurable:!0,writable:!0,value:function value(text,reviver){return JSON._real_parse(text,function(key,val){var value=val;if(Array.isArray(value)&&2===value.length)switch(value[0]){case"(revive:set)":value=new Set(value[1]);break;case"(revive:map)":value=new Map(value[1]);break;case"(revive:date)":value=new Date(value[1]);break;case"(revive:eval)":try{if(Array.isArray(value[1])){var $ReviveData$=value[1][1];value=eval(value[1][0])}else value=eval(value[1])}catch(e){}}else if("string"==typeof value&&"@@revive@@"===value.slice(0,10))try{value=eval(value.slice(10))}catch(e){}if("function"==typeof reviver)try{value=reviver(key,value)}catch(e){}return value})}}),Object.defineProperty(Array.prototype,"contains",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.contains called on null or undefined");return Array.prototype.includes.apply(this,arguments)}}),Object.defineProperty(Array.prototype,"containsAll",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.containsAll called on null or undefined");return Array.prototype.includesAll.apply(this,arguments)}}),Object.defineProperty(Array.prototype,"containsAny",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.containsAny called on null or undefined");return Array.prototype.includesAny.apply(this,arguments)}}),Object.defineProperty(String.prototype,"readBracketedList",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.readBracketedList called on null or undefined");for(var e=new RegExp("(?:\\[\\[((?:\\s|\\S)*?)\\]\\])|([^\"'\\s]\\S*)","gm"),t=[],r=void 0;null!==(r=e.exec(this));)r[1]?t.push(r[1]):r[2]&&t.push(r[2]);return t}})}();var Browser=function(){var e=navigator.userAgent.toLowerCase(),t=e.includes("windows phone"),r=Object.freeze({Android:!t&&e.includes("android"),BlackBerry:/blackberry|bb10/.test(e),iOS:!t&&/ip(?:hone|ad|od)/.test(e),Windows:t||e.includes("iemobile"),any:function(){return r.Android||r.BlackBerry||r.iOS||r.Windows}}),n=!r.Windows&&!/khtml|trident|edge/.test(e)&&e.includes("gecko"),a=!e.includes("opera")&&/msie|trident/.test(e),i=a?function(){var t=/(?:msie\s+|rv:)(\d+\.\d)/.exec(e);return t?Number(t[1]):0}():null,o=e.includes("opera")||e.includes(" opr/"),s=o?function(){var t=new RegExp((/khtml|chrome/.test(e)?"opr":"version")+"\\/(\\d+\\.\\d+)"),r=t.exec(e);return r?Number(r[1]):0}():null,u=e.includes("vivaldi");return Object.freeze({userAgent:e,isMobile:r,isGecko:n,isIE:a,ieVersion:i,isOpera:o,operaVersion:s,isVivaldi:u})}(),Has=function(){var e=function(){try{return"function"==typeof document.createElement("audio").canPlayType}catch(e){}return!1}(),t=e&&function(){try{var e=document.createElement("audio").play();return e.catch(function(){}),e instanceof Promise}catch(e){}return!1}(),r=function(){try{return"Blob"in window&&"File"in window&&"FileList"in window&&"FileReader"in window&&!Browser.isMobile.any()&&(!Browser.isOpera||Browser.operaVersion>=15)}catch(e){}return!1}(),n=function(){try{return"geolocation"in navigator&&"function"==typeof navigator.geolocation.getCurrentPosition&&"function"==typeof navigator.geolocation.watchPosition}catch(e){}return!1}(),a=function(){try{return"MutationObserver"in window&&"function"==typeof window.MutationObserver}catch(e){}return!1}(),i=function(){try{return"performance"in window&&"function"==typeof window.performance.now}catch(e){}return!1}();return Object.freeze({audio:e,audioPromise:t,fileAPI:r,geolocation:n,mutationObserver:a,performance:i})}(),Visibility=function(){function e(){return Boolean(r&&document[r.hiddenProperty])}function t(){return r&&document[r.stateProperty]||"visible"}var r=function(){try{return Object.freeze([{hiddenProperty:"hidden",stateProperty:"visibilityState",changeEvent:"visibilitychange"},{hiddenProperty:"webkitHidden",stateProperty:"webkitVisibilityState",changeEvent:"webkitvisibilitychange"},{hiddenProperty:"mozHidden",stateProperty:"mozVisibilityState",changeEvent:"mozvisibilitychange"},{hiddenProperty:"msHidden",stateProperty:"msVisibilityState",changeEvent:"msvisibilitychange"}].find(function(e){return e.hiddenProperty in document}))}catch(e){}return null}();return Object.freeze(Object.defineProperties({},{isHidden:{value:e},state:{value:t},hiddenProperty:{value:r.hiddenProperty},stateProperty:{value:r.stateProperty},changeEvent:{value:r.changeEvent}}))}(),_ref3=function(){function e(t){if("object"!==(void 0===t?"undefined":_typeof(t))||null===t)return t;if(t instanceof String)return String(t);if(t instanceof Number)return Number(t);if(t instanceof Boolean)return Boolean(t);if("function"==typeof t.clone)return t.clone(!0);if(t.nodeType&&"function"==typeof t.cloneNode)return t.cloneNode(!0);var r=void 0;return t instanceof Array?r=new Array(t.length):t instanceof Date?r=new Date(t.getTime()):t instanceof Map?(r=new Map,t.forEach(function(t,n){return r.set(n,e(t))})):t instanceof RegExp?r=new RegExp(t):t instanceof Set?(r=new Set,t.forEach(function(t){return r.add(e(t))})):r=Object.create(Object.getPrototypeOf(t)),Object.keys(t).forEach(function(n){return r[n]=e(t[n])}),r}function t(e){for(var t=document.createDocumentFragment(),r=document.createElement("p"),n=void 0;null!==(n=e.firstChild);){if(n.nodeType===Node.ELEMENT_NODE){switch(n.nodeName.toUpperCase()){case"BR":if(null!==n.nextSibling&&n.nextSibling.nodeType===Node.ELEMENT_NODE&&"BR"===n.nextSibling.nodeName.toUpperCase()){e.removeChild(n.nextSibling),e.removeChild(n),t.appendChild(r),r=document.createElement("p");continue}if(!r.hasChildNodes()){e.removeChild(n);continue}break;case"ADDRESS":case"ARTICLE":case"ASIDE":case"BLOCKQUOTE":case"CENTER":case"DIV":case"DL":case"FIGURE":case"FOOTER":case"FORM":case"H1":case"H2":case"H3":case"H4":case"H5":case"H6":case"HEADER":case"HR":case"MAIN":case"NAV":case"OL":case"P":case"PRE":case"SECTION":case"TABLE":case"UL":r.hasChildNodes()&&(t.appendChild(r),r=document.createElement("p")),t.appendChild(n);continue}}r.appendChild(n)}r.hasChildNodes()&&t.appendChild(r),e.appendChild(t)}function r(){try{return document.activeElement||null}catch(e){return null}}function n(e,t,r){var n="object"===(void 0===e?"undefined":_typeof(e))?e:document.getElementById(e);if(null==n)return null;var a=Array.isArray(t)?t:[t];jQuery(n).empty();for(var i=0,o=a.length;i<o;++i)if(Story.has(a[i]))return new Wikifier(n,Story.get(a[i]).processText().trim()),n;if(null!=r){var s=String(r).trim();""!==s&&new Wikifier(n,s)}return n}function a(e,t,r){var n=jQuery(document.createElement("div")),a=jQuery(document.createElement("button")),i=jQuery(document.createElement("pre")),o=L10n.get("errorTitle")+": "+(t||"unknown error");return a.addClass("error-toggle").ariaClick({label:L10n.get("errorToggle")},function(){a.hasClass("enabled")?(a.removeClass("enabled"),i.attr({"aria-hidden":!0,hidden:"hidden"})):(a.addClass("enabled"),i.removeAttr("aria-hidden hidden"))}).appendTo(n),jQuery(document.createElement("span")).addClass("error").text(o).appendTo(n),jQuery(document.createElement("code")).text(r).appendTo(i),i.addClass("error-source").attr({"aria-hidden":!0,hidden:"hidden"}).appendTo(n),n.addClass("error-view").appendTo(e),console.warn(o+"\n\t"+r.replace(/\n/g,"\n\t")),!1}function i(e,t){var r=i;switch(void 0===e?"undefined":_typeof(e)){case"number":if(Number.isNaN(e))return t;break;case"object":if(null===e)return t;if(Array.isArray(e))return e.map(function(e){return r(e,t)}).join(", ");if(e instanceof Set)return[].concat(_toConsumableArray(e)).map(function(e){return r(e,t)}).join(", ");if(e instanceof Map){return"{ "+[].concat(_toConsumableArray(e)).map(function(e){var n=_slicedToArray(e,2),a=n[0],i=n[1];return r(a,t)+" → "+r(i,t)}).join(", ")+" }"}return e instanceof Date?e.toLocaleString():"function"==typeof e.toString?e.toString():Object.prototype.toString.call(e);case"function":case"undefined":return t}return String(e)}return Object.freeze(Object.defineProperties({},{clone:{value:e},convertBreaks:{value:t},safeActiveElement:{value:r},setPageElement:{value:n},throwError:{value:a},toStringOrDefault:{value:i}}))}(),clone=_ref3.clone,convertBreaks=_ref3.convertBreaks,safeActiveElement=_ref3.safeActiveElement,setPageElement=_ref3.setPageElement,throwError=_ref3.throwError,toStringOrDefault=_ref3.toStringOrDefault;!function(){function e(e){13!==e.which&&32!==e.which||(e.preventDefault(),jQuery(safeActiveElement()||this).trigger("click"))}function t(e){return function(){var t=jQuery(this);t.ariaIsDisabled()||(t.is("[aria-pressed]")&&t.attr("aria-pressed","true"===t.attr("aria-pressed")?"false":"true"),e.apply(this,arguments))}}function r(e){return t(function(){jQuery(this).off(".aria-clickable").removeAttr("tabindex aria-controls aria-pressed").not("a,button").removeAttr("role").end().filter("button").prop("disabled",!0),e.apply(this,arguments)})}jQuery.fn.extend({ariaClick:function(n,a){if(0===this.length||0===arguments.length)return this;var i=n,o=a;return null==o&&(o=i,i=undefined),i=jQuery.extend({namespace:undefined,one:!1,selector:undefined,data:undefined,controls:undefined,pressed:undefined,label:undefined},i),"string"!=typeof i.namespace?i.namespace="":"."!==i.namespace[0]&&(i.namespace="."+i.namespace),"boolean"==typeof i.pressed&&(i.pressed=i.pressed?"true":"false"),this.filter("button").prop("type","button"),this.not("a,button").attr("role","button"),this.attr("tabindex",0),null!=i.controls&&this.attr("aria-controls",i.controls),null!=i.pressed&&this.attr("aria-pressed",i.pressed),null!=i.label&&this.attr({"aria-label":i.label,title:i.label}),this.not("button").on("keypress.aria-clickable"+i.namespace,i.selector,e),this.on("click.aria-clickable"+i.namespace,i.selector,i.data,i.one?r(o):t(o)),this},ariaDisabled:function(e){if(0===this.length||0===arguments.length)return this;var t=this.not("button,fieldset,input,menuitem,optgroup,option,select,textarea"),r=this.filter("button,fieldset,input,menuitem,optgroup,option,select,textarea");return e?(t.each(function(){this.setAttribute("disabled",""),this.setAttribute("aria-disabled","")}),r.each(function(){this.disabled=!0,this.setAttribute("aria-disabled","")})):(t.each(function(){this.removeAttribute("disabled"),this.removeAttribute("aria-disabled")}),r.each(function(){this.disabled=!1,this.removeAttribute("aria-disabled")})),this},ariaIsDisabled:function(){return this.is("[disabled]")}})}(),function(){jQuery.extend({wikiWithOptions:function(e){for(var t=arguments.length,r=Array(t>1?t-1:0),n=1;n<t;n++)r[n-1]=arguments[n];if(0!==r.length){var a=document.createDocumentFragment();r.forEach(function(t){return new Wikifier(a,t,e)});var i=[].concat(_toConsumableArray(a.querySelectorAll(".error"))).map(function(e){return e.textContent.replace(errorPrologRegExp,"")});if(i.length>0)throw new Error(i.join("; "))}},wiki:function(){for(var e=arguments.length,t=Array(e),r=0;r<e;r++)t[r]=arguments[r];this.wikiWithOptions.apply(this,[undefined].concat(t))}}),jQuery.fn.extend({wikiWithOptions:function(e){for(var t=arguments.length,r=Array(t>1?t-1:0),n=1;n<t;n++)r[n-1]=arguments[n];if(0===this.length||0===r.length)return this

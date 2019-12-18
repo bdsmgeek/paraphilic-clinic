@@ -1,0 +1,50 @@
+::  StoryInit
+/*Pronoun Object*/
+<<set $pronouns to {
+        "male": {
+                "subjective": "he",
+                "objective" : "him",
+                "possessive": "his",
+                "reflexive" : "himself"
+        },
+        "female": {
+                "subjective": "she",
+                "objective" : "her",
+                "possessive": "hers",
+                "reflexive" : "herself"
+        },
+        "enby": {
+                "subjective": "they",
+                "objective" : "them",
+                "possessive": "theirs",
+                "reflexive" : "themself"
+        }
+}>>
+
+/* Player Character Defaults */
+<<set $player to {
+	"name": {
+		"first": "Joe",
+		"last": "Blow"
+	},
+	"pronoun": $pronouns.male,
+	"role": {
+		"doctor": true,
+		"patient": false
+	},
+	"has":{
+		"penis": true,
+		"testicles": true,
+		"clitoris": false,
+		"vagina": false,
+		"breasts": false
+	},
+	"likes":{
+		"men": false,
+		"women": true,
+		"trans": {
+			"men": false,
+			"women": true
+		}
+	}
+}>>

@@ -1,0 +1,2 @@
+:: PassageHeader
+<<set ga('send', 'event', 'passage', 'loaded', passage());>>

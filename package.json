@@ -1,0 +1,28 @@
+{
+  "name": "paraphilic-clinic",
+  "version": "1.0.0",
+  "description": "An interactive adult oriented text based choose your own adventure style game, focused on fetishes.",
+  "main": "./docs/index.html",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "tweego -t -o docs/index-test.html src",
+    "build": "tweego -o docs/index.html src"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bdsmgeek/paraphilic-clinic.git"
+  },
+  "keywords": [
+    "twine"
+  ],
+  "author": "BDSMGeek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bdsmgeek/paraphilic-clinic/issues"
+  },
+  "homepage": "https://github.com/bdsmgeek/paraphilic-clinic#readme"
+}

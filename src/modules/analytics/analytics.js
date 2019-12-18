@@ -4,7 +4,7 @@
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-ga('create', 'UA-33634518-12', 'auto');
+ga('create', process.env.GUA, 'auto');
 ga('set', 'checkProtocolTask', null); // Disable file protocol checking.
 ga('set', 'checkStorageTask', null); // Disable cookie storage checking.
 ga('set', 'historyImportTask', null); // Disable history checking (requires reading from cookies).

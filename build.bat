@@ -1,1 +1,0 @@
-tweego -o docs/index.html src

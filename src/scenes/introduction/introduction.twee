@@ -1,0 +1,9 @@
+:: Introduction
+"Good morning!" says a young nurse manning the front desk with an exceptionally welcoming tone. Her blonde hair is pulled back into a neat bun, with a white nurse cap sitting on it. She hands you a tablet "Please sign in." 
+
+[[Sign in. | Character Creation]]
+
+:: Introduction Signed In [post_char_submit]
+"Thank you so much!" Holly takes the form from you and gives it a look before putting it into a folder and handing it off to the nurse behind her. When she turns back she asks "Did you want to take a tour of the facility?"
+
+[[Yes, please.| Clinic Tour]]
